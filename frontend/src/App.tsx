@@ -10,7 +10,6 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import POS from './pages/POS';
 import Products from './pages/Products';
-import ProductsTest from './pages/ProductsTest';
 import Customers from './pages/Customers';
 import Documents from './pages/Documents';
 import Shifts from './pages/Shifts';
@@ -36,7 +35,6 @@ function App() {
             <Route path="/pos" element={<Dashboard />} />
             <Route path="/pos/cashier" element={<POS />} />
             <Route path="/pos/products" element={<Products />} />
-            <Route path="/pos/products-test" element={<ProductsTest />} />
             <Route path="/pos/customers" element={<Customers />} />
             <Route path="/pos/documents" element={<Documents />} />
             <Route path="/pos/movements" element={<Documents />} />
