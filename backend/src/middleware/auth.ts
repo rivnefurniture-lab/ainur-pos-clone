@@ -43,7 +43,8 @@ export const isAuthenticated = (req: Request, res: Response, next: NextFunction)
 
 export const getCompanyId = (req: Request): string => {
   // Return session company or default - always return a valid company ID
-  return req.session?.companyId || req.params.companyId || DEFAULT_COMPANY_ID;
+  const paramCompanyId = typeof req.params.companyId === 'string' ? req.params.companyId : undefined;
+  return req.session?.companyId || paramCompanyId || DEFAULT_COMPANY_ID;
 };
 
 export const getUserId = (req: Request): string | null => {
