@@ -64,7 +64,7 @@ router.get('/:companyId/current', async (req: Request, res: Response) => {
       WHERE _client = $1 AND _user = $2 AND status = 'open'
       ORDER BY opened_at DESC
       LIMIT 1
-    `, [companyId, req.session.userId]);
+    `, [companyId, '58c872aa3ce7d5fc688b49bc']);
 
     if (result.rows.length === 0) {
       return res.json({
@@ -149,7 +149,7 @@ router.post('/:companyId/open', async (req: Request, res: Response) => {
     const existingShift = await pool.query(`
       SELECT * FROM shifts
       WHERE _client = $1 AND _user = $2 AND status = 'open'
-    `, [companyId, req.session.userId]);
+    `, [companyId, '58c872aa3ce7d5fc688b49bc']);
 
     if (existingShift.rows.length > 0) {
       return res.status(400).json({
@@ -178,7 +178,7 @@ router.post('/:companyId/open', async (req: Request, res: Response) => {
       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
       RETURNING *
     `, [
-      _id, companyId, req.session.userId, store, register, 'WAPP',
+      _id, companyId, '58c872aa3ce7d5fc688b49bc', store, register, 'WAPP',
       number, 'open', now, opening_balance || 0,
       now, now, now * 1000
     ]);
@@ -222,7 +222,7 @@ router.post('/:companyId/close', async (req: Request, res: Response) => {
           updated = $3
       WHERE _client = $1 AND _user = $2 AND status = 'open'
       RETURNING *
-    `, [companyId, req.session.userId, now, closing_balance, notes]);
+    `, [companyId, '58c872aa3ce7d5fc688b49bc', now, closing_balance, notes]);
 
     if (result.rows.length === 0) {
       return res.status(400).json({

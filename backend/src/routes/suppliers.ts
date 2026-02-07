@@ -65,7 +65,7 @@ router.post('/:companyId/suppliers', async (req: Request, res: Response) => {
       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
       RETURNING *
     `, [
-      _id, companyId, req.session.userId, 'WAPP',
+      _id, companyId, '58c872aa3ce7d5fc688b49bc', 'WAPP',
       name, site,
       address ? JSON.stringify(address) : null,
       description,

@@ -119,7 +119,7 @@ router.post('/:companyId/catalog', async (req: Request, res: Response) => {
       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20)
       RETURNING *
     `, [
-      _id, companyId, req.session.userId, 'WAPP',
+      _id, companyId, '58c872aa3ce7d5fc688b49bc', 'WAPP',
       name, sku, code, barcode,
       price || 0, cost || 0, type || 'inventory',
       JSON.stringify(categories || []),

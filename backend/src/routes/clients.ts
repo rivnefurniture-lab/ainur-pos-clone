@@ -117,7 +117,7 @@ router.post('/:companyId/clients', async (req: Request, res: Response) => {
       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18)
       RETURNING *
     `, [
-      _id, companyId, req.session.userId, 'WAPP',
+      _id, companyId, '58c872aa3ce7d5fc688b49bc', 'WAPP',
       name, type || 'person', sex, description,
       address ? JSON.stringify(address) : null,
       JSON.stringify(phones || []), JSON.stringify(emails || []),
