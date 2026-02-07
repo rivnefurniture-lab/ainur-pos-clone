@@ -14,21 +14,7 @@ import { documentApi } from '../services/api';
 import { theme } from '../styles/GlobalStyles';
 import { format, subDays } from 'date-fns';
 import { ru } from 'date-fns/locale';
-import type { Document } from '../types';
-
-interface Shift {
-  _id: string;
-  number: number;
-  opened: number;
-  closed?: number;
-  store_name?: string;
-  register_name?: string;
-  cashier_name?: string;
-  sales_total: number;
-  sales_count: number;
-  cash_start: number;
-  cash_end?: number;
-}
+import type { Document, Shift } from '../types';
 
 // ============================================
 // Styled Components

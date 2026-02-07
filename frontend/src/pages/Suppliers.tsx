@@ -555,7 +555,7 @@ export default function Suppliers() {
                   <Td>{supplier.phones?.[0] || ''}</Td>
                   <Td>{supplier.emails?.[0] || ''}</Td>
                   <Td>{supplier.description || ''}</Td>
-                  <Td>{supplier.address?.street || ''}</Td>
+                  <Td>{supplier.address?.actual || ''}</Td>
                   <Td>Олег Кицюк</Td>
                 </Tr>
               ))}

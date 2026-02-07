@@ -674,7 +674,7 @@ export default function Settings() {
                 {store.address && (
                   <StoreAddress>
                     <MapPin size={14} />
-                    {typeof store.address === 'string' ? store.address : store.address.street}
+                    {typeof store.address === 'string' ? store.address : store.address?.actual || ''}
                   </StoreAddress>
                 )}
                 <StoreActions>
@@ -696,7 +696,7 @@ export default function Settings() {
 
   // Accounts Page
   if (isAccounts) {
-    const totalBalance = accounts.reduce((sum, acc) => sum + (acc.balance || 0), 0);
+    const totalBalance = accounts.reduce((sum, acc) => sum + (acc.balance?.balance || 0), 0);
 
     return (
       <MainLayout title="Рахунки">
@@ -721,7 +721,7 @@ export default function Settings() {
                   📅 Створено {acc.created ? format(new Date(acc.created * 1000), 'd MMMM yyyy', { locale: ru }) : '—'}
                 </AccountDate>
                 <AccountBalance>
-                  <span>Баланс </span>{formatPrice(acc.balance || 0)} грн
+                  <span>Баланс </span>{formatPrice(acc.balance?.balance || 0)} грн
                 </AccountBalance>
                 <StoreActions>
                   <StoreEditButton>

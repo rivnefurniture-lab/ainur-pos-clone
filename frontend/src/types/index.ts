@@ -174,6 +174,8 @@ export interface Shift {
   _store: string;
   store_name?: string;
   _user: string;
+  user_name?: string;
+  cashier_name?: string;
   _account?: string;
   status: 'open' | 'closed' | 'reconciled';
   cash_start: number;

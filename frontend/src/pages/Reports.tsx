@@ -475,12 +475,12 @@ export default function Reports() {
 
     categoryMap.forEach((data, categoryName) => {
       const catSales = salesDocs.filter(d => 
-        d.products?.some(p => data.products.some(dp => dp._id === p._id))
+        d.items?.some((item: any) => data.products.some(dp => dp._id === item.product_id))
       );
       
       const revenue = catSales.reduce((s, d) => s + (d.total || 0), 0);
-      const sold = catSales.reduce((s, d) => s + (d.products?.length || 0), 0);
-      const cost = catSales.reduce((s, d) => s + (d.cost || d.total * 0.6 || 0), 0);
+      const sold = catSales.reduce((s, d) => s + (d.items?.length || 0), 0);
+      const cost = catSales.reduce((s, d) => s + (d.cost_total || d.total * 0.6 || 0), 0);
       const profit = revenue - cost;
       const marginality = revenue > 0 ? Math.round((profit / revenue) * 100) : 0;
       
@@ -724,9 +724,6 @@ export default function Reports() {
               </PanelActions>
             </PanelHeader>
             <PanelContent>
-              {selectedProduct.image && (
-                <ProductImage src={selectedProduct.image} alt={selectedProduct.name} />
-              )}
               <PanelLabel>товар</PanelLabel>
               <PanelTitle>{selectedProduct.name}</PanelTitle>
               
@@ -734,7 +731,7 @@ export default function Reports() {
                 <InfoLabel>Штрих-код:</InfoLabel>
                 <InfoValue>{selectedProduct.barcode || '—'}</InfoValue>
                 <InfoLabel>Артикул:</InfoLabel>
-                <InfoValue>{selectedProduct.article || selectedProduct._id?.slice(-6) || '—'}</InfoValue>
+                <InfoValue>{selectedProduct.sku || selectedProduct._id?.slice(-6) || '—'}</InfoValue>
                 <InfoLabel>Код товару:</InfoLabel>
                 <InfoValue>{selectedProduct.code || '—'}</InfoValue>
               </InfoGrid>
@@ -754,7 +751,7 @@ export default function Reports() {
                     }
                   </InfoValue>
                   <InfoLabel>Категорії</InfoLabel>
-                  <InfoValue>{selectedProduct.categories?.[0]?.name || '—'}</InfoValue>
+                  <InfoValue>{selectedProduct.categories?.[0] || '—'}</InfoValue>
                   <InfoLabel>Країна</InfoLabel>
                   <InfoValue>—</InfoValue>
                   <InfoLabel>Срок придатності</InfoLabel>
