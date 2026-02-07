@@ -5,6 +5,42 @@ import { isAuthenticated, getCompanyId } from '../middleware/auth';
 const router = Router();
 
 /**
+ * GET /data/:companyId/register (singular alias)
+ * Alias for registers endpoint
+ */
+router.get('/:companyId/register', isAuthenticated, async (req: Request, res: Response) => {
+  try {
+    const { companyId } = req.params;
+
+    const userCompanyId = getCompanyId(req);
+    if (companyId !== userCompanyId) {
+      return res.status(403).json({ status: false, error: 'Access denied' });
+    }
+
+    const result = await pool.query(`
+      SELECT *
+      FROM registers
+      WHERE _client = $1
+      ORDER BY name
+    `, [companyId]);
+
+    res.json({
+      status: true,
+      error: null,
+      objects: result.rows.length,
+      total: result.rows.length,
+      data: result.rows,
+    });
+  } catch (error) {
+    console.error('Registers fetch error:', error);
+    res.status(500).json({
+      status: false,
+      error: 'Failed to fetch registers',
+    });
+  }
+});
+
+/**
  * GET /data/:companyId/registers
  * Get all cash registers
  */

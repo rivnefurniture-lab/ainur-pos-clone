@@ -5,6 +5,47 @@ import { isAuthenticated, getCompanyId } from '../middleware/auth';
 const router = Router();
 
 /**
+ * GET /shift/:companyId
+ * Alias for getting current shift (redirects to /current behavior)
+ */
+router.get('/:companyId', isAuthenticated, async (req: Request, res: Response) => {
+  try {
+    const { companyId } = req.params;
+
+    const userCompanyId = getCompanyId(req);
+    if (companyId !== userCompanyId) {
+      return res.status(403).json({ status: false, error: 'Access denied' });
+    }
+
+    const result = await pool.query(`
+      SELECT *
+      FROM shifts
+      WHERE _client = $1 AND status = 'open'
+      ORDER BY opened_at DESC
+      LIMIT 1
+    `, [companyId]);
+
+    if (result.rows.length === 0) {
+      return res.json({
+        status: true,
+        data: null,
+      });
+    }
+
+    res.json({
+      status: true,
+      data: result.rows[0],
+    });
+  } catch (error) {
+    console.error('Current shift fetch error:', error);
+    res.status(500).json({
+      status: false,
+      error: 'Failed to fetch current shift',
+    });
+  }
+});
+
+/**
  * GET /shift/:companyId/current
  * Get current open shift
  */

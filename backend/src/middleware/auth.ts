@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 
 // Default company for development
-const DEFAULT_COMPANY_ID = '58c872aa3ce7d5fc688b49bd';
-const DEFAULT_USER_ID = '58c872aa3ce7d5fc688b49bc';
+export const DEFAULT_COMPANY_ID = '58c872aa3ce7d5fc688b49bd';
+export const DEFAULT_USER_ID = '58c872aa3ce7d5fc688b49bc';
 
 // Extend session type
 declare module 'express-session' {
@@ -21,22 +21,24 @@ export const isAuthenticated = (req: Request, res: Response, next: NextFunction)
     return next();
   }
   
-  // Allow access for default company (development/demo mode)
-  // Check the original URL for company ID pattern
-  const urlMatch = req.originalUrl.match(/\/([a-f0-9]{24})(?:\/|$|\?)/);
-  const urlCompanyId = urlMatch ? urlMatch[1] : null;
-  
-  // Debug log
-  console.log(`Auth check: URL=${req.originalUrl}, urlCompanyId=${urlCompanyId}, defaultId=${DEFAULT_COMPANY_ID}, match=${urlCompanyId === DEFAULT_COMPANY_ID}`);
-  
-  // Allow access for default company
-  if (urlCompanyId === DEFAULT_COMPANY_ID) {
+  // DEMO MODE: Allow access if the URL contains the default company ID anywhere
+  // This is a permissive check for development/demo purposes
+  if (req.originalUrl.includes(DEFAULT_COMPANY_ID)) {
     return next();
   }
   
-  // Also check params and body
-  const companyId = req.params.companyId || req.body?.companyId;
-  if (companyId === DEFAULT_COMPANY_ID) {
+  // Also check params
+  if (req.params.companyId === DEFAULT_COMPANY_ID) {
+    return next();
+  }
+  
+  // Check body for companyId
+  if (req.body?.companyId === DEFAULT_COMPANY_ID) {
+    return next();
+  }
+  
+  // Check query params
+  if (req.query.companyId === DEFAULT_COMPANY_ID) {
     return next();
   }
   
