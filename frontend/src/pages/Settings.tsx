@@ -674,7 +674,7 @@ export default function Settings() {
                 {store.address && (
                   <StoreAddress>
                     <MapPin size={14} />
-                    {typeof store.address === 'string' ? store.address : store.address?.actual || ''}
+                    {store.address}
                   </StoreAddress>
                 )}
                 <StoreActions>
