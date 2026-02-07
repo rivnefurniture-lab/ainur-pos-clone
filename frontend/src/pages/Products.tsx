@@ -23,7 +23,7 @@ import MainLayout from '../components/Layout/MainLayout';
 import { useAppDispatch, useAppSelector } from '../hooks/useRedux';
 import { fetchProducts, fetchCategories } from '../store/slices/dataSlice';
 import { dataApi } from '../services/api';
-import type { Product, Store, Category } from '../types';
+import type { Product, Store } from '../types';
 import { theme } from '../styles/GlobalStyles';
 
 // ============================================
@@ -875,7 +875,7 @@ export default function Products() {
               <FilterSelect value={filterCategory} onChange={(e) => setFilterCategory(e.target.value)}>
                 <option value="">Вибрати категорію</option>
                 {categories.map(cat => (
-                  <option key={cat._id} value={cat._id}>{cat.name}</option>
+                  <option key={cat} value={cat}>{cat}</option>
                 ))}
               </FilterSelect>
             </FilterSection>
@@ -1127,7 +1127,7 @@ export default function Products() {
               <FilterSelect>
                 <option>Выберите из списка или введите новую и нажмите Enter</option>
                 {categories.map(cat => (
-                  <option key={cat._id} value={cat._id}>{cat.name}</option>
+                  <option key={cat} value={cat}>{cat}</option>
                 ))}
               </FilterSelect>
             </FormGroup>
@@ -1294,8 +1294,8 @@ export default function Products() {
                   Товари і услуги
                 </CategoryItem>
                 {categories.map(cat => (
-                  <CategoryItem key={cat._id} $level={1}>
-                    {cat.name}
+                  <CategoryItem key={cat} $level={1}>
+                    {cat}
                   </CategoryItem>
                 ))}
               </CategoryTree>
