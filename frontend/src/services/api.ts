@@ -182,7 +182,7 @@ export const dataApi = {
 
   // Registers
   getRegisters: async (companyId: string): Promise<PaginatedResponse<Register>> => {
-    const response = await api.get(`/data/${companyId}/register`);
+    const response = await api.get(`/data/${companyId}/registers`);
     return response.data;
   },
 
@@ -241,7 +241,7 @@ export const documentApi = {
 
 export const shiftApi = {
   getCurrentShift: async (companyId: string): Promise<ApiResponse<Shift | null>> => {
-    const response = await api.get(`/shift/${companyId}`);
+    const response = await api.get(`/shift/${companyId}/current`);
     return response.data;
   },
 
