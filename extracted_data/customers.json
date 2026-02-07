@@ -1,0 +1,4227 @@
+[
+  {
+    "_id": "696a7f8dc6109838dd07bb2e",
+    "name": "Андрій водій",
+    "description": "",
+    "sex": "",
+    "type": "person",
+    "discount": 0,
+    "discount_card": "",
+    "default": false,
+    "deleted": false,
+    "enable_savings": false,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [],
+    "details": [],
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "loyalty_type": "discount",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1768587149,
+    "updated": 1768587149,
+    "_app": "WAPP",
+    "created_ms": 1768587149.906,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "69616d18f284b014a1077435",
+    "name": "Діана Коваленко",
+    "description": "",
+    "sex": "",
+    "type": "person",
+    "discount": 0,
+    "discount_card": "",
+    "default": false,
+    "deleted": false,
+    "enable_savings": false,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [],
+    "details": [],
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "loyalty_type": "discount",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1767992600,
+    "updated": 1767992600,
+    "_app": "WAPP",
+    "created_ms": 1767992600.768,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "69556ebeb0210fbdb2046170",
+    "name": "Коля Бостон",
+    "description": "",
+    "sex": "",
+    "type": "person",
+    "discount": 0,
+    "discount_card": "",
+    "default": false,
+    "deleted": false,
+    "enable_savings": false,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [],
+    "details": [],
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "loyalty_type": "discount",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1767206590,
+    "updated": 1767206590,
+    "_app": "WAPP",
+    "created_ms": 1767206590.622,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6939bd6de34d17bc2f05e958",
+    "name": "Марʼяна Чехович",
+    "description": "",
+    "sex": "",
+    "type": "person",
+    "discount": null,
+    "discount_card": "",
+    "default": false,
+    "deleted": false,
+    "enable_savings": false,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [],
+    "details": [],
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "loyalty_type": "discount",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1765391725,
+    "updated": 1765391815,
+    "_app": "WAPP",
+    "created_ms": 1765391725.004,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "debt": 0
+  },
+  {
+    "_id": "68e570bf777b7ebed70ef2cc",
+    "name": "Казак Діма",
+    "description": "",
+    "sex": "",
+    "type": "person",
+    "discount": 0,
+    "discount_card": "",
+    "default": false,
+    "deleted": false,
+    "enable_savings": false,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [],
+    "details": [],
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "loyalty_type": "discount",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1759867071,
+    "updated": 1759867071,
+    "_app": "WAPP",
+    "created_ms": 1759867071.821,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "68dbb348ad11c3a67e0e9a68",
+    "name": "Колодяжна Анна",
+    "description": "",
+    "sex": "",
+    "type": "person",
+    "discount": 0,
+    "discount_card": "",
+    "default": false,
+    "deleted": false,
+    "enable_savings": false,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [],
+    "details": [],
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "loyalty_type": "discount",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1759228744,
+    "updated": 1759228744,
+    "_app": "WAPP",
+    "created_ms": 1759228744.778,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "68bc7b156cc273c8e8057a9a",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Катерина Корнеєнкова",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1757182741,
+    "updated": 1757182741,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1757182741.21,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "688105e91229771c8f0344f5",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Поліна Шматченко",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1753286121,
+    "updated": 1753286121,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1753286121.824,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "687e63ec178841a1a5090c5f",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Катерина Радіонова",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1753113580,
+    "updated": 1753113580,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1753113580.435,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "684339d874553211f6058d1c",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Іванка Радисюк",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1749236184,
+    "updated": 1749236184,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1749236184.315,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6841b51e77abebeeb40dc0d1",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Альона та Вадим Гуменюк",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1749136670,
+    "updated": 1749136670,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1749136670.221,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67e2f032e25ed859bf0e53ad",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Коля Бостон",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1742925874,
+    "updated": 1742925874,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1742925874.853,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67c20fd1f00c2cadd906fb15",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Антарес",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1740771281,
+    "updated": 1740771281,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1740771281.643,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "61bba155ac6632575f281d8c",
+    "name": "Артем Софійчук",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1639686485,
+    "updated": 1735930347,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1639686485.794,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "debt": 0,
+    "rdebt": 0,
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "loyalty_type": "discount"
+  },
+  {
+    "_id": "6778305942bf5ac79b070334",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Міша офіс",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1735929945,
+    "updated": 1735929945,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1735929945.046,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6318b6f986266b2afb7717df",
+    "name": "Роздріб Епіцентр",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1662564089,
+    "updated": 1735335983,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1662564089.077,
+    "debt": 996,
+    "rdebt": 0,
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "loyalty_type": "discount"
+  },
+  {
+    "_id": "5f96e3870bd70c778731345a",
+    "name": "Роздріб Інстаграм",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "discount": 0,
+    "bday": null,
+    "sex": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1603724167,
+    "updated": 1735325851,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1603724167.142,
+    "debt": 336,
+    "rdebt": 0,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "bank_details": [],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "default": false,
+    "details": [],
+    "enable_savings": false,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "loyalty_type": "discount",
+    "type": "person"
+  },
+  {
+    "_id": "676ef7a6d6a3a696150fb65b",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Ангеліна Маляр",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1735325606,
+    "updated": 1735325606,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1735325606.904,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "676ef6d4d7e3653f120229ac",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Марія Довгошей",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1735325396,
+    "updated": 1735325396,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1735325396.484,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67604e01600ac92bf10f841a",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "rdebt": 0,
+    "name": "Случак Світлана",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1734364673,
+    "updated": 1734364673,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1734364673.079,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67535150df9b5c4dcc055a3e",
+    "name": "Валерій Осницький",
+    "description": "",
+    "sex": "",
+    "type": "person",
+    "discount": 0,
+    "discount_card": "",
+    "default": false,
+    "deleted": false,
+    "enable_savings": false,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [],
+    "details": [],
+    "emails": [],
+    "phones": [],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1733513552,
+    "updated": 1733513552,
+    "_app": "IOSAPP",
+    "created_ms": 1733513552.58,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "674f86b449d82bd07403f0d6",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Оксана Коваль",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1733265076,
+    "updated": 1733265076,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1733265076.701,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67463545e6568a87840d0623",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Аліна Галагуз (Абрек)",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1732654405,
+    "updated": 1732654434,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1732654405.677,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5bbf8d850eccd32f1b617bd5",
+    "name": "Артем Валігура",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1539280261,
+    "updated": 1732653327,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1539280261.766,
+    "debt": 1220,
+    "rdebt": 0,
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "loyalty_type": "discount"
+  },
+  {
+    "_id": "6744c983dee2fbe7160bd589",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Анна Гузьома",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1732561283,
+    "updated": 1732561283,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1732561283.73,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "673e2b8a924f0b8d3404f5d3",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Ксеня Кутельмах",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1732127626,
+    "updated": 1732127626,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1732127626.775,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67294e4255c3fd68c40820ec",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Артем Паламарчук (Зарта)",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1730760258,
+    "updated": 1730760258,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1730760258.758,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67266aec5b3fd8522208d298",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Людвічук Андрій",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1730570988,
+    "updated": 1730570988,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1730570988.986,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "67044ae34277742edc05293d",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Олександр Ликов",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1728334563,
+    "updated": 1728334563,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1728334563.561,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "618e750c23e4107fc83cd8a8",
+    "name": "Девоніна Вікторія",
+    "discount": 0,
+    "discount_card": null,
+    "bday": null,
+    "address": {
+      "actual": null
+    },
+    "enable_saving": false,
+    "default": false,
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "sex": "female",
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1636726028,
+    "updated": 1726328385,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1636726028.739,
+    "debt": 0,
+    "rdebt": 0,
+    "bank_details": [],
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "details": [],
+    "enable_savings": false,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "loyalty_type": "discount",
+    "type": "person"
+  },
+  {
+    "_id": "66d1115679ffe67845047a5f",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Марія Білик",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1724977494,
+    "updated": 1724977494,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1724977494.524,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "66ccbdc8fef503bfca020e5a",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Катерина Довгошей",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1724693960,
+    "updated": 1724693960,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1724693960.029,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "66ba59ff029dce5bce0dfd89",
+    "type": "person",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "enable_savings": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [],
+    "bank_details": [],
+    "discount": 0,
+    "default": false,
+    "loyalty_type": "discount",
+    "bonus_balance": 0,
+    "bonus_spent": 0,
+    "cashback_rate": 0,
+    "name": "Інна Іванюша",
+    "bday": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1723488767,
+    "updated": 1723488767,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1723488767.016,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "668ed7ebda42dd2d1a037394",
+    "name": "Кукта Марійка",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1720637412,
+    "updated": 1720637412,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1720637412.023,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "668ecdd9687cf1890d010258",
+    "name": "Марина Шинкар",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1720634841,
+    "updated": 1720634841,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1720634841.577,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "667c441548580b394b0ae716",
+    "name": "Христина Бойко",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1719419925,
+    "updated": 1719419925,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1719419925.533,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "665a3013a7f9b8051f0d6ae3",
+    "name": "Снічук Вадим Ultrasale",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1717186579,
+    "updated": 1717186579,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1717186579.632,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6650a1e8e25cde1c19009496",
+    "name": "Шадура Поліна",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1716560360,
+    "updated": 1716560360,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1716560360.12,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6605c6786f9c5997c606d587",
+    "name": "Катерина Полякова",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1711654520,
+    "updated": 1711654520,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1711654520.44,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "65ee18c85ecb4acd6c0915c6",
+    "name": "Софія Дьяченко",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1710102727,
+    "updated": 1710102727,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1710102727.634,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f04a4b20bd70c3c2f543a60",
+    "name": "Альона Гуменюк",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1594139826,
+    "updated": 1707773251,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1594139826.03,
+    "debt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "rdebt": 0
+  },
+  {
+    "_id": "65c3b6f73cb92daa4b0306a8",
+    "name": "Ірина Костюк",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1707325175,
+    "updated": 1707325175,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1707325175.899,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "65ba181b2717d089ea0c4ae6",
+    "name": "Іваньо Назар",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1706694683,
+    "updated": 1706694683,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1706694683.237,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "656a4392a342a59abc00b416",
+    "name": "МорФлот",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1701462930,
+    "updated": 1701462930,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1701462930.304,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "654e8cdf85ac4599f20d519d",
+    "name": "Таня Демчук (Несинець)",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1699646687,
+    "updated": 1699646687,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1699646687.588,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "654e8c6b1367742dd109d22c",
+    "name": "Іванка Ціпан",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1699646564,
+    "updated": 1699646564,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1699646564.349,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6513259d28071b77f401acbc",
+    "name": "Розетка Видача",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1695753629,
+    "updated": 1695753629,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1695753629.553,
+    "debt": 3809.8399999999997,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "63c963bd2b1512f94005371d",
+    "name": "Софійчук Валерія",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": 1672673799,
+    "discount": 0,
+    "sex": "female",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1674142653,
+    "updated": 1691846552,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1674142653.424,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "62d9817238a3c27d22100462",
+    "name": "Назар Герасименко",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1658421618,
+    "updated": 1658421618,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1658421618.17,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "62a35fdd2e8a951b0d329da7",
+    "name": "Ткач Андрій",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1654874077,
+    "updated": 1654874077,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1654874077.422,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "627add09fe91b556fc5dd79e",
+    "name": "Ющенко Маргарита",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1652219145,
+    "updated": 1652219145,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1652219145.379,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6270111eba38b450b8460d72",
+    "name": "Денис Носаль",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1651511582,
+    "updated": 1651511582,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1651511582.481,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "613a110123e4101b70322650",
+    "name": "Розница OLX",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1631195393,
+    "updated": 1631195393,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1631195393.966,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "60c1f0480bd70c2ad53a7136",
+    "name": "екатерина нагорная",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "discount": 0,
+    "bday": null,
+    "sex": null,
+    "_user": "5c7ae1e70bd70c5abe20fbc9",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1623322696,
+    "updated": 1623322696,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1623322696.908,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "5c7ae1e70bd70c5abe20fbc9",
+        "name": "Екатерина Нагорная",
+        "email": "loveiska30@mail.ru",
+        "phone": "+380689845818",
+        "pic": "https://i0.ainur.app/v2/50641bb1-91bd-44ec-af2b-be851a3aa708.jpg",
+        "created": 1551557095
+      }
+    }
+  },
+  {
+    "_id": "60be6acd0bd70c7908001ecd",
+    "name": "Екатерина Нагорная",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1623091917,
+    "updated": 1623091917,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1623091917.418,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f89b7390bd70c1f104b302c",
+    "name": "Розница Розетка",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "discount": 0,
+    "bday": null,
+    "sex": null,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1602860857,
+    "updated": 1616596379,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1602860857.345,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "default": false,
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "enable_savings": false,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    },
+    "type": "person",
+    "debt": 1802.96,
+    "rdebt": 0
+  },
+  {
+    "_id": "603680120bd70c481a2b08ff",
+    "name": "Ошибочная продажа",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1614184466,
+    "updated": 1614184466,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1614184466.679,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "6023080d0bd70c786926379a",
+    "name": "Андарачний Олексій",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1612908557,
+    "updated": 1612908557,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1612908557.788,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5ff38d9c0bd70c248005d224",
+    "name": "Никита Сосед",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1609797020,
+    "updated": 1609797020,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1609797020.129,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5fde3bc90bd70c20f275ecf6",
+    "name": "Оксана Стуконис",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1608399817,
+    "updated": 1608399817,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1608399817.825,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5fd269c80bd70c745145cd80",
+    "name": "Благотворительность",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1607625160,
+    "updated": 1607625160,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1607625160.489,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f2001da0bd70c41753bdc32",
+    "name": "Гребенюк Олександр Квест комната",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58dc47b13ce7d56b5c8b4b61",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1595933146,
+    "updated": 1606836847,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1595933146.201,
+    "info": {
+      "user": {
+        "_id": "58dc47b13ce7d56b5c8b4b61",
+        "name": "Зінчик Олена",
+        "email": "osnval@gmail.com",
+        "phone": "0988721322",
+        "pic": "",
+        "created": 1490831281
+      }
+    },
+    "debt": 11610,
+    "rdebt": 0
+  },
+  {
+    "_id": "5fbe38fd0bd70c12f50514c9",
+    "name": "Розница Флексби",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1606301949,
+    "updated": 1606301949,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1606301949.955,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5fb2a9a00bd70c6a5179c1eb",
+    "name": "Олексій Бондаренко",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1605544352,
+    "updated": 1605544352,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1605544352.762,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f99a5020bd70c243d346597",
+    "name": "Валерия Скай Молл",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1603904770,
+    "updated": 1603904770,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1603904770.093,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f904cf60bd70c1102223b28",
+    "name": "Розница ПРОМ Юа",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "discount": 0,
+    "bday": null,
+    "sex": null,
+    "_user": "5f0748150bd70c53af0aa181",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1603292406,
+    "updated": 1603292406,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1603292406.765,
+    "debt": 388.81000000000023,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "5f0748150bd70c53af0aa181",
+        "name": "Алена Гуменюк",
+        "email": "loveiska222@mail.ru",
+        "phone": "+380632073030",
+        "pic": "",
+        "created": 1594312725
+      }
+    }
+  },
+  {
+    "_id": "5f89b6c50bd70c17fc20d256",
+    "name": "Розница Ловиска",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "discount": 0,
+    "bday": null,
+    "sex": null,
+    "_user": "5f0748150bd70c53af0aa181",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1602860741,
+    "updated": 1602860741,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1602860741.64,
+    "debt": 1341,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "5f0748150bd70c53af0aa181",
+        "name": "Алена Гуменюк",
+        "email": "loveiska222@mail.ru",
+        "phone": "+380632073030",
+        "pic": "",
+        "created": 1594312725
+      }
+    }
+  },
+  {
+    "_id": "5f89b6390bd70c215a48cc7d",
+    "name": "Розница Майнкрафт",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "discount": 0,
+    "bday": null,
+    "sex": null,
+    "_user": "5f0748150bd70c53af0aa181",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1602860601,
+    "updated": 1602860601,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1602860601.71,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "5f0748150bd70c53af0aa181",
+        "name": "Алена Гуменюк",
+        "email": "loveiska222@mail.ru",
+        "phone": "+380632073030",
+        "pic": "",
+        "created": 1594312725
+      }
+    }
+  },
+  {
+    "_id": "5f4d4a8b0bd70c603233db46",
+    "name": "Рома Чуланов",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1598900875,
+    "updated": 1598900875,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1598900875.157,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f04c74f0bd70c65101a3017",
+    "name": "Назар Иваньо",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1594148687,
+    "updated": 1594148687,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1594148687.978,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f04c7340bd70c7f4409c047",
+    "name": "Саша Пренделович",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1594148660,
+    "updated": 1594148660,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1594148660.029,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5f04c5860bd70c762c66c43e",
+    "name": "Вова Биг Босс",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1594148230,
+    "updated": 1594148230,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1594148230.882,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5eced0710bd70c2a831be48a",
+    "name": "Олег",
+    "phones": [
+      "0939713320"
+    ],
+    "emails": [
+      "Te@mail.ru"
+    ],
+    "address": {
+      "actual": "Киев №22"
+    },
+    "social": {
+      "vk_profile": null,
+      "fb_profile": null
+    },
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1590612081,
+    "updated": 1590612081,
+    "deleted": false,
+    "_app": "ECAPP",
+    "created_ms": 1590612081.661,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5ececf1b0bd70c2a787cf0e7",
+    "name": "ТЕСТ",
+    "phones": [
+      "ТЕСТ"
+    ],
+    "emails": [
+      "Te@mail.ru"
+    ],
+    "address": {
+      "actual": "ТЕСТ"
+    },
+    "social": {
+      "vk_profile": null,
+      "fb_profile": null
+    },
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1590611739,
+    "updated": 1590611739,
+    "deleted": false,
+    "_app": "ECAPP",
+    "created_ms": 1590611739.456,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5e61b84c0bd70c5af97963c3",
+    "name": "Петя Царук",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1583462476,
+    "updated": 1583462476,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1583462476.167,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5e06257f0bd70c46874f4ab1",
+    "name": "Славік Федорчук",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1577461119,
+    "updated": 1577461119,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1577461119.468,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5d80f2a70bd70c013f78b338",
+    "name": "Даша Фотограф",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1568731815,
+    "updated": 1568731815,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1568731815.422,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5c8663db0bd70c05e96bd7eb",
+    "name": "Саша Вет",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1552311259,
+    "updated": 1552311259,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1552311259.21,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5c6c1cfa0bd70c13a7172a83",
+    "name": "Божко Вікторія",
+    "type": "person",
+    "phones": [
+      "+380976341491"
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1550589178,
+    "updated": 1550589178,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1550589178.061,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5c2f925d0bd70c770b6aca48",
+    "name": "Марина Качур",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "female",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1546621533,
+    "updated": 1546621533,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1546621533.16,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5c27fd2d0bd70c27031110cc",
+    "name": "Мирко Людмила",
+    "type": "person",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": null,
+      "legal": null
+    },
+    "details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "bank_details": [
+      {
+        "key": null,
+        "value": null
+      }
+    ],
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1546124589,
+    "updated": 1546124589,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1546124589.697,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "5a5d16403ce7d516508b46bc",
+    "name": "Людва",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": ""
+    },
+    "created": 1516049984,
+    "uuid": "55ca70e5-9ee9-4270-a0d5-bbd64a7f89b3",
+    "updated": 1516049984,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1516049984.191,
+    "sum": 1420,
+    "debt": 1482,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58c872ab3ce7d5fc688b49bf",
+    "name": "Розничный покупатель",
+    "default": true,
+    "created": 1489531563,
+    "uuid": "03333c68-68f6-4212-820d-d694f846a815",
+    "updated": 1513254123,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489531563.459,
+    "sum": 4117828.0919999997,
+    "_stat_docs": {
+      "sales": {
+        "_id": "sales",
+        "sum": 663368.1179999999,
+        "discounts": 5007.839999999999,
+        "count": 2923,
+        "paid_sum": 52238.8
+      }
+    },
+    "_stat_orders": {
+      "debit": {
+        "_id": "debit",
+        "sum": 637372.119
+      }
+    },
+    "debt": 31780.77,
+    "rdebt": 2843,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "597724d43ce7d55b7f8b456d",
+    "name": "Евтушок Лена",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": ""
+    },
+    "created": 1500980436,
+    "uuid": "d246e9e6-dc7a-42fe-b551-cbf411663661",
+    "updated": 1500980436,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1500980436.486,
+    "sum": 749,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "595fa2d83ce7d508568b456a",
+    "name": "Карина Никольская",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": ""
+    },
+    "created": 1499439832,
+    "uuid": "bf807f23-14bc-47b9-96fb-71c2d78984b0",
+    "updated": 1499439832,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1499439832.795,
+    "sum": 149.5,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58f7b6203ce7d533188b4653",
+    "name": "Рита Осадча",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": ""
+    },
+    "created": 1492629024,
+    "uuid": "63477e5d-c8e6-4720-acf3-c7a7d4371932",
+    "updated": 1492629024,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1492629024.792,
+    "sum": 270,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58e2368a3ce7d506228b45bc",
+    "name": "Андрей Александров (доза)",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": ""
+    },
+    "created": 1491220106,
+    "uuid": "c55292e4-bc3c-4eb6-bb16-9278b1e08d7e",
+    "updated": 1491220106,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1491220106.398,
+    "sum": 85090,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58dd6ea63ce7d55c238b48cd",
+    "name": "Мікро Людмила",
+    "phones": [
+      ""
+    ],
+    "emails": [
+      ""
+    ],
+    "created": 1490906790,
+    "uuid": "62dc26e2-61a6-403b-859a-767c8259d586",
+    "updated": 1490906790,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1490906790.937,
+    "sum": 23200,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58d92e7d3ce7d525428b45cf",
+    "name": "Мельник Андрій",
+    "phones": [
+      "093 782 32 94"
+    ],
+    "emails": [
+      ""
+    ],
+    "bday": null,
+    "discount": 0,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": ""
+    },
+    "created": 1490628221,
+    "uuid": "8a12b9ab-6f47-4667-8905-ea8715a7d2d5",
+    "updated": 1490628221,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1490628221.883,
+    "sum": 300,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58d92daf3ce7d5dc408b459a",
+    "name": "Вавдиюк Иванна",
+    "phones": [
+      "098 942 29 82"
+    ],
+    "emails": [
+      ""
+    ],
+    "created": 1490628015,
+    "uuid": "28c1ba7a-2004-492b-b2ec-725f14b734a2",
+    "updated": 1490628015,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1490628015.376,
+    "sum": 300,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58d92c923ce7d568428b4582",
+    "name": "Лавнова Элиза",
+    "phones": [
+      "068 286 34 21 "
+    ],
+    "emails": [
+      ""
+    ],
+    "created": 1490627730,
+    "uuid": "3918e304-b392-465f-9125-478fd8341345",
+    "updated": 1490627730,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1490627730.307,
+    "sum": 400,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  },
+  {
+    "_id": "58d92acb3ce7d582418b456b",
+    "name": "Вознюк Рома",
+    "phones": [
+      "0980188039"
+    ],
+    "emails": [
+      "vroma111@gmail.com"
+    ],
+    "bday": 642027599,
+    "discount": 100,
+    "sex": "male",
+    "enable_savings": false,
+    "default": false,
+    "address": {
+      "actual": ""
+    },
+    "created": 1490627275,
+    "uuid": "98950eb7-4e2f-43e4-88b3-16f13e13a98e",
+    "updated": 1490627275,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1490627275.303,
+    "sum": 0,
+    "debt": 0,
+    "rdebt": 0,
+    "info": {
+      "user": {
+        "_id": "58c872aa3ce7d5fc688b49bc",
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "phone": 380939713320,
+        "pic": "",
+        "created": 1489531562
+      }
+    }
+  }
+]

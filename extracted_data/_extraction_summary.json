@@ -1,0 +1,24 @@
+{
+  "extraction_timestamp": "20260207_014625",
+  "company_id": "58c872aa3ce7d5fc688b49bd",
+  "counts": {
+    "company": 0,
+    "stores": 9,
+    "categories": 110,
+    "products": 3203,
+    "product_stock": 0,
+    "customers": 92,
+    "suppliers": 187,
+    "accounts": 22,
+    "money_sources": 30,
+    "registers": 0,
+    "employees": 0,
+    "units": 0,
+    "tags": 0,
+    "taxes": 0,
+    "documents": 10000,
+    "money_movements": 10000,
+    "shifts": 0,
+    "settings": 1
+  }
+}

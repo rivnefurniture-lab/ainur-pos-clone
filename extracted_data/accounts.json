@@ -1,0 +1,618 @@
+[
+  {
+    "_id": "61f28ea50665da0b024836a2",
+    "type": "bank_account",
+    "bank_details": [],
+    "balance": {
+      "income": 793109,
+      "outcome": 0,
+      "balance": 793109
+    },
+    "name": "Термінал Святошин",
+    "include": true,
+    "use_terminal": true,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1643286181,
+    "uuid": "11ee82e5-98bb-4aa9-9390-c9b338dd2a68",
+    "updated": 1643286181,
+    "deleted": false,
+    "created_ms": 1643286181.952
+  },
+  {
+    "_id": "61f28e80781ff97c5e5a2eb8",
+    "type": "bank_account",
+    "bank_details": [],
+    "balance": {
+      "income": 3488754.88,
+      "outcome": -7831,
+      "balance": 3480923.88
+    },
+    "name": "Термінал Осокорки",
+    "include": true,
+    "use_terminal": true,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1643286144,
+    "uuid": "2810a8f9-00a0-4728-888a-12715a6ffdd8",
+    "updated": 1643286144,
+    "deleted": false,
+    "created_ms": 1643286144.098
+  },
+  {
+    "_id": "61f28dd8781ff97c5e5a2e9d",
+    "type": "bank_account",
+    "bank_details": [],
+    "balance": {
+      "income": 5139036.01,
+      "outcome": -5426,
+      "balance": 5133610.01
+    },
+    "name": "Термінал Лобановського",
+    "include": true,
+    "use_terminal": true,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1643285976,
+    "uuid": "c3161337-b98d-4e3f-9d1c-0307a4b98195",
+    "updated": 1643286408,
+    "deleted": false,
+    "created_ms": 1643285976.132
+  },
+  {
+    "_id": "61f28f3b4077b035631bb8d4",
+    "type": "bank_account",
+    "bank_details": [],
+    "balance": {
+      "income": 2109120.89,
+      "outcome": -8627,
+      "balance": 2100493.89
+    },
+    "name": "Термінал \"Океан Плаза\" мінус 1 поверх Ашан",
+    "include": true,
+    "use_terminal": true,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1643286331,
+    "uuid": "95a0000c-5978-4933-9308-e2151fb66a92",
+    "updated": 1643286331,
+    "deleted": false,
+    "created_ms": 1643286331.879
+  },
+  {
+    "_id": "61f28f171acdcd17502003c0",
+    "type": "bank_account",
+    "bank_details": [],
+    "balance": {
+      "income": 4075721.98,
+      "outcome": -17027.89,
+      "balance": 4058694.09
+    },
+    "name": "Термінал \"Океан Плаза\" 2 поверх",
+    "include": true,
+    "use_terminal": true,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1643286295,
+    "uuid": "e2b9e983-ed63-4469-bf21-b3a52542d941",
+    "updated": 1643286295,
+    "deleted": false,
+    "created_ms": 1643286295.362
+  },
+  {
+    "_id": "61f28edda39d640b66449fb3",
+    "type": "bank_account",
+    "bank_details": [],
+    "balance": {
+      "income": 2956394.57,
+      "outcome": -11277.2,
+      "balance": 2945117.37
+    },
+    "name": "Термінал \"Океан Плаза\" 1 поверх",
+    "include": true,
+    "use_terminal": true,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1643286237,
+    "uuid": "6bce6ecc-e906-44bb-b26b-6f2bb150fc63",
+    "updated": 1643286276,
+    "deleted": false,
+    "created_ms": 1643286237.63
+  },
+  {
+    "_id": "592f39ae3ce7d539608b4609",
+    "name": "Святошино, \"NOVUS\"",
+    "created": 1496267182,
+    "uuid": "b5a2b85f-8b52-495c-b17e-07db6a1ac2b6",
+    "updated": 1644406043,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1496267182.298,
+    "default": false,
+    "_register": "592f3a7b0eccd30f97529ea2",
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": -6937,
+        "discounts": 0,
+        "count": 4,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 50269,
+        "discounts": 0,
+        "count": 388,
+        "paid_sum": 4958
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 8,
+        "paid_sum": 0
+      }
+    },
+    "include": true,
+    "balance": {
+      "income": 1710843.16,
+      "outcome": -1979.81,
+      "balance": 1708863.35
+    }
+  },
+  {
+    "_id": "672a5cc9a1582a5fe70b0d18",
+    "taxes": [],
+    "name": "СКЛАД РЕМОНТ",
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1730829513,
+    "uuid": "a3fd8faf-921e-459b-a063-53c212accf95",
+    "updated": 1730829513,
+    "deleted": false,
+    "created_ms": 1730829513.864,
+    "include": true,
+    "balance": {
+      "income": 0,
+      "outcome": 0,
+      "balance": 0
+    }
+  },
+  {
+    "_id": "592f3b2a0eccd30fcf22313a",
+    "type": "register",
+    "_register": "592f3b2a0eccd30fcf22313b",
+    "name": "Офіс",
+    "created": 1496267562,
+    "updated": 1614614445,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1496267562.733,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "include": true,
+    "balance": {
+      "income": 445451.65,
+      "outcome": -445451.65,
+      "balance": 0
+    }
+  },
+  {
+    "_id": "58c874653ce7d5656b8b4696",
+    "name": "Офис \"LOVEISKA\"",
+    "address": "",
+    "description": "Склад та офіс",
+    "created": 1489532005,
+    "uuid": "0b8d9774-3bb0-4f99-bca9-83bb10ce21e7",
+    "updated": 1708536151,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489532005.657,
+    "default": true,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "shortname": "Офіс \"LOVEISKA...",
+    "balance": {
+      "income": 13247523.8,
+      "outcome": -32997048.42,
+      "balance": -19749524.62
+    },
+    "type": "store",
+    "include": false,
+    "_register": "592f3b2a0eccd30fcf22313c",
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": 1233,
+        "discounts": 0,
+        "count": 5,
+        "paid_sum": 0
+      },
+      "purchases": {
+        "_id": "purchases",
+        "sum": 462628.12,
+        "discounts": 0,
+        "count": 55,
+        "paid_sum": 21000.56
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 16,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 271571.32,
+        "discounts": 3773.64,
+        "count": 102,
+        "paid_sum": 27648
+      }
+    },
+    "taxes": []
+  },
+  {
+    "_id": "59d368073ce7d52b118b4588",
+    "name": "Осокорки, \"NOVUS\"",
+    "created": 1507026951,
+    "uuid": "09db7306-45df-4a0e-a494-7eb3bbdb186f",
+    "updated": 1548956114,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1507026951.719,
+    "include": true,
+    "balance": {
+      "income": 3135432.82,
+      "outcome": -37181.24,
+      "balance": 3098251.58
+    }
+  },
+  {
+    "_id": "58c8741e3ce7d5ac658b496d",
+    "name": "Лобановського, \"NOVUS\"",
+    "address": "проспект Валерерія Лобановського 4Д",
+    "created": 1489531934,
+    "uuid": "22f46919-0a53-440e-ac73-c3854162f345",
+    "updated": 1643389209,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489531934.483,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "shortname": "Магазин \"ЫШ-ТЫ...",
+    "default": false,
+    "balance": {
+      "income": 4510896.41,
+      "outcome": -611791.01,
+      "balance": 3899105.4
+    },
+    "type": "store",
+    "include": true,
+    "_register": "592f3aba0eccd30fcf223139",
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": -2504,
+        "discounts": 0,
+        "count": 5,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 83878.999,
+        "discounts": 0,
+        "count": 605,
+        "paid_sum": 5980
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 18,
+        "paid_sum": 0
+      }
+    },
+    "bank_details": []
+  },
+  {
+    "_id": "61f984f5a8623731992e897e",
+    "type": "register",
+    "_register": "61f984f5a8623731992e897d",
+    "name": "Каса на Святошинська 3",
+    "created": 1643742453,
+    "updated": 1709070494,
+    "deleted": false,
+    "_app": null,
+    "created_ms": 1643742453.679,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "include": true,
+    "balance": {
+      "income": 616221.78,
+      "outcome": -616221.78,
+      "balance": 0
+    }
+  },
+  {
+    "_id": "61f2e1349f76e66d310ae615",
+    "type": "register",
+    "_register": "61f2e1349f76e66d310ae614",
+    "name": "Каса на Лобановського 4Д",
+    "created": 1643307316,
+    "updated": 1762932535,
+    "deleted": false,
+    "_app": null,
+    "created_ms": 1643307316.981,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "include": true,
+    "balance": {
+      "income": 2856017.4,
+      "outcome": -2855668.4,
+      "balance": 349
+    }
+  },
+  {
+    "_id": "61f999abe2acf7317f25663b",
+    "type": "register",
+    "_register": "61f999abe2acf7317f25663a",
+    "name": "Каса на Бажана 8",
+    "created": 1643747755,
+    "updated": 1758920503,
+    "deleted": false,
+    "_app": null,
+    "created_ms": 1643747755.147,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "include": true,
+    "balance": {
+      "income": 1936015.19,
+      "outcome": -1936015.19,
+      "balance": 0
+    }
+  },
+  {
+    "_id": "61f9ad3e64f9f914c36342ca",
+    "type": "register",
+    "_register": "61f9ad3e64f9f914c36342c9",
+    "name": "Каса Океан Плаза 2",
+    "created": 1643752766,
+    "updated": 1766129061,
+    "deleted": false,
+    "_app": null,
+    "created_ms": 1643752766.915,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "include": true,
+    "balance": {
+      "income": 2708994.37,
+      "outcome": -2708544.58,
+      "balance": 449.79
+    }
+  },
+  {
+    "_id": "61f9acebca92052a2c767b87",
+    "type": "register",
+    "_register": "61f9acebca92052a2c767b86",
+    "name": "Каса Океан Плаза 1",
+    "created": 1643752683,
+    "updated": 1757313767,
+    "deleted": false,
+    "_app": null,
+    "created_ms": 1643752683.107,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "include": true,
+    "balance": {
+      "income": 1909681.4,
+      "outcome": -1909681.4,
+      "balance": 0
+    }
+  },
+  {
+    "_id": "61f9abdd2ee3c543cd362b5f",
+    "type": "register",
+    "_register": "61f9abdd2ee3c543cd362b5e",
+    "name": "Каса Океан Плаза -1",
+    "created": 1643752413,
+    "updated": 1761070962,
+    "deleted": false,
+    "_app": null,
+    "created_ms": 1643752413.92,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "include": true,
+    "balance": {
+      "income": 1383525.8,
+      "outcome": -1383525.8,
+      "balance": 0
+    }
+  },
+  {
+    "_id": "623f95c015afe432df5fa55d",
+    "name": "Березне",
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1648334272,
+    "uuid": "5fa2f798-40dc-42a6-8ff1-72b83b294bad",
+    "updated": 1669653901,
+    "deleted": false,
+    "created_ms": 1648334272.241,
+    "default": false,
+    "taxes": [],
+    "include": true,
+    "balance": {
+      "income": 168769.6,
+      "outcome": -118407.58,
+      "balance": 50362.02
+    }
+  },
+  {
+    "_id": "58c872ab3ce7d5fc688b49be",
+    "name": "\"Океан Плаза\" Ашан -1 этаж",
+    "default": false,
+    "created": 1489531563,
+    "uuid": "25064669-5a8d-4913-af09-e4674336b41f",
+    "updated": 1539110254,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489531563.458,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "shortname": "Мой магазин",
+    "address": "вулиця Антоновича 176\n-1 поверх (біля 20 каси Ашану)",
+    "description": "",
+    "balance": {
+      "income": 3649815.75,
+      "outcome": -194828.6,
+      "balance": 3454987.15
+    },
+    "type": "store",
+    "include": false,
+    "_register": null,
+    "_stat_docs": {
+      "purchases": {
+        "_id": "purchases",
+        "sum": 500,
+        "discounts": 0,
+        "count": 1,
+        "paid_sum": 0
+      },
+      "changes": {
+        "_id": "changes",
+        "sum": -5117,
+        "discounts": 0,
+        "count": 10,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 190186.799,
+        "discounts": 1234.2,
+        "count": 1103,
+        "paid_sum": 11825.8
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 21,
+        "paid_sum": 0
+      }
+    }
+  },
+  {
+    "_id": "595c16383ce7d5b5148b4920",
+    "name": "\"Океан Плаза\" 2 этаж",
+    "address": "Антоновича 176\n2 этаж\nвозле фудкорта",
+    "created": 1499207224,
+    "uuid": "7791e68e-6bdf-4854-9a9b-275557dcba69",
+    "updated": 1539110268,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1499207224.839,
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": -1507,
+        "discounts": 0,
+        "count": 4,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 67462,
+        "discounts": 0,
+        "count": 725,
+        "paid_sum": 1827
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 11,
+        "paid_sum": 0
+      }
+    },
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "include": true,
+    "balance": {
+      "income": 4697043.15,
+      "outcome": -1681.36,
+      "balance": 4695361.79
+    }
+  },
+  {
+    "_id": "5cc8361d0bd70c435619795b",
+    "address": "Антоновича 176, 1 этаж",
+    "name": "\"Океан Плаза\" 1 этаж",
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1556624925,
+    "uuid": "1ce7bc51-aa5d-464e-a797-570def1293e4",
+    "updated": 1556624925,
+    "deleted": false,
+    "created_ms": 1556624925.817,
+    "include": true,
+    "balance": {
+      "income": 2708672.9,
+      "outcome": -1117.55,
+      "balance": 2707555.35
+    }
+  }
+]

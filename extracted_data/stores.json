@@ -1,0 +1,323 @@
+[
+  {
+    "_id": "672a5cc9a1582a5fe70b0d18",
+    "taxes": [],
+    "name": "СКЛАД РЕМОНТ",
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1730829513,
+    "uuid": "a3fd8faf-921e-459b-a063-53c212accf95",
+    "updated": 1730829513,
+    "deleted": false,
+    "created_ms": 1730829513.864
+  },
+  {
+    "_id": "58c874653ce7d5656b8b4696",
+    "name": "Офис \"LOVEISKA\"",
+    "address": "",
+    "description": "Склад та офіс",
+    "created": 1489532005,
+    "uuid": "0b8d9774-3bb0-4f99-bca9-83bb10ce21e7",
+    "updated": 1708536151,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489532005.657,
+    "default": true,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "shortname": "Офіс \"LOVEISKA...",
+    "balance": {
+      "income": 455369.25,
+      "outcome": -274338.03,
+      "balance": 0
+    },
+    "type": "store",
+    "include": false,
+    "_register": "592f3b2a0eccd30fcf22313c",
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": 1233,
+        "discounts": 0,
+        "count": 5,
+        "paid_sum": 0
+      },
+      "purchases": {
+        "_id": "purchases",
+        "sum": 462628.12,
+        "discounts": 0,
+        "count": 55,
+        "paid_sum": 21000.56
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 16,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 271571.32,
+        "discounts": 3773.64,
+        "count": 102,
+        "paid_sum": 27648
+      }
+    },
+    "taxes": []
+  },
+  {
+    "_id": "623f95c015afe432df5fa55d",
+    "name": "Березне",
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1648334272,
+    "uuid": "5fa2f798-40dc-42a6-8ff1-72b83b294bad",
+    "updated": 1669653901,
+    "deleted": false,
+    "created_ms": 1648334272.241,
+    "default": false,
+    "taxes": []
+  },
+  {
+    "_id": "592f39ae3ce7d539608b4609",
+    "name": "Святошино, \"NOVUS\"",
+    "created": 1496267182,
+    "uuid": "b5a2b85f-8b52-495c-b17e-07db6a1ac2b6",
+    "updated": 1644406043,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1496267182.298,
+    "default": false,
+    "_register": "592f3a7b0eccd30f97529ea2",
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": -6937,
+        "discounts": 0,
+        "count": 4,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 50269,
+        "discounts": 0,
+        "count": 388,
+        "paid_sum": 4958
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 8,
+        "paid_sum": 0
+      }
+    }
+  },
+  {
+    "_id": "58c8741e3ce7d5ac658b496d",
+    "name": "Лобановського, \"NOVUS\"",
+    "address": "проспект Валерерія Лобановського 4Д",
+    "created": 1489531934,
+    "uuid": "22f46919-0a53-440e-ac73-c3854162f345",
+    "updated": 1643389209,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489531934.483,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "shortname": "Магазин \"ЫШ-ТЫ...",
+    "default": false,
+    "balance": {
+      "income": 611432.01,
+      "outcome": -611551.01,
+      "balance": 0
+    },
+    "type": "store",
+    "include": true,
+    "_register": "592f3aba0eccd30fcf223139",
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": -2504,
+        "discounts": 0,
+        "count": 5,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 83878.999,
+        "discounts": 0,
+        "count": 605,
+        "paid_sum": 5980
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 18,
+        "paid_sum": 0
+      }
+    },
+    "bank_details": []
+  },
+  {
+    "_id": "5cc8361d0bd70c435619795b",
+    "address": "Антоновича 176, 1 этаж",
+    "name": "\"Океан Плаза\" 1 этаж",
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "_app": "WAPP",
+    "created": 1556624925,
+    "uuid": "1ce7bc51-aa5d-464e-a797-570def1293e4",
+    "updated": 1556624925,
+    "deleted": false,
+    "created_ms": 1556624925.817
+  },
+  {
+    "_id": "59d368073ce7d52b118b4588",
+    "name": "Осокорки, \"NOVUS\"",
+    "created": 1507026951,
+    "uuid": "09db7306-45df-4a0e-a494-7eb3bbdb186f",
+    "updated": 1548956114,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1507026951.719
+  },
+  {
+    "_id": "595c16383ce7d5b5148b4920",
+    "name": "\"Океан Плаза\" 2 этаж",
+    "address": "Антоновича 176\n2 этаж\nвозле фудкорта",
+    "created": 1499207224,
+    "uuid": "7791e68e-6bdf-4854-9a9b-275557dcba69",
+    "updated": 1539110268,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1499207224.839,
+    "_stat_docs": {
+      "changes": {
+        "_id": "changes",
+        "sum": -1507,
+        "discounts": 0,
+        "count": 4,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 67462,
+        "discounts": 0,
+        "count": 725,
+        "paid_sum": 1827
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 11,
+        "paid_sum": 0
+      }
+    },
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    }
+  },
+  {
+    "_id": "58c872ab3ce7d5fc688b49be",
+    "name": "\"Океан Плаза\" Ашан -1 этаж",
+    "default": false,
+    "created": 1489531563,
+    "uuid": "25064669-5a8d-4913-af09-e4674336b41f",
+    "updated": 1539110254,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489531563.458,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "shortname": "Мой магазин",
+    "address": "вулиця Антоновича 176\n-1 поверх (біля 20 каси Ашану)",
+    "description": "",
+    "balance": {
+      "income": 179616.05,
+      "outcome": -139757.05,
+      "balance": 0
+    },
+    "type": "store",
+    "include": false,
+    "_register": null,
+    "_stat_docs": {
+      "purchases": {
+        "_id": "purchases",
+        "sum": 500,
+        "discounts": 0,
+        "count": 1,
+        "paid_sum": 0
+      },
+      "changes": {
+        "_id": "changes",
+        "sum": -5117,
+        "discounts": 0,
+        "count": 10,
+        "paid_sum": 0
+      },
+      "sales": {
+        "_id": "sales",
+        "sum": 190186.799,
+        "discounts": 1234.2,
+        "count": 1103,
+        "paid_sum": 11825.8
+      },
+      "movements": {
+        "_id": "movements",
+        "sum": 0,
+        "discounts": 0,
+        "count": 21,
+        "paid_sum": 0
+      }
+    }
+  }
+]

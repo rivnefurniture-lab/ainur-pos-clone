@@ -1,0 +1,7321 @@
+[
+  {
+    "_id": "6984d489b00d764aa60a2996",
+    "name": "Сергій 7 км",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b1d3e514-7d1d-4931-9526-2dc311c304e6",
+    "updated": 1770312841,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1770312841,
+    "created_ms": 1770312841.771
+  },
+  {
+    "_id": "697b5e3f5324adbb7b049374",
+    "name": "Ірина Рибак (кіндери)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0958828821"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e6982d98-2be7-45c5-84eb-b5990e5f9e6c",
+    "updated": 1769692735,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1769692735,
+    "created_ms": 1769692735.972
+  },
+  {
+    "_id": "69736c928a680b07e508a8e5",
+    "name": "Чігірьова Ольга (м. Чернівці)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0980556512"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "7c5bd491-18bc-4302-ae15-58d3277c53dc",
+    "updated": 1769172114,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1769172114,
+    "created_ms": 1769172114.016
+  },
+  {
+    "_id": "696a5742de3a39f94c0c9cc4",
+    "name": "WestOpt (ВестОпт, оптовий склад)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "1057d946-bc5f-418a-afba-cdadd1945926",
+    "updated": 1768576834,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1768576834,
+    "created_ms": 1768576834.176
+  },
+  {
+    "_id": "696a3d9bc8376a9aae0a6a94",
+    "name": "Сонечко (Одеса)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e7927b8b-ed18-4a7d-862d-36350047fade",
+    "updated": 1768570267,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1768570267,
+    "created_ms": 1768570267.945
+  },
+  {
+    "_id": "695570bb7437c5dff505fd17",
+    "name": "Аліна Пашаєва",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0935814093"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "a2388a18-0964-4c72-8c94-82a83a3b5af1",
+    "updated": 1767207099,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1767207099,
+    "created_ms": 1767207099.021
+  },
+  {
+    "_id": "694d561389ce4ef4a7041088",
+    "name": "Поправка Тетяна (магазин на Героїв Дніпра 41, Київ)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0505235550"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "1fa76379-a650-49d8-a780-b2f1738d813c",
+    "updated": 1766675987,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1766675987,
+    "created_ms": 1766675987.341
+  },
+  {
+    "_id": "69380d5ca3a0e80f170dc760",
+    "name": "WestFood (ВестФуд, оптовий склад)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2326269c-59ca-4996-8a92-eb7aa86214c2",
+    "updated": 1765281116,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1765281116,
+    "created_ms": 1765281116.929
+  },
+  {
+    "_id": "6932e609618b60ce4707b164",
+    "name": "Фора (маркет)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "4448aa4d-fd45-4954-a99c-743dfd8b967d",
+    "updated": 1764943369,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1764943369,
+    "created_ms": 1764943369.802
+  },
+  {
+    "_id": "691c68d7dcdc096db105ee3a",
+    "name": "Малофій Тетяна Петрівна (Igor Mal)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0502282377"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c0c9be6d-fc0d-40ae-b3a6-a95553afba91",
+    "updated": 1763469527,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1763469527,
+    "created_ms": 1763469527.477
+  },
+  {
+    "_id": "68ffc8d4fdac71d3610eb159",
+    "name": "Ірина Запоріжжя",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2aabb684-7120-4adc-9217-323e8451dff2",
+    "updated": 1761593556,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1761593556,
+    "created_ms": 1761593556.291
+  },
+  {
+    "_id": "683a2814a78f50976c083f77",
+    "name": "Аліна та Валерій  Пашаєви 1070-1072",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0935814093",
+      "0939209332"
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "87dfbc09-c233-4c81-a667-b86cece86240",
+    "updated": 1759860150,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1748641812,
+    "created_ms": 1748641812.451
+  },
+  {
+    "_id": "68d696d819d140736e052e3a",
+    "name": "Богдан Юрій (солодощі)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0676479789"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "57b06404-06b3-4967-a0e9-18d7e82fcc9e",
+    "updated": 1758893784,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1758893784,
+    "created_ms": 1758893784.424
+  },
+  {
+    "_id": "68cfe6d5fd0fdf13a30d8540",
+    "name": "Довгань Христина (солодощі, Львів)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0636519024"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e9d6cdcc-719f-42e5-b70c-9e76dcb7ed31",
+    "updated": 1758455509,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1758455509,
+    "created_ms": 1758455509.574
+  },
+  {
+    "_id": "68c993e1a81be16cbd07cb73",
+    "name": "Столичний ринок",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "797c42ce-2049-4308-880e-93b4a1a72fad",
+    "updated": 1758041057,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1758041057,
+    "created_ms": 1758041057.947
+  },
+  {
+    "_id": "68c9922f12e323df2403a837",
+    "name": "Gusto Market (ФОП Кошмал Н.С., Столичний ринок)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2ca85f78-60b8-426b-bb16-46b04c347a3c",
+    "updated": 1758040623,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1758040623,
+    "created_ms": 1758040623.823
+  },
+  {
+    "_id": "68ade6f1eaf6b90c1d031530",
+    "name": "Заплатинська Тетяна Одеса",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0971556659"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "7763b38f-4f62-4008-a7a1-64b08ec5407c",
+    "updated": 1756227313,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1756227313,
+    "created_ms": 1756227313.699
+  },
+  {
+    "_id": "68922b44e40a58c5cd037b7e",
+    "name": "Прилуцька Юлія",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0971844504"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c073196d-366c-493f-aade-45d01c68df58",
+    "updated": 1754409796,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1754409796,
+    "created_ms": 1754409796.396
+  },
+  {
+    "_id": "687a6e9f34a01a6e620ceadc",
+    "name": "Поп Март",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "d33e4161-4d9d-4e1c-aee0-a0abe72bd3de",
+    "updated": 1752854175,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1752854175,
+    "created_ms": 1752854175.924
+  },
+  {
+    "_id": "68741190176583ee9d047361",
+    "name": "Шитря Олена",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0975508066"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "6b680e74-ae86-45da-8408-00b267122a3d",
+    "updated": 1752437136,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1752437136,
+    "created_ms": 1752437136.279
+  },
+  {
+    "_id": "685ef691713279950d0646d8",
+    "name": "Лабубу Склеп",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "131dd4ef-2a9a-411d-8486-1eebf5eaed08",
+    "updated": 1751053969,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1751053969,
+    "created_ms": 1751053969.453
+  },
+  {
+    "_id": "685ee03a2a226eec350a6d4a",
+    "name": "Польша",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e1d351bb-7965-4ee0-9062-34e6a2d64332",
+    "updated": 1751048250,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1751048250,
+    "created_ms": 1751048250.361
+  },
+  {
+    "_id": "685c9f996c405820dc0a40a8",
+    "name": "Євгеній Бурмістров",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0662128474"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "d22be9ac-3f32-40b2-a82f-b64275b8c56d",
+    "updated": 1750900633,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1750900633,
+    "created_ms": 1750900633.233
+  },
+  {
+    "_id": "6850213b6a960ca0eb0bbcb7",
+    "name": "Ковальова Анна",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0663891303"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b1f7ef44-e3a6-432f-8b94-3b7c785de097",
+    "updated": 1750081851,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1750081851,
+    "created_ms": 1750081851.176
+  },
+  {
+    "_id": "684b20c92fa3fa99ff04f130",
+    "name": "Керімова Реана",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c3036c97-7d9a-48af-8df6-663e77664d5e",
+    "updated": 1749754057,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1749754057,
+    "created_ms": 1749754057.848
+  },
+  {
+    "_id": "684836298e1dc042cc0525c6",
+    "name": "НадоМакс Нуредін Ольга",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0733161386"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "0bf804f7-025c-41e8-9d80-004bd4bf2d8d",
+    "updated": 1749562921,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1749562921,
+    "created_ms": 1749562921.322
+  },
+  {
+    "_id": "68461c0a3a4b5fed970082c8",
+    "name": "Карімова Реана",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "fe8f78c9-54b7-450b-b6ca-77901e4339d4",
+    "updated": 1749425162,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1749425162,
+    "created_ms": 1749425162.667
+  },
+  {
+    "_id": "683a2b2df208955836017ba0",
+    "name": "Вадим Бадіу",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0939209332"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "bc24dee0-01cb-4491-a8e8-005c503812ef",
+    "updated": 1748642605,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1748642605,
+    "created_ms": 1748642605.11
+  },
+  {
+    "_id": "6836f4d87690595dc50fea34",
+    "name": "Яна Грушка",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0508511020"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "7319e770-0b29-4d07-bec9-a1edb11dfc6a",
+    "updated": 1748432088,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1748432088,
+    "created_ms": 1748432088.907
+  },
+  {
+    "_id": "6836f4207d67ad26140d1687",
+    "name": "Чарушин Володимир",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0673267750"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "7abf0ebc-831b-448f-b8fb-159c6ddf5740",
+    "updated": 1748431904,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1748431904,
+    "created_ms": 1748431904.858
+  },
+  {
+    "_id": "68348bcbcc57368daa063dc6",
+    "name": "Тему",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "0d4db2c8-147f-4cf3-a935-854a8f6494c5",
+    "updated": 1748274123,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1748274123,
+    "created_ms": 1748274123.63
+  },
+  {
+    "_id": "6825d10724a122853103765c",
+    "name": "Фаллахі Кавех (Маха 7 км)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0638669596"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b9843dba-8932-4ae4-962f-6d6fa6629ef9",
+    "updated": 1747308807,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1747308807,
+    "created_ms": 1747308807.186
+  },
+  {
+    "_id": "6825d033f4092fb2d70fa52a",
+    "name": "Кюлафлі Василиса",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0678900861"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "d080bbd7-43ba-4a14-a236-d3a1fb541b29",
+    "updated": 1747308595,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1747308595,
+    "created_ms": 1747308595.626
+  },
+  {
+    "_id": "6792649d600857e0e704a7b2",
+    "name": "Царук Петро",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c21099d9-9106-43d8-a2fd-f76f95f6829e",
+    "updated": 1737647261,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1737647261,
+    "created_ms": 1737647261.788
+  },
+  {
+    "_id": "6761a2654ab02c95fc097649",
+    "name": "Ірина Козина",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "093 122 4402"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "394e7f7d-ab5a-4eec-8263-cd1a2d60e3ed",
+    "updated": 1734451813,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1734451813,
+    "created_ms": 1734451813.966
+  },
+  {
+    "_id": "620fa46e1c19f258ff3fff8a",
+    "name": "Юрій Білан TOYS HUB",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "d206de2b-f958-49e4-b99f-e8e5a5899c99",
+    "updated": 1733424740,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1645192302,
+    "created_ms": 1645192302.249,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6750bf0dbd92eba62e00c440",
+    "name": "ФОП Федоров Максим Олексійович",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "642a9e70-d7c3-4f62-933d-04142badf4ed",
+    "updated": 1733345037,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1733345037,
+    "created_ms": 1733345037.459
+  },
+  {
+    "_id": "67408ee396cfe9d60e0cf158",
+    "name": "Мія Самбір",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 75,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c7cdf6dc-b76d-4cac-9b31-0d50796ea03a",
+    "updated": 1732284131,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1732284131,
+    "created_ms": 1732284131.16
+  },
+  {
+    "_id": "6738b413599ceeef610fb1f6",
+    "name": "Сергій Грищук",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "881a842b-2133-43dc-95b9-f66424f020fe",
+    "updated": 1731769363,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1731769363,
+    "created_ms": 1731769363.323
+  },
+  {
+    "_id": "67378fe0e90bd2385d07e6a6",
+    "name": "Юдіна Ольга",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "46682401-3aa6-4bbe-83f7-35be0574e104",
+    "updated": 1731694560,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1731694560,
+    "created_ms": 1731694560.882
+  },
+  {
+    "_id": "6737675ede2a3fbfa40e0d21",
+    "name": "Годунов Владислав",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "70180511-f76c-4d4c-8b8c-a0cacc3cca15",
+    "updated": 1731684190,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1731684190,
+    "created_ms": 1731684190.15
+  },
+  {
+    "_id": "67376066ba4c0ecdba0872a3",
+    "name": "Данчук Тетяна",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "Лапки",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "3f91ce7d-c95d-4f80-a7a2-3c4aa08cc333",
+    "updated": 1731682430,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1731682406,
+    "created_ms": 1731682406.535
+  },
+  {
+    "_id": "63e26be2e7d319377d03edfb",
+    "name": "КідСваг",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0666439721"
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "bc7fee0a-d6b5-46b5-8806-3adfec53277d",
+    "updated": 1731421954,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1675783138,
+    "created_ms": 1675783138.94,
+    "debt": 183.1999999999989,
+    "rdebt": 0
+  },
+  {
+    "_id": "672617cb5afb33131d0562ea",
+    "name": "1000 дрібниць (Одеса)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "86b2d40b-64a6-41a0-a7d1-297f23ea1b1a",
+    "updated": 1730549707,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1730549707,
+    "created_ms": 1730549707.983
+  },
+  {
+    "_id": "671bcbc6444b9f8db00accf6",
+    "name": "Ірина Волянська та Тетяна (Рівне)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0967800580"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "Ірина-0967800580\nТетяна-0961260502",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "3462b1af-b7ab-4798-817b-bca9e56d4042",
+    "updated": 1729874886,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1729874886,
+    "created_ms": 1729874886.08
+  },
+  {
+    "_id": "667452d3c10ebec5f101d746",
+    "name": "Софія Куранова Рівне",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0978896722"
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "a291f809-75d1-4ede-bfeb-b7ecc91086f2",
+    "updated": 1729874590,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1718899411,
+    "created_ms": 1718899411.335,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "671a0e914100cd7e5e0de46b",
+    "name": "Ірина Сквіші Київ",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "cb9df356-4edd-4139-b3b6-2bdf6294e238",
+    "updated": 1729760913,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1729760913,
+    "created_ms": 1729760913.177
+  },
+  {
+    "_id": "6717c11eefa52eafc706c768",
+    "name": "Мартинова Яна Євгенівна",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0937791355"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "debt": 0,
+    "rdebt": 0,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "5a2b2372-ca3b-44ac-8ac6-1d0f3693cf9f",
+    "updated": 1729610014,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1729610014,
+    "created_ms": 1729610014.679
+  },
+  {
+    "_id": "667c70db18e66af89d09fb1b",
+    "name": "Розетка",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "cbded220-ebe5-41f8-80eb-73142dd91a4d",
+    "updated": 1719431387,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1719431387,
+    "created_ms": 1719431387.841,
+    "debt": 0
+  },
+  {
+    "_id": "66671f1fc8e48985c80e5171",
+    "name": "Койра Анастасія",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0507276361"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2efdc3af-71ae-48d9-a8ff-7d42609be55b",
+    "updated": 1718034207,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1718034207,
+    "created_ms": 1718034207.669,
+    "debt": 0
+  },
+  {
+    "_id": "66671c955c7b6da03e0cf98a",
+    "name": "Максим Запоріжжя",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0937477899"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c9d5d580-17e0-4650-a56c-cba999a0b405",
+    "updated": 1718033557,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1718033557,
+    "created_ms": 1718033557.048,
+    "debt": 0
+  },
+  {
+    "_id": "665dd75365551ac62d03e7a8",
+    "name": "MORO",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "4d341133-a916-4127-bd1b-24af3b86aa73",
+    "updated": 1717426003,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1717426003,
+    "created_ms": 1717426003.517,
+    "debt": 0
+  },
+  {
+    "_id": "665a2fe98c2deb376708f586",
+    "name": "Снічук Вадим Ultrasale",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "34938f7a-2e69-4eae-bbff-320d07f9a850",
+    "updated": 1717186537,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1717186537,
+    "created_ms": 1717186537.042,
+    "debt": 0
+  },
+  {
+    "_id": "6606f9a082d78edc54099a23",
+    "name": "Северіна Ніна (Одеса)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0505257932"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "053aed5c-1833-44f2-b66f-0a3fea04e840",
+    "updated": 1711733152,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1711733152,
+    "created_ms": 1711733152.65,
+    "debt": 0
+  },
+  {
+    "_id": "65f49df05cf9fc7b280abe17",
+    "name": "Власюк Галина Юріївна",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0688838076"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "8aad2998-9aae-4a54-b0ca-79a1c60b489e",
+    "updated": 1710530032,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1710530032,
+    "created_ms": 1710530032.721,
+    "debt": 0
+  },
+  {
+    "_id": "65e712d7ac6e96776e069ee8",
+    "name": "Кока Кола",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b97bf9ea-c1e0-4706-880c-f3cf67346ded",
+    "updated": 1709642455,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1709642455,
+    "created_ms": 1709642455.598,
+    "debt": 0
+  },
+  {
+    "_id": "65bcffc3b7157bc4040d6c25",
+    "name": "Трофімчук Сергій (Одеса)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0973043858"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "20b49a33-5fa4-4548-9f33-6f947b66d7ca",
+    "updated": 1706885059,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1706885059,
+    "created_ms": 1706885059.511,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "65b7bf2ac03f87396c06d082",
+    "name": "Коваль Б.М. (скібіді)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e1a386d0-a228-4313-b0bf-d2af26d9b936",
+    "updated": 1706540832,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1706540832,
+    "created_ms": 1706540832.187,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "65a16279e9f263bddb042cc6",
+    "name": "Гриценко Андрій",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0986292953"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "8e4b81ba-9006-44bf-bb1f-4f81de83b707",
+    "updated": 1705075311,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1705075311,
+    "created_ms": 1705075311.487,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "658ed84aa5c86f9997022006",
+    "name": "Халід (Мир товаров)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b45a6733-3ea5-470c-8cf7-cba960b30d67",
+    "updated": 1703860298,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1703860298,
+    "created_ms": 1703860298.425,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "65882c2949b897c61f0f79c8",
+    "name": "Сільпо",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "38c2ce54-5252-4c97-8460-e2be3f840550",
+    "updated": 1703423017,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1703423017,
+    "created_ms": 1703423017.306,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "65882c243c06f6fb5b0e20b6",
+    "name": "Сільпо",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b5abc52a-1c25-4845-aaaa-e5357a352800",
+    "updated": 1703423005,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1703423005,
+    "created_ms": 1703423005.028,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "656342479f4fd0699d03059b",
+    "name": "НП Шопінг",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "a858cf19-0419-42a1-acdc-9224dae7b5ce",
+    "updated": 1701003847,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1701003847,
+    "created_ms": 1701003847.668,
+    "debt": 9480,
+    "rdebt": 0
+  },
+  {
+    "_id": "654e1d5a2ec7bbef600b2666",
+    "name": "Будинок полімерів",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0672007200"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e3c30b83-1d1a-4312-88be-8f828bc01482",
+    "updated": 1699618138,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1699618138,
+    "created_ms": 1699618138.843,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "65496a99c0636622b700c598",
+    "name": "Бейбі Плюс",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "196e9d65-1623-4a66-8e7d-9f14dea08a64",
+    "updated": 1699310232,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1699310232,
+    "created_ms": 1699310232.112,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "65325336da4bd727fc008ae0",
+    "name": "Віталій (Одеса)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0686699535"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "01466946-6a8f-4922-a934-ce3f54aff874",
+    "updated": 1697796918,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1697796918,
+    "created_ms": 1697796918.693,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "64a41463c4feb926600540e6",
+    "name": "Велпакс (пакети)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "41e31c4d-c6df-4012-9794-c4579423af68",
+    "updated": 1688474723,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1688474723,
+    "created_ms": 1688474723.773,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6488e36a3c72fdcaf00b529b",
+    "name": "Ярослав Одеса",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "097bd436-1a04-49f5-b1d6-d4ec3082e6fa",
+    "updated": 1686692713,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1686692713,
+    "created_ms": 1686692713.843,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "63ef956757fe2a422b03e704",
+    "name": "Мансур Baby Toys",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0508846433"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b69e178c-0190-4c4f-b814-e387db04aff0",
+    "updated": 1676645735,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1676645735,
+    "created_ms": 1676645735.381,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "639ce70cfb997401e908da1e",
+    "name": "Троя (Леся)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0932092921"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "cba298bb-1d86-4c1a-9416-a01108040cd5",
+    "updated": 1671227147,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1671227147,
+    "created_ms": 1671227147.473,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "639797cd5444154f585c2dfc",
+    "name": "008",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "ef0b23db-fe2c-4a60-ad8b-605df2f0e0aa",
+    "updated": 1670879181,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1670879181,
+    "created_ms": 1670879181.103,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "638e4464861b85319e689b9b",
+    "name": "Гришин Сергій, Дніпро, Веселкові друзі (Китайські)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0932012937"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "6e13285f-eda0-42de-b3e3-d961bb8daf49",
+    "updated": 1670268004,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1670268004,
+    "created_ms": 1670268004.963,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "635bd37793b7ca0426176bc2",
+    "name": "Ткаченко Сергій, Харків, Веселкові друзі UA",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "d50762ec-5eb8-47be-9be1-ea3832e3196e",
+    "updated": 1666962295,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1666962295,
+    "created_ms": 1666962295.953,
+    "debt": 839.6200000000026,
+    "rdebt": 0
+  },
+  {
+    "_id": "63580f91dff0f94b3803d4c0",
+    "name": "Аврора",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "9dd47b32-9a77-4c0d-bfe5-3a039002e887",
+    "updated": 1666715537,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1666715537,
+    "created_ms": 1666715537.043,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6353ecb7027d0231190a5024",
+    "name": "Нехаєнко Олександр",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0631119311"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "f2fdcea4-1d75-4b0d-b21f-550492f68ba4",
+    "updated": 1666444471,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1666444471,
+    "created_ms": 1666444471.478,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "624aefd6d2963b7eaa6d22bf",
+    "name": "Кучинская Злата Хагги",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0632337962"
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e8378bde-2b74-44e8-b24e-599e6bc6f9aa",
+    "updated": 1649078261,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1649078230,
+    "created_ms": 1649078230.352,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "62153495376d9575ca3ba191",
+    "name": "НОВІ АРТИКУЛИ",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2ea7e190-e2dd-4277-8a6d-1b51ab6298e5",
+    "updated": 1645556885,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1645556885,
+    "created_ms": 1645556885.803,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6213bc0099618702c503c3f4",
+    "name": "Борис Бабий",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0689563446"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b689db49-4fde-4a92-9a90-a2ac56241ca4",
+    "updated": 1645460480,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1645460480,
+    "created_ms": 1645460480.957,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61ae4cdaec64562dd87822fe",
+    "name": "Бондарчук Андрей Хагги Вагги",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0505604975"
+    ],
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "20155aa1-0e99-4b62-b3d7-96f495b04d5f",
+    "updated": 1644860016,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1638812890,
+    "created_ms": 1638812890.362,
+    "site": null,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "62066566be146115da76c4c5",
+    "name": "Рахман Раймулла (флайнова)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0639573777"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "97de69af-8b2e-4aa2-aece-609253d97114",
+    "updated": 1644586342,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1644586342,
+    "created_ms": 1644586342.835,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "62054c6196958d6aad6a2920",
+    "name": "Шовкун Валентина и Максим брелки лала",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0633959561"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "1b03302e-94db-47f5-9916-edd99cc59cf2",
+    "updated": 1644514401,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1644514401,
+    "created_ms": 1644514401.857,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61fb0561d1d0180722087b34",
+    "name": "НП Шоппинг",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e7924322-9251-4cbf-84c5-3e2206e3d668",
+    "updated": 1643840865,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1643840865,
+    "created_ms": 1643840865.256,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61f2eeecf02e4a468d35d6ae",
+    "name": "Козина Ирина Хагги",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0972940795"
+    ],
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "157e1374-5cf0-41d8-8609-cc3f73ae0a48",
+    "updated": 1643310828,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1643310828,
+    "created_ms": 1643310828.8,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61b8d858b6c6402da22701c5",
+    "name": "Влад Чернышов Утки, Харьков",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0505001198"
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "a38b9129-8045-4d76-a492-84062fb30e76",
+    "updated": 1643299254,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1639503960,
+    "created_ms": 1639503960.04,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61f14e9e4facf0503860fd43",
+    "name": "Штанько Анастасия Спрингтреп Бонни",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0675784937"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2763a236-8856-4c63-8b00-c4f3a9ec0c20",
+    "updated": 1643204254,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1643204254,
+    "created_ms": 1643204254.229,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61dc7fba6d860677d50752ad",
+    "name": "Вінго",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "55a1d63f-21e6-48fe-bee8-7d203d6a5bdd",
+    "updated": 1641840570,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1641840570,
+    "created_ms": 1641840570.236,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61dc3f92bd11d407eb3a4c23",
+    "name": "Игорь Хагги Вагги",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0931604518"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "0995132f-3133-4a75-bb42-eb6504ab0f38",
+    "updated": 1641824146,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1641824146,
+    "created_ms": 1641824146.955,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61c5f5688b8a1c4baa4e149c",
+    "name": "Шукрулла (маски Кальмара)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b29df911-1313-4916-b9f5-3da0f3cb7a65",
+    "updated": 1640363368,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1640363368,
+    "created_ms": 1640363368.444,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61c39c44328dfb254d0319e3",
+    "name": "Винго",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "98b077c4-acde-4374-9da2-6f437b831ee3",
+    "updated": 1640209476,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1640209476,
+    "created_ms": 1640209476.565,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c76c7e80bd70c4db3639e3d",
+    "name": "Хабиб (Магазин на углу)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b4e206dd-6518-41ca-a8f2-d5dfb6d16335",
+    "updated": 1640101689,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1551288296,
+    "created_ms": 1551288296.412,
+    "debt": 34548.53,
+    "rdebt": 0
+  },
+  {
+    "_id": "61bd0a9903276f6068789eb6",
+    "name": "Юлия Ерохина ТМ Масяша",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b19f55ff-9efa-4e16-b28d-cb1b5688fe9a",
+    "updated": 1639778969,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1639778969,
+    "created_ms": 1639778969.533,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61bd040ac01c870e926c1b37",
+    "name": "АТБ",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e54b606a-2f1c-43f1-a684-de2ff4c3e020",
+    "updated": 1639777290,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1639777290,
+    "created_ms": 1639777290.278,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61ba1d1dc6e35f0fb867c6f2",
+    "name": "МОРО",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "647b39e8-5849-4f3e-846a-e2c07b10e1cf",
+    "updated": 1639587101,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1639587101,
+    "created_ms": 1639587101.822,
+    "debt": 27829.699999999997,
+    "rdebt": 0
+  },
+  {
+    "_id": "61ba096ef162184b6e5ce5a7",
+    "name": "Марина (Хагги Вагги)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0677039493"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b1b0bc61-0dff-4db6-a520-ab2aad23409c",
+    "updated": 1639582062,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1639582062,
+    "created_ms": 1639582062.391,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61b0b2d38eef57192b362633",
+    "name": "ТОВ \"ОКАРІНА\" (чупи)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "bd23ede0-d294-44da-9afc-0ae6b1e3a155",
+    "updated": 1638970067,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1638970067,
+    "created_ms": 1638970067.637,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61816e2123e4102dac12b6c9",
+    "name": "Дидык Андрей",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0639258340"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "990d0a95-44a5-4984-bcc6-939011d9faea",
+    "updated": 1635872289,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1635872289,
+    "created_ms": 1635872289.468,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "617c1c7223e41018f4615f3a",
+    "name": "Master8shop.prom.ua Роман",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "19483770-0a3b-45f1-bafc-975c4db96529",
+    "updated": 1635523698,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1635523698,
+    "created_ms": 1635523698.155,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "617c1bdd23e4100bb761b36e",
+    "name": "Restore Ua",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "f0097023-cdb6-4ad6-813a-f59894608fbd",
+    "updated": 1635523549,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1635523549,
+    "created_ms": 1635523549.725,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "616846b623e4101df7209ac1",
+    "name": "FoodMarket (Волынская база)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "7e7997b1-56db-479e-8554-5afff2b525fb",
+    "updated": 1634223798,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1634223798,
+    "created_ms": 1634223798.903,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "613f836f23e4102f34108231",
+    "name": "KidSwag (игрушки)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "8407ad2b-64ce-4f7f-99b5-182d02b3036b",
+    "updated": 1631552367,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1631552367,
+    "created_ms": 1631552367.393,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "61377ad323e4107dcd7b5ce1",
+    "name": "Фан Геймс Шоп (игры)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "0bad3b4f-f474-43a2-af67-62415d5f1664",
+    "updated": 1631025875,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1631025875,
+    "created_ms": 1631025875.269,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6130ed5323e41078ef1836ea",
+    "name": "Магазин слева на въезде (Волынская база)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "5ee6e4db-de25-4f8d-904a-15b5aa6c11c9",
+    "updated": 1630596435,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1630596435,
+    "created_ms": 1630596435.376,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6130e92623e4106548615bc9",
+    "name": "Смак (Волынская база)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "094cb677-6015-4a55-87c2-154586720022",
+    "updated": 1630595366,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1630595366,
+    "created_ms": 1630595366.435,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6130e74923e410082910fbd4",
+    "name": "ФОП Туйчибойзода Мумин (Волынская база)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c606efd7-83f2-4baa-9bf1-a608b62a6c26",
+    "updated": 1630594889,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1630594889,
+    "created_ms": 1630594889.894,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "612fafd523e410115907c152",
+    "name": "Людмила Подарочные пакеты Троя",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b621569c-2dbb-407e-9124-5765ad40895a",
+    "updated": 1630515157,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1630515157,
+    "created_ms": 1630515157.959,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "610beeda23e4106ffc5e4497",
+    "name": "Артем Валигура",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "21557060-384e-4076-9c6e-98160b378c04",
+    "updated": 1628171994,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1628171994,
+    "created_ms": 1628171994.222,
+    "debt": 626.0899999999992,
+    "rdebt": 0
+  },
+  {
+    "_id": "60d9c3460bd70c7f6c206d0e",
+    "name": "Шамшурін Дмитро Олександрович (toys-kopitsa.com.ua)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "607f2dbb0bd70c4d7b05e29a",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "b5423936-6b62-4b6f-bdd1-24179d962443",
+    "updated": 1624884038,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1624884038,
+    "created_ms": 1624884038.422,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "60d4b6c20bd70c4f1b45b297",
+    "name": "Алексей Теремки",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "aa8315df-bd44-4cfd-88b5-1958930b572b",
+    "updated": 1624561964,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1624553154,
+    "created_ms": 1624553154.749,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "60c77ddb0bd70c2011296a59",
+    "name": "Карго 120",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "052333cd-9729-44c0-bbfc-f69dd930531e",
+    "updated": 1623686619,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1623686619,
+    "created_ms": 1623686619.897,
+    "debt": 156,
+    "rdebt": 0
+  },
+  {
+    "_id": "60bf73210bd70c74c018ab93",
+    "name": "Волинська база",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "607f2dbb0bd70c4d7b05e29a",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e0e4c131-9715-4a35-a4cd-9bbf12b3b95c",
+    "updated": 1623159585,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1623159585,
+    "created_ms": 1623159585.086,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "60ba29990bd70c78ff75316f",
+    "name": "Антон Хоррор персонажи",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "3d3d94c6-0dd4-4e4e-a5be-08e1e04e0d07",
+    "updated": 1622813081,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1622813081,
+    "created_ms": 1622813081.155,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "609eb4fb0bd70c4ce86bf182",
+    "name": "Копица",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "5cacdbfb-3564-45ef-ae3e-3a1f02381378",
+    "updated": 1621013755,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1621013755,
+    "created_ms": 1621013755.876,
+    "debt": 143194.5,
+    "rdebt": 0
+  },
+  {
+    "_id": "6095789c0bd70c46d545a9a4",
+    "name": "Зубаир (магазин 43,44)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "7f631d2c-7997-4501-83f8-abf7ba3c2196",
+    "updated": 1620408476,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1620408476,
+    "created_ms": 1620408476.487,
+    "debt": 151989.16,
+    "rdebt": 0
+  },
+  {
+    "_id": "6069e87b0bd70c7fee63dcbc",
+    "name": "Шалашов Александр ( Пандавиль)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2877c6d8-f318-480c-af2c-df59844d2c3b",
+    "updated": 1617553531,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1617553531,
+    "created_ms": 1617553531.025,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "605e14810bd70c186d07c5cf",
+    "name": "Шпакович Галина (Амонг Ас)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "f722ec76-d7fe-4986-bffe-bbb9ff87dab8",
+    "updated": 1616778369,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1616778369,
+    "created_ms": 1616778369.567,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "605cc90c0bd70c6da44ae110",
+    "name": "Илона Горбарук",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "13ed5592-b862-4ef9-ba87-2134904fa8bd",
+    "updated": 1616693516,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1616693516,
+    "created_ms": 1616693516.289,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "6059f9240bd70c50f17c208d",
+    "name": "Влад (Волинка, Київ)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "0ceb0c1e-cf4e-492d-8537-ad1a2841ca40",
+    "updated": 1616509220,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1616509220,
+    "created_ms": 1616509220.461,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5cfa931c0bd70c04d3684c61",
+    "name": "Заколки Грабар Вадим",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e13094c0-a34c-4534-838d-d7f46992154f",
+    "updated": 1614787633,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1559925532,
+    "created_ms": 1559925532.052,
+    "debt": 17195.97,
+    "rdebt": 0
+  },
+  {
+    "_id": "5fdb6d7e0bd70c2725012782",
+    "name": "Коробки юа пром нет",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "59f68843-94a9-48bd-8ab0-3d885bc2c1f9",
+    "updated": 1608215934,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1608215934,
+    "created_ms": 1608215934.446,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5fd500c80bd70c713a48f178",
+    "name": "Крента ЛІдія",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "+380636793580"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "Солодощі та вода з Європи",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "369f0e02-17c8-430f-97c8-6daa3bdf1d79",
+    "updated": 1607794888,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1607794888,
+    "created_ms": 1607794888.738,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5fad4e910bd70c3d2968ec19",
+    "name": "Новус",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "f4dfd52e-8652-4a3d-9cc0-7c64488c68c5",
+    "updated": 1605193361,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1605193361,
+    "created_ms": 1605193361.576,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5fad4cf60bd70c5f2c7419ff",
+    "name": "Прядун Дмитрий (импортные сладости)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "7b896381-dbb0-412c-84f7-4d8267c1a475",
+    "updated": 1605192950,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1605192950,
+    "created_ms": 1605192950.095,
+    "debt": 7980.049999999999,
+    "rdebt": 0
+  },
+  {
+    "_id": "5fad4ce30bd70c646d1f7591",
+    "name": "Данил Короновирус",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "3d12262f-0141-461b-86b8-d111566125e8",
+    "updated": 1605192931,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1605192931,
+    "created_ms": 1605192931.189,
+    "debt": 109910,
+    "rdebt": 0
+  },
+  {
+    "_id": "5f3adf740bd70c25de1e60e0",
+    "name": "Сивокоз Ірина",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "+380676883188"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "Солодощі з Європи\nВайбер \nСладкая Европа",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "0dfb2b1f-a3b3-4c5a-b4ef-12819ce54935",
+    "updated": 1597693812,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1597693812,
+    "created_ms": 1597693812.236,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5f22f2d70bd70c657973070e",
+    "name": "Шамс",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2106366b-62c9-4cd8-a578-50afdbb0e3b4",
+    "updated": 1596125911,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1596125911,
+    "created_ms": 1596125911.972,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5e5fe05a0bd70c5d757e319b",
+    "name": "Мирвайс (кучерявый)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "9ba9a7b9-96e1-457d-9397-825e4eb8a8e7",
+    "updated": 1583341658,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1583341658,
+    "created_ms": 1583341658.709,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5e55142a0bd70c534144d9c2",
+    "name": "PAPA design (ПАПА дизайн)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0676538383"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "56be443e-a395-4601-b589-4cc2311a1863",
+    "updated": 1582634026,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1582634026,
+    "created_ms": 1582634026.031,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5e5412630bd70c5eae45d174",
+    "name": "Брелки К",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "981f148e-bf14-4912-bdb7-b67da9fdbeb5",
+    "updated": 1582568035,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1582568035,
+    "created_ms": 1582568035.704,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5e0645670bd70c7e1f770145",
+    "name": "Украинские слаймы оффишл",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "88834614-b67a-45cf-9346-5675cbb34dd6",
+    "updated": 1577469287,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1577469287,
+    "created_ms": 1577469287.501,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5e029b730bd70c1e701e2f13",
+    "name": "Плюш К",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "2f28ac41-8c2d-45ff-b470-357d56f9edf6",
+    "updated": 1577229446,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1577229171,
+    "created_ms": 1577229171.645,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5e010ef50bd70c1c9867c8d4",
+    "name": "Вода ROI",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "cddb229e-92d3-40d8-9350-17b2f3335be3",
+    "updated": 1577127669,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1577127669,
+    "created_ms": 1577127669.148,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5dfce1670bd70c29c4750dcc",
+    "name": "Таня (Пол)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0963082642"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      },
+      {
+        "key": "",
+        "value": ""
+      },
+      {
+        "key": "",
+        "value": ""
+      },
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "9a2590f0-21ea-4107-b382-7239cc43afa8",
+    "updated": 1576853863,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1576853863,
+    "created_ms": 1576853863.992,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5df8fbb30bd70c2e9d5322e2",
+    "name": "Оксана Ночники",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "1497e09d-c8b9-4796-a59b-e7294c6305c0",
+    "updated": 1576598451,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1576598451,
+    "created_ms": 1576598451.312,
+    "debt": 4074,
+    "rdebt": 0
+  },
+  {
+    "_id": "5df6b4eb0bd70c7f923868b5",
+    "name": "Кучерявый",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "32b5f7e3-13d1-4a8e-9d65-13c9909245b6",
+    "updated": 1576449259,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1576449259,
+    "created_ms": 1576449259.476,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5dd6e10d0bd70c35e547bfb3",
+    "name": "Кошельки К",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "d4b72c64-c721-45bf-9c0e-00d66b1c0106",
+    "updated": 1574363405,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1574363405,
+    "created_ms": 1574363405.907,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5dd6e0af0bd70c2fe91aefc3",
+    "name": "Канцелярия К",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "34c5362e-6bd0-400e-8f52-5275e175a89c",
+    "updated": 1574363397,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1574363311,
+    "created_ms": 1574363311.079,
+    "debt": 1584,
+    "rdebt": 0
+  },
+  {
+    "_id": "5dd56cff0bd70c219c1a4164",
+    "name": "Тимур Кроли",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "3eb0df6d-082f-4704-92b4-4b6ac2e72671",
+    "updated": 1574268159,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1574268159,
+    "created_ms": 1574268159.171,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5dd4745b0bd70c4b24029a2b",
+    "name": "Майнкрафт К",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "83990b90-5f42-4097-977c-b28378a2d4f1",
+    "updated": 1574204507,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1574204507,
+    "created_ms": 1574204507.26,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5d9f52ff0bd70c3a426f92df",
+    "name": "Руслана Ободки",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "79002c08-6ebb-49c3-97f7-b0e406608edf",
+    "updated": 1570722559,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1570722559,
+    "created_ms": 1570722559.365,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5d79366a0bd70c24735ab2a6",
+    "name": "От Женьки, рынок Борщаги",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c0804bb8-6364-48ea-a880-8ab3823ea0f2",
+    "updated": 1568224874,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1568224874,
+    "created_ms": 1568224874.321,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5d7695f80bd70c260205e444",
+    "name": "Бутик Сладостей ЖаТем",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "5e34b4e1-cc86-47bf-bb67-730980259d01",
+    "updated": 1568052728,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1568052728,
+    "created_ms": 1568052728.178,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5d72859d0bd70c61a45bcb14",
+    "name": "Султан Носки",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "cb37448d-6763-4505-a358-cdde10a9eee4",
+    "updated": 1567786397,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1567786397,
+    "created_ms": 1567786397.707,
+    "debt": 468,
+    "rdebt": 0
+  },
+  {
+    "_id": "5d23704c0bd70c62ac3988ee",
+    "name": "Belleza (Беллеза)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "01622f5d-6a35-45fc-9842-e18f5f25de32",
+    "updated": 1562603596,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1562603596,
+    "created_ms": 1562603596.31,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5cc316bd0bd70c3070779d86",
+    "name": "Олег (майнкрафт)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0662547555"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "e29f59da-e1aa-44d6-b7b2-066db54ed856",
+    "updated": 1556289213,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1556289213,
+    "created_ms": 1556289213.445,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c76c87e0bd70c5644775903",
+    "name": "Магазин №82 (находится в здании)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "46da3d46-29d9-41fc-a76d-7d6efa63ccea",
+    "updated": 1551288446,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1551288446,
+    "created_ms": 1551288446.12,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c5de17e0bd70c1a932e8872",
+    "name": "Тарас Кутаск",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c9b10110-71b1-44e1-a381-6949aff6ee4c",
+    "updated": 1549656446,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1549656446,
+    "created_ms": 1549656446.581,
+    "debt": 905,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c5dcc590bd70c3a8a145755",
+    "name": "Торби Щастя",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "3e1a73e0-4dad-4962-9654-73330717f477",
+    "updated": 1549651033,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1549651033,
+    "created_ms": 1549651033.102,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c50825a0bd70c5a9675fe83",
+    "name": "Ла Прида",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "bd473b0c-ab3b-4e45-b810-de172e3ecd27",
+    "updated": 1548780122,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1548780122,
+    "created_ms": 1548780122.087,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c4f210a0bd70c0dca43d5e1",
+    "name": "Оптовый склад коробочек",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "66c1b63b-13f7-4fca-a69c-23f10587a6aa",
+    "updated": 1548689674,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1548689674,
+    "created_ms": 1548689674.001,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c41fb580bd70c41fb26f1c6",
+    "name": "Вива заколки",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "c0d6bf5a-0703-4c73-923b-29d23dcb662c",
+    "updated": 1547828056,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1547828056,
+    "created_ms": 1547828056.692,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5bd1edd727ac63246f648713",
+    "name": "Abertime.com.ua Кошельки",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1540484567,
+    "uuid": "f2af3053-520b-49e2-862e-842841df0bbe",
+    "updated": 1547674263,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1540484567.057,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c27802a0bd70c3e210f75ef",
+    "name": "ECOGO/ ЭКОГОУ",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "38f6cd01-2218-4046-b948-99ef80ef4f28",
+    "updated": 1546092586,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1546092586,
+    "created_ms": 1546092586.805,
+    "debt": 5000,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c1d4cf90bd70c6f836f5d1a",
+    "name": "Вкусная Помощь Валерий",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "f7c76d03-12c5-444a-8d86-d428712f0e28",
+    "updated": 1545424121,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1545424121,
+    "created_ms": 1545424121.181,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c15441b0bd70c6c0a518ad5",
+    "name": "Светлана (майнкрафт)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0631757424"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "834cf084-4546-4cea-ac70-138aa8bdf6c0",
+    "updated": 1544897563,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1544897563,
+    "created_ms": 1544897563.623,
+    "debt": 26235,
+    "rdebt": 0
+  },
+  {
+    "_id": "5c000aa30bd70c65dd4e8d2a",
+    "name": "Санитайзер",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "uuid": "f6b459ef-16d1-4687-8ebd-2158de83a375",
+    "updated": 1543506595,
+    "deleted": false,
+    "_app": "WAPP",
+    "created": 1543506595,
+    "created_ms": 1543506595.427,
+    "debt": 39955,
+    "rdebt": 0
+  },
+  {
+    "_id": "5bccaf0f27ac63246132f413",
+    "name": "Яна Мунира",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0664561420"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1540140815,
+    "uuid": "54f12a3e-0839-4841-808b-fe71528e02f0",
+    "updated": 1540140815,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1540140815.411,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5bcc9c3127ac630dfb1f75f0",
+    "name": "Юсуф",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0635372778"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1540135985,
+    "uuid": "54a1479c-1383-4afe-9365-dd9d0056b259",
+    "updated": 1540135985,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1540135985.507,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5bc6115b0eccd33f5a58110b",
+    "name": "Санам (кроли, брелки)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0934085574"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1539707227,
+    "uuid": "ad37ce28-e428-47d9-a772-49689751edc5",
+    "updated": 1539707227,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1539707227.17,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b6337e20eccd3434a7508a9",
+    "name": "Ирина-Светлана/Лиля (бейблейди, Троя)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0663614938"
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1533229026,
+    "uuid": "9f9b7918-7120-4ee7-b024-be5a7003a624",
+    "updated": 1539105572,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1533229026.498,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "debt": 10472.95,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b912ee10eccd372954c06eb",
+    "name": "Магниты Скай Солюшн (Галина)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1536241377,
+    "uuid": "903b87f2-05f2-4a8d-b852-f7de8d99275c",
+    "updated": 1536241377,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1536241377.337,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b48e4fd0eccd321d126b00e",
+    "name": "Анна (сквиши, бейблейди)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0982429834",
+      "0509356370"
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1531503869,
+    "uuid": "12eb80e8-d00e-4865-97e2-a6f0cf446eda",
+    "updated": 1533229274,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1531503869.173,
+    "info": {
+      "user": {
+        "name": "Олег Кицюк",
+        "email": "o_kytsuk@mail.ru",
+        "created": 1489531562,
+        "pic": "",
+        "phone": 380939713320,
+        "_id": "58c872aa3ce7d5fc688b49bc"
+      }
+    },
+    "debt": 7915,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b621db30eccd30a1c74dddb",
+    "name": "Бене Банка, Юшманов Владимир",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0631443927"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1533156787,
+    "uuid": "a6b4b79c-3226-48eb-92c4-576825d9d77c",
+    "updated": 1533156787,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1533156787.873,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b4b8a200eccd3205634729d",
+    "name": "Деревянные открытки",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1531677216,
+    "uuid": "f4a188ea-fdcf-443e-ac11-8b12dde9edef",
+    "updated": 1531677216,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1531677216.481,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b1144470eccd30d473f38b7",
+    "name": "Ферайдун",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1527858247,
+    "uuid": "89acab0e-9c66-4581-ba8a-cad56f92b5ec",
+    "updated": 1527858247,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1527858247.827,
+    "debt": 8046.27,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b0be66f0eccd354fe7b8dfc",
+    "name": "Адина (кроли)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1527506543,
+    "uuid": "4b96ab1a-8f7c-48d6-9c99-c7c47385d0ba",
+    "updated": 1527506543,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1527506543.91,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5b0866540eccd3002a643b42",
+    "name": "Миколка Людвичук",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": null,
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1527277140,
+    "uuid": "38aad2fa-ef21-4bfb-b279-72e2e5bb23a7",
+    "updated": 1527277157,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1527277140.66,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5ae1052d0eccd37faa454d7d",
+    "name": "Bene Banka",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0631443927"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "Юшманов Владимир",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1524696365,
+    "uuid": "2c445808-cf29-4126-b8d3-2e58406abfe1",
+    "updated": 1524696365,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1524696365.838,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5ad08c540eccd314e71c25ff",
+    "name": "Щеглов Виталий Александрович (витамины Тедди)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "0954242497"
+    ],
+    "site": null,
+    "address": {
+      "actual": "г. Харьков",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "витамины Тедди (для волос)",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1523616852,
+    "uuid": "74bdc404-9446-400e-a027-f9d68d2c459b",
+    "updated": 1523616885,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1523616852.848,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5ac7bed70eccd34098722cc0",
+    "name": "Kyiv Style",
+    "emails": [
+      "mail@kyivstyle.com"
+    ],
+    "phones": [
+      "0674202717",
+      "0501371245"
+    ],
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "Блокноти, кошельки",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1523039959,
+    "uuid": "442e5d93-1c97-4550-9873-2da197c72e78",
+    "updated": 1523039959,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1523039959.575,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5a9d301b0eccd35f3142cf69",
+    "name": "Мирослав Полководец",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1520250907,
+    "uuid": "698236f4-38ad-44c5-9a8d-282464069124",
+    "updated": 1520250907,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1520250907.374,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "5a9b43c20eccd32dda131503",
+    "name": "Вова Настольные игры",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "created": 1520124866,
+    "uuid": "9338697f-df13-4aa1-844c-3794b32e4dcc",
+    "updated": 1520124866,
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1520124866.432,
+    "debt": 2238.6,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c872ab3ce7d5fc688b49c0",
+    "name": "Поставщик",
+    "default": true,
+    "created": 1489531563,
+    "uuid": "dc9c9507-39d4-4051-b125-ea683412754e",
+    "updated": 1513181163,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489531563.459,
+    "_stat_orders": {
+      "credit": {
+        "_id": "credit",
+        "sum": 214312.36
+      }
+    },
+    "_stat_docs": {
+      "purchases": {
+        "_id": "purchases",
+        "sum": 199213.36,
+        "discounts": 0,
+        "count": 36,
+        "paid_sum": 15550.56
+      }
+    },
+    "debt": 19910,
+    "rdebt": 0
+  },
+  {
+    "_id": "59f775e93ce7d51e4e8b45d2",
+    "name": "ТМ Орнер",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      },
+      {
+        "key": "",
+        "value": ""
+      },
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1509389801,
+    "uuid": "792469b1-a6b8-4edf-9512-297721761312",
+    "updated": 1509389801,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1509389801.861,
+    "debt": 114253.5,
+    "rdebt": 0
+  },
+  {
+    "_id": "58daa38a3ce7d516148b4590",
+    "name": "DUSHKA (косметика)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      ""
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1490723722,
+    "uuid": "3643e516-11f5-4eb2-b7f1-8c321eef06ff",
+    "updated": 1490723722,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1490723722.004,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c884bf3ce7d5686c8b461a",
+    "name": "Драчук Віталік (чашки)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "093 907 76 79",
+      "096 118 87 07"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Драчук В.О.",
+        "value": "5168 7423 5771 2870"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489536191,
+    "uuid": "05159dd7-11cb-4947-9c3d-3f353d7b21cc",
+    "updated": 1489536191,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489536191.871,
+    "debt": 3772.0499999999993,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c883f13ce7d5c06b8b46b0",
+    "name": "Блокноти Сонаті",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "067 326 09 01"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Приватбанк на Радіч О.Б.",
+        "value": "4149 4378 5052 9031"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489535985,
+    "uuid": "dd5e221b-6e63-48ac-9a09-cb04739a5d65",
+    "updated": 1489535985,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489535985.476,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c8831c3ce7d5226b8b469b",
+    "name": "Славік Бузли",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "066 652 55 08"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Федорчук В.М.",
+        "value": "4149 6258 1229 6463"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489535772,
+    "uuid": "dc616ba6-c848-4b54-8204-16d84b7d4762",
+    "updated": 1489535772,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489535772.16,
+    "debt": 7473673.08,
+    "rdebt": 386
+  },
+  {
+    "_id": "58c882aa3ce7d528698b4823",
+    "name": "Доктор Пепер",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "096 797 25 11"
+    ],
+    "site": "",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Кучеров С.В.",
+        "value": "5168 7556 3375 2783"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489535658,
+    "uuid": "1345753a-be2c-4d56-9768-0b7c3b0668ba",
+    "updated": 1489535658,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489535658.622,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c881273ce7d5f26a8b473d",
+    "name": "Vtrende (бутилочки, термоси, кролі)",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "093 267 56 42"
+    ],
+    "site": "http://vtrende.net.ua/",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Князєва Тетяна",
+        "value": "5168 2450 1064 1980"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489535271,
+    "uuid": "2ec549da-b96a-4a1f-bfe3-cb7c40394a48",
+    "updated": 1489535271,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489535271.837,
+    "debt": 875.19,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c87c4e3ce7d524698b477b",
+    "name": "Артишок Дизайн",
+    "emails": [
+      "artishokua@gmail.com"
+    ],
+    "phones": [
+      "093 600 86 86",
+      "098 100 50 86"
+    ],
+    "site": "http://artishok-d.com.ua/",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Сурілова Д.Д.",
+        "value": "4149 4378 6198 2781"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489534030,
+    "uuid": "e0e7668d-aa1a-4e99-98b4-b3ccbf67c8ef",
+    "updated": 1489534030,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489534030.574,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c87bea3ce7d524698b4779",
+    "name": "La Prida",
+    "emails": [
+      "laprida.ua@gmail.com"
+    ],
+    "phones": [
+      "0 800 750 280"
+    ],
+    "site": "https://laprida.ua/",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Ковальчук М.В.",
+        "value": "4149 6258 1160 9062"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489533930,
+    "uuid": "203ee84c-6967-4dd4-8b12-0b4c38ba33ae",
+    "updated": 1489533930,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489533930.348,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c87b133ce7d5686c8b460d",
+    "name": "ZIZ",
+    "emails": [
+      "info@ziz.ua"
+    ],
+    "phones": [
+      "063 877 41 75"
+    ],
+    "site": "http://ziz.ua/",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489533715,
+    "uuid": "83afc4f3-39e4-4896-89eb-229b0cd2aab9",
+    "updated": 1489533715,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489533715.318,
+    "debt": 0,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c87a9d3ce7d5686c8b460b",
+    "name": "Sweet Life",
+    "emails": [
+      ""
+    ],
+    "phones": [
+      "066 306 42 06",
+      "063 100 25 74"
+    ],
+    "site": "http://www.sw-life.com.ua/",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Демченко О.В.",
+        "value": "5168 7423 2768 7723"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489533597,
+    "uuid": "06e002dd-942b-4a8c-8944-5de5cb4b03fc",
+    "updated": 1489533597,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489533597.567,
+    "debt": 24241,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c879183ce7d5fc688b49de",
+    "name": "Шокопак",
+    "emails": [
+      "gukovalexandr777@gmail.com"
+    ],
+    "phones": [
+      "073 089 14 69",
+      "068 201 96 26"
+    ],
+    "site": "http://shokopack.com.ua/",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк на Гуков Олександр",
+        "value": "5168 7572 5152 3835"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "Можна нормально просити про відстрочку",
+    "default": false,
+    "created": 1489533208,
+    "uuid": "87aa0ac1-5bee-4c42-9a27-caccd5b880ec",
+    "updated": 1489533208,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489533208.044,
+    "debt": 6501.88,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c878213ce7d5f26a8b4731",
+    "name": "Презентвіль",
+    "emails": [
+      "info@presentville.com.ua"
+    ],
+    "phones": [
+      "067 233 55 10",
+      "050 233 55 10"
+    ],
+    "site": "https://www.presentville.com.ua/",
+    "address": {
+      "actual": "",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта на Розенштейн О.Г.",
+        "value": "5169 3324 0312 2503"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489532961,
+    "uuid": "2f4e2719-13c2-4c79-b968-a2e75cf152ec",
+    "updated": 1489532961,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489532961.413,
+    "debt": 295.97000000000116,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c8773c3ce7d528698b47ff",
+    "name": "Шокосмайл",
+    "emails": [
+      "office@shokosmile.com.ua"
+    ],
+    "phones": [
+      "067 818 84 03"
+    ],
+    "site": "http://shokosmile.com.ua/",
+    "address": {
+      "actual": "Дніпро, вул Свердлова, буд 30/32, кв 62",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "Карта Приватбанк. Гасанов А.З.",
+        "value": "5168 7420 2302 8743"
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "-12% від оптових цін при будь якому об'ємі замовлення\nМожлива відстрочка на пару днів\nМаємо робити 50 тисяч обороту в місяць",
+    "default": false,
+    "created": 1489532732,
+    "uuid": "d779ca7c-0560-41f8-bbd0-a865278795b9",
+    "updated": 1489532732,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489532732.168,
+    "debt": 15567,
+    "rdebt": 0
+  },
+  {
+    "_id": "58c8761f3ce7d51a6d8b469b",
+    "name": "Олексій (Love is)",
+    "emails": [
+      "mas_25@ukr.net"
+    ],
+    "phones": [
+      "095 282 12 98"
+    ],
+    "site": "",
+    "address": {
+      "actual": "Київ",
+      "legal": ""
+    },
+    "bank_details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "details": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "description": "",
+    "default": false,
+    "created": 1489532447,
+    "uuid": "94234a05-22c8-44a3-984e-cb67f9bdb97c",
+    "updated": 1489532447,
+    "_user": "58c872aa3ce7d5fc688b49bc",
+    "_client": "58c872aa3ce7d5fc688b49bd",
+    "deleted": false,
+    "_app": "WAPP",
+    "created_ms": 1489532447.238,
+    "debt": 605.7799999999988,
+    "rdebt": 0
+  }
+]
