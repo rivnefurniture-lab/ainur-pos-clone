@@ -18,10 +18,9 @@ import type {
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
-// Create axios instance with credentials
+// Create axios instance
 const api = axios.create({
   baseURL: API_BASE_URL,
-  withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
     'api': 'v3', // Match Ainur's header
@@ -44,6 +43,13 @@ api.interceptors.response.use(
   (error) => {
     // Don't redirect on 401 - we handle auth internally
     // This prevents redirect loops when using auto-login
+    console.error('API Error:', {
+      url: error.config?.url,
+      method: error.config?.method,
+      status: error.response?.status,
+      data: error.response?.data,
+      message: error.message,
+    });
     return Promise.reject(error);
   }
 );

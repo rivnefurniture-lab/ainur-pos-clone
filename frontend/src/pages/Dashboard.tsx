@@ -521,11 +521,16 @@ export default function Dashboard() {
   };
 
   const loadData = async () => {
-    if (!companyId) return;
+    if (!companyId) {
+      console.log('No companyId, skipping data load');
+      return;
+    }
     
     try {
       setLoading(true);
       const { from, to } = getDateRange();
+      
+      console.log('Loading dashboard data:', { companyId, from, to, selectedStore });
       
       const filters: { from: number; to: number; stores?: string[] } = { from, to };
       if (selectedStore !== 'all') {
@@ -537,6 +542,12 @@ export default function Dashboard() {
         dataApi.getStores(companyId),
         dataApi.getStockStats(companyId),
       ]);
+      
+      console.log('API Responses:', {
+        docs: { status: docsResponse.status, count: docsResponse.data?.length },
+        stores: { status: storesResponse.status, count: storesResponse.data?.length },
+        stats: { status: stockStatsResponse.status, data: stockStatsResponse.data },
+      });
       
       if (docsResponse.status && docsResponse.data) {
         setDocuments(docsResponse.data);
