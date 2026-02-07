@@ -22,15 +22,21 @@ export const isAuthenticated = (req: Request, res: Response, next: NextFunction)
   }
   
   // Allow access for default company (development/demo mode)
-  // Check in params, body, query, or URL path
-  const companyId = req.params.companyId || req.body?.companyId || req.query.companyId as string;
-  
-  // Check the original URL for company ID pattern (handles both /xxx/ and /xxx? cases)
+  // Check the original URL for company ID pattern
   const urlMatch = req.originalUrl.match(/\/([a-f0-9]{24})(?:\/|$|\?)/);
   const urlCompanyId = urlMatch ? urlMatch[1] : null;
   
+  // Debug log
+  console.log(`Auth check: URL=${req.originalUrl}, urlCompanyId=${urlCompanyId}, defaultId=${DEFAULT_COMPANY_ID}, match=${urlCompanyId === DEFAULT_COMPANY_ID}`);
+  
   // Allow access for default company
-  if (companyId === DEFAULT_COMPANY_ID || urlCompanyId === DEFAULT_COMPANY_ID) {
+  if (urlCompanyId === DEFAULT_COMPANY_ID) {
+    return next();
+  }
+  
+  // Also check params and body
+  const companyId = req.params.companyId || req.body?.companyId;
+  if (companyId === DEFAULT_COMPANY_ID) {
     return next();
   }
   
