@@ -5,6 +5,7 @@ import { createServer } from 'http';
 import { Server as SocketServer } from 'socket.io';
 import dotenv from 'dotenv';
 
+import authRoutes from './routes/auth';
 import proxyRoutes from './routes/proxy';
 import catalogRoutes from './routes/catalog';
 import clientsRoutes from './routes/clients';
@@ -42,6 +43,7 @@ app.get('/health', (_req: Request, res: Response) => {
 });
 
 // API Routes
+app.use('/auth', authRoutes);
 app.use('/proxy', proxyRoutes);
 
 // Direct data routes
