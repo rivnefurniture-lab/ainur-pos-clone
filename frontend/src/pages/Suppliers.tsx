@@ -445,7 +445,7 @@ export default function Suppliers() {
         try {
           const response = await documentApi.searchDocuments(
             user._client,
-            { type: 'purchases' },
+            { types: ['purchases'] },
             0,
             100
           );

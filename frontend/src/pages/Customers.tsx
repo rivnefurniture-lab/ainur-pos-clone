@@ -529,7 +529,7 @@ export default function Customers() {
         try {
           const response = await documentApi.searchDocuments(
             user._client,
-            { type: 'sales' },
+            { types: ['sales'] },
             0,
             100
           );
@@ -574,13 +574,10 @@ export default function Customers() {
     return format(new Date(timestamp * 1000), 'd MMMM yyyy', { locale: ru });
   };
 
-  const formatBirthday = (birthday: string | number | undefined) => {
-    if (!birthday) return '';
+  const formatBirthday = (bday: string | undefined) => {
+    if (!bday) return '';
     try {
-      if (typeof birthday === 'number') {
-        return format(new Date(birthday * 1000), 'dd.MM.yyyy');
-      }
-      return birthday;
+      return bday;
     } catch {
       return '';
     }
@@ -674,10 +671,10 @@ export default function Customers() {
                   </Td>
                   <Td>{customer.phones?.[0] || ''}</Td>
                   <Td>{customer.emails?.[0] || ''}</Td>
-                  <Td>{formatBirthday(customer.birthday)}</Td>
+                  <Td>{formatBirthday(customer.bday)}</Td>
                   <Td>{customer.sex === 'male' ? 'Чоловіча' : customer.sex === 'female' ? 'Жіноча' : ''}</Td>
                   <Td>{customer.description || ''}</Td>
-                  <Td>{customer.address?.street || ''}</Td>
+                  <Td>{customer.address?.actual || ''}</Td>
                   <Td>Олег Кицюк</Td>
                 </Tr>
               ))}

@@ -452,7 +452,7 @@ export default function Reports() {
     const categoryMap = new Map<string, { products: Product[]; sales: Document[] }>();
     
     products.forEach(product => {
-      const categoryName = product.categories?.[0]?.name || 'Без категорії';
+      const categoryName = product.categories?.[0] || 'Без категорії';
       if (!categoryMap.has(categoryName)) {
         categoryMap.set(categoryName, { products: [], sales: [] });
       }
@@ -543,7 +543,7 @@ export default function Reports() {
 
   // Get products for a category
   const getCategoryProducts = (categoryName: string) => {
-    return products.filter(p => (p.categories?.[0]?.name || 'Без категорії') === categoryName);
+    return products.filter(p => (p.categories?.[0] || 'Без категорії') === categoryName);
   };
 
   return (
