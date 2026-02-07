@@ -15,38 +15,9 @@ declare module 'express-session' {
   }
 }
 
+// NO AUTHENTICATION - Allow all requests
 export const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
-  // Check if authenticated via session
-  if (req.session && req.session.isAuthenticated) {
-    return next();
-  }
-  
-  // DEMO MODE: Allow access if the URL contains the default company ID anywhere
-  // This is a permissive check for development/demo purposes
-  if (req.originalUrl.includes(DEFAULT_COMPANY_ID)) {
-    return next();
-  }
-  
-  // Also check params
-  if (req.params.companyId === DEFAULT_COMPANY_ID) {
-    return next();
-  }
-  
-  // Check body for companyId
-  if (req.body?.companyId === DEFAULT_COMPANY_ID) {
-    return next();
-  }
-  
-  // Check query params
-  if (req.query.companyId === DEFAULT_COMPANY_ID) {
-    return next();
-  }
-  
-  res.status(401).json({
-    status: false,
-    error: 'Unauthorized',
-    details: 'Please login to access this resource',
-  });
+  return next();
 };
 
 export const getCompanyId = (req: Request): string => {
