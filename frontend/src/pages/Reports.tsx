@@ -7,12 +7,17 @@ import {
   ChevronDown,
   ChevronRight,
   Plus,
-  Minus,
   X,
   Download,
   Calendar,
   Settings,
   HelpCircle,
+  ShoppingBag,
+  Layers,
+  CalendarDays,
+  Users,
+  UserCircle,
+  Wallet,
 } from 'lucide-react';
 import MainLayout from '../components/Layout/MainLayout';
 import { useAppSelector, useAppDispatch } from '../hooks/useRedux';
@@ -20,7 +25,7 @@ import { fetchProducts, fetchDocuments } from '../store/slices/dataSlice';
 import type { Product, Document } from '../types';
 import { theme } from '../styles/GlobalStyles';
 import { format, subDays } from 'date-fns';
-import { ru } from 'date-fns/locale';
+import { uk } from 'date-fns/locale';
 
 // ============================================
 // Interfaces
@@ -35,6 +40,17 @@ interface CategorySummary {
   children?: CategorySummary[];
   expanded?: boolean;
 }
+
+type ReportSubType = 
+  | 'by_products' 
+  | 'by_categories' 
+  | 'by_sets' 
+  | 'by_days' 
+  | 'by_weeks' 
+  | 'by_months' 
+  | 'by_employees' 
+  | 'by_clients'
+  | 'finance';
 
 // ============================================
 // Styled Components
@@ -100,6 +116,47 @@ const ReportTypeName = styled.div<{ light?: boolean }>`
   color: ${props => props.light ? 'white' : theme.colors.textPrimary};
 `;
 
+// Sub-Report Types Grid
+const SubReportTypesGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+  max-width: 800px;
+`;
+
+const SubReportCard = styled.div<{ disabled?: boolean }>`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 16px;
+  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
+  opacity: ${props => props.disabled ? 0.5 : 1};
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: ${props => props.disabled ? 'none' : 'translateY(-2px)'};
+  }
+`;
+
+const SubReportIcon = styled.div`
+  width: 64px;
+  height: 64px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+`;
+
+const SubReportName = styled.div`
+  font-size: 14px;
+  color: ${theme.colors.textSecondary};
+  text-align: center;
+`;
+
 // Tabs
 const TabsContainer = styled.div`
   display: flex;
@@ -156,14 +213,14 @@ const FilterButton = styled.button<{ hasValue?: boolean }>`
   align-items: center;
   gap: 6px;
   padding: 6px 12px;
-  background: ${props => props.hasValue ? '#e0f2fe' : 'white'};
-  border: 1px solid ${props => props.hasValue ? '#0ea5e9' : theme.colors.border};
+  background: ${props => props.hasValue ? '#fff3e0' : 'white'};
+  border: 1px solid ${props => props.hasValue ? '#f39c12' : theme.colors.border};
   border-radius: 4px;
   font-size: 13px;
-  color: ${props => props.hasValue ? '#0284c7' : theme.colors.textSecondary};
+  color: ${props => props.hasValue ? '#e67e22' : theme.colors.textSecondary};
 
   &:hover {
-    background: ${props => props.hasValue ? '#bae6fd' : '#f5f5f5'};
+    background: ${props => props.hasValue ? '#ffe0b2' : '#f5f5f5'};
   }
 `;
 
@@ -383,14 +440,6 @@ const PanelContent = styled.div`
   padding: 20px;
 `;
 
-const ProductImage = styled.img`
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 16px;
-`;
-
 const PanelTitle = styled.h2`
   font-size: 20px;
   font-weight: 600;
@@ -419,6 +468,21 @@ const InfoValue = styled.span`
 `;
 
 // ============================================
+// Sub-report type data
+// ============================================
+const subReportTypes: { id: ReportSubType; name: string; icon: any; disabled?: boolean }[] = [
+  { id: 'by_products', name: 'Продажі по товарам', icon: ShoppingBag },
+  { id: 'by_categories', name: 'Продажі по категоріям', icon: Layers },
+  { id: 'by_sets', name: 'Продажі по комплектам', icon: Package, disabled: true },
+  { id: 'by_days', name: 'Продажі по дням', icon: CalendarDays },
+  { id: 'by_weeks', name: 'Продажі по тижням', icon: Calendar },
+  { id: 'by_months', name: 'Продажі по місяцям', icon: Calendar },
+  { id: 'by_employees', name: 'Звіт по співробітникам', icon: Users, disabled: true },
+  { id: 'by_clients', name: 'Звіт по клієнтам', icon: UserCircle, disabled: true },
+  { id: 'finance', name: 'Фінансовий', icon: Wallet, disabled: true },
+];
+
+// ============================================
 // Component
 // ============================================
 export default function Reports() {
@@ -427,6 +491,7 @@ export default function Reports() {
   const { products, documents } = useAppSelector(state => state.data);
 
   const [reportType, setReportType] = useState<'sales' | 'warehouse' | 'finance'>('sales');
+  const [subReportType, setSubReportType] = useState<ReportSubType | null>(null);
   const [activeTab, setActiveTab] = useState<'reports' | 'dates'>('reports');
   const [dateFrom, setDateFrom] = useState(subDays(new Date(), 7));
   const [dateTo, setDateTo] = useState(new Date());
@@ -546,6 +611,62 @@ export default function Reports() {
     return products.filter(p => (p.categories?.[0] || 'Без категорії') === categoryName);
   };
 
+  // If no sub-report is selected, show the grid
+  if (!subReportType) {
+    return (
+      <MainLayout title="Звіти">
+        <PageContainer>
+          <PageTitle>Виберіть тип звіту</PageTitle>
+
+          <ReportTypesGrid>
+            <ReportTypeCard 
+              selected={reportType === 'sales'}
+              onClick={() => setReportType('sales')}
+            >
+              <ReportTypeLabel light={reportType === 'sales'}>
+                Конструктор звітів
+              </ReportTypeLabel>
+              <ReportTypeName light={reportType === 'sales'}>
+                Продажі
+              </ReportTypeName>
+            </ReportTypeCard>
+
+            <ReportTypeCard disabled>
+              <ReportTypeBadge>В розробці</ReportTypeBadge>
+              <ReportTypeLabel>Конструктор звітів</ReportTypeLabel>
+              <ReportTypeName>Склад</ReportTypeName>
+            </ReportTypeCard>
+
+            <ReportTypeCard disabled>
+              <ReportTypeBadge>В розробці</ReportTypeBadge>
+              <ReportTypeLabel>Конструктор звітів</ReportTypeLabel>
+              <ReportTypeName>Фінанси</ReportTypeName>
+            </ReportTypeCard>
+          </ReportTypesGrid>
+
+          <SubReportTypesGrid>
+            {subReportTypes.map(sub => {
+              const IconComponent = sub.icon;
+              return (
+                <SubReportCard 
+                  key={sub.id}
+                  disabled={sub.disabled}
+                  onClick={() => !sub.disabled && setSubReportType(sub.id)}
+                >
+                  <SubReportIcon>
+                    <IconComponent size={32} />
+                  </SubReportIcon>
+                  <SubReportName>{sub.name}</SubReportName>
+                </SubReportCard>
+              );
+            })}
+          </SubReportTypesGrid>
+        </PageContainer>
+      </MainLayout>
+    );
+  }
+
+  // Show report details
   return (
     <MainLayout title="Звіти">
       <PageContainer>
@@ -557,7 +678,7 @@ export default function Reports() {
             onClick={() => setReportType('sales')}
           >
             <ReportTypeLabel light={reportType === 'sales'}>
-              Конструктор отчётов
+              Конструктор звітів
             </ReportTypeLabel>
             <ReportTypeName light={reportType === 'sales'}>
               Продажі
@@ -566,13 +687,13 @@ export default function Reports() {
 
           <ReportTypeCard disabled>
             <ReportTypeBadge>В розробці</ReportTypeBadge>
-            <ReportTypeLabel>Конструктор отчётов</ReportTypeLabel>
+            <ReportTypeLabel>Конструктор звітів</ReportTypeLabel>
             <ReportTypeName>Склад</ReportTypeName>
           </ReportTypeCard>
 
           <ReportTypeCard disabled>
             <ReportTypeBadge>В розробці</ReportTypeBadge>
-            <ReportTypeLabel>Конструктор отчётов</ReportTypeLabel>
+            <ReportTypeLabel>Конструктор звітів</ReportTypeLabel>
             <ReportTypeName>Фінанси</ReportTypeName>
           </ReportTypeCard>
         </ReportTypesGrid>
@@ -580,13 +701,13 @@ export default function Reports() {
         <TabsContainer>
           <Tab active={activeTab === 'reports'} onClick={() => setActiveTab('reports')}>
             <Package size={16} />
-            Отчёти
+            Звіти
           </Tab>
           <Tab active={activeTab === 'dates'} onClick={() => setActiveTab('dates')}>
             <Calendar size={16} />
-            Отчёт по датам
+            Звіт по датам
           </Tab>
-          <AddTabButton>
+          <AddTabButton onClick={() => setSubReportType(null)}>
             <Plus size={16} />
           </AddTabButton>
         </TabsContainer>
@@ -603,7 +724,7 @@ export default function Reports() {
           <FilterButton hasValue>
             Дата
             <span style={{ marginLeft: 4 }}>
-              {format(dateFrom, 'd MMM', { locale: ru })} — {format(dateTo, 'd MMM', { locale: ru })}
+              {format(dateFrom, 'd MMM', { locale: uk })} — {format(dateTo, 'd MMM', { locale: uk })}
             </span>
             <FilterClear onClick={() => {
               setDateFrom(subDays(new Date(), 7));
@@ -647,159 +768,101 @@ export default function Reports() {
               </tr>
             </Thead>
             <tbody>
-              {categorySummaries.map((summary, idx) => (
-                idx === 0 ? (
-                  <TotalRow key={summary.name}>
-                    <Td></Td>
-                    <Td>{summary.name}</Td>
-                    <Td>{summary.count}</Td>
-                    <Td>{formatPrice(summary.revenue)}</Td>
-                    <Td>{summary.sold}</Td>
-                    <Td>{formatPrice(summary.profit)}</Td>
-                    <Td>{summary.marginality}%</Td>
-                  </TotalRow>
-                ) : (
+              {categorySummaries.map((category, idx) => {
+                const isTotal = idx === 0;
+                const isExpanded = expandedCategories.has(category.name);
+                const categoryProducts = !isTotal ? getCategoryProducts(category.name).slice(0, 5) : [];
+                
+                return (
                   <>
-                    <Tr key={summary.name} onClick={() => toggleCategory(summary.name)}>
+                    <Tr 
+                      key={category.name}
+                      style={isTotal ? { background: '#f9fafb', fontWeight: 600 } : undefined}
+                      onClick={() => !isTotal && toggleCategory(category.name)}
+                    >
                       <ExpandCell>
-                        <ExpandButton>
-                          {expandedCategories.has(summary.name) ? (
-                            <Minus size={16} />
-                          ) : (
-                            <Plus size={16} />
-                          )}
-                        </ExpandButton>
+                        {!isTotal && category.count > 0 && (
+                          <ExpandButton>
+                            {isExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                          </ExpandButton>
+                        )}
                       </ExpandCell>
+                      <CategoryCell>
+                        {isTotal ? category.name : <CategoryName>{category.name}</CategoryName>}
+                      </CategoryCell>
                       <Td>
-                        <CategoryName>⊙ {summary.name}</CategoryName>
+                        <CountLink>{category.count}</CountLink>
                       </Td>
-                      <Td>
-                        <CountLink>{summary.count}</CountLink>
+                      <Td>{formatPrice(category.revenue)} ₴</Td>
+                      <Td>{category.sold}</Td>
+                      <Td style={{ color: category.profit >= 0 ? '#10b981' : '#ef4444' }}>
+                        {formatPrice(category.profit)} ₴
                       </Td>
-                      <Td>{formatPrice(summary.revenue)}</Td>
-                      <Td>{summary.sold}</Td>
-                      <Td>{formatPrice(summary.profit)}</Td>
-                      <Td>{summary.marginality}%</Td>
+                      <Td>{category.marginality}%</Td>
                     </Tr>
-                    {expandedCategories.has(summary.name) && 
-                      getCategoryProducts(summary.name).slice(0, 10).map(product => (
-                        <Tr key={product._id} level={1} onClick={() => openProductPanel(product)}>
-                          <Td></Td>
-                          <CategoryCell level={1}>
-                            <CategoryName>{product.name}</CategoryName>
-                          </CategoryCell>
-                          <Td>0</Td>
-                          <Td>0,00</Td>
-                          <Td>0</Td>
-                          <Td>0,00</Td>
-                          <Td>—</Td>
-                        </Tr>
-                      ))
-                    }
+                    {isExpanded && categoryProducts.map(product => (
+                      <Tr 
+                        key={product._id} 
+                        level={1}
+                        onClick={(e) => { e.stopPropagation(); openProductPanel(product); }}
+                      >
+                        <ExpandCell />
+                        <CategoryCell level={1}>
+                          <CategoryName>{product.name}</CategoryName>
+                        </CategoryCell>
+                        <Td>-</Td>
+                        <Td>{formatPrice(product.price || 0)} ₴</Td>
+                        <Td>-</Td>
+                        <Td>-</Td>
+                        <Td>-</Td>
+                      </Tr>
+                    ))}
                   </>
-                )
-              ))}
+                );
+              })}
             </tbody>
           </Table>
         </TableContainer>
-      </PageContainer>
 
-      {/* Overlay */}
-      <PanelOverlay isOpen={selectedProduct !== null} onClick={closePanel} />
+        {/* Product Detail Panel */}
+        <PanelOverlay isOpen={!!selectedProduct} onClick={closePanel} />
+        <SlidePanel isOpen={!!selectedProduct}>
+          {selectedProduct && (
+            <>
+              <PanelHeader>
+                <PanelActions>
+                  <EditButton>Редагувати</EditButton>
+                  <DeleteButton>Видалити</DeleteButton>
+                </PanelActions>
+                <PanelCloseButton onClick={closePanel}>
+                  <X size={20} />
+                </PanelCloseButton>
+              </PanelHeader>
+              <PanelContent>
+                <PanelTitle>{selectedProduct.name}</PanelTitle>
+                <PanelLabel>SKU: {selectedProduct.sku || 'N/A'}</PanelLabel>
 
-      {/* Product Detail Panel */}
-      <SlidePanel isOpen={selectedProduct !== null}>
-        {selectedProduct && (
-          <>
-            <PanelHeader>
-              <PanelCloseButton onClick={closePanel}>
-                <X size={20} />
-              </PanelCloseButton>
-              <PanelActions>
-                <EditButton>Редагувати</EditButton>
-                <span style={{ padding: 8 }}>
-                  <Download size={18} color={theme.colors.textMuted} />
-                </span>
-                <DeleteButton>Видалити</DeleteButton>
-              </PanelActions>
-            </PanelHeader>
-            <PanelContent>
-              <PanelLabel>товар</PanelLabel>
-              <PanelTitle>{selectedProduct.name}</PanelTitle>
-              
-              <InfoGrid>
-                <InfoLabel>Штрих-код:</InfoLabel>
-                <InfoValue>{selectedProduct.barcode || '—'}</InfoValue>
-                <InfoLabel>Артикул:</InfoLabel>
-                <InfoValue>{selectedProduct.sku || selectedProduct._id?.slice(-6) || '—'}</InfoValue>
-                <InfoLabel>Код товару:</InfoLabel>
-                <InfoValue>{selectedProduct.code || '—'}</InfoValue>
-              </InfoGrid>
-
-              <div style={{ marginTop: 24 }}>
-                <TabsContainer>
-                  <Tab active>Інформація</Tab>
-                  <Tab>Історія руху</Tab>
-                </TabsContainer>
-
-                <InfoGrid style={{ marginTop: 16 }}>
-                  <InfoLabel>Створено</InfoLabel>
-                  <InfoValue>
-                    {selectedProduct.created 
-                      ? format(new Date(selectedProduct.created * 1000), 'd MMMM yyyy', { locale: ru })
-                      : '—'
-                    }
-                  </InfoValue>
-                  <InfoLabel>Категорії</InfoLabel>
-                  <InfoValue>{selectedProduct.categories?.[0] || '—'}</InfoValue>
-                  <InfoLabel>Країна</InfoLabel>
-                  <InfoValue>—</InfoValue>
-                  <InfoLabel>Срок придатності</InfoLabel>
-                  <InfoValue>—</InfoValue>
-                  <InfoLabel>Група</InfoLabel>
-                  <InfoValue>Товари і послуги</InfoValue>
-                  <InfoLabel>Опис</InfoLabel>
-                  <InfoValue>—</InfoValue>
+                <InfoGrid>
+                  <InfoLabel>Ціна:</InfoLabel>
+                  <InfoValue>{formatPrice(selectedProduct.price || 0)} ₴</InfoValue>
+                  
+                  <InfoLabel>Собівартість:</InfoLabel>
+                  <InfoValue>{formatPrice(selectedProduct.cost || 0)} ₴</InfoValue>
+                  
+                  <InfoLabel>Залишок:</InfoLabel>
+                  <InfoValue>{selectedProduct.total_stock || 0} шт</InfoValue>
+                  
+                  <InfoLabel>Категорія:</InfoLabel>
+                  <InfoValue>{selectedProduct.categories?.[0] || 'Без категорії'}</InfoValue>
+                  
+                  <InfoLabel>Штрихкод:</InfoLabel>
+                  <InfoValue>{selectedProduct.barcode || 'N/A'}</InfoValue>
                 </InfoGrid>
-              </div>
-
-              <div style={{ marginTop: 24 }}>
-                <h4 style={{ fontSize: 14, fontWeight: 600, marginBottom: 12 }}>ЦІНИ</h4>
-                <Table style={{ minWidth: 'auto' }}>
-                  <thead>
-                    <tr>
-                      <Th style={{ padding: '8px 12px' }}>Ціна продажу</Th>
-                      <Th style={{ padding: '8px 12px' }}>Ціна закупки</Th>
-                      <Th style={{ padding: '8px 12px' }}>Собівартість</Th>
-                      <Th style={{ padding: '8px 12px' }}>Націнка</Th>
-                      <Th style={{ padding: '8px 12px' }}>Маржинальність</Th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <Td style={{ padding: '8px 12px', color: theme.colors.danger }}>
-                        {formatPrice(selectedProduct.price || 0)} грн
-                      </Td>
-                      <Td style={{ padding: '8px 12px' }}>
-                        {formatPrice(selectedProduct.cost * 1.05 || 0)} грн
-                      </Td>
-                      <Td style={{ padding: '8px 12px' }}>
-                        {formatPrice(selectedProduct.cost || 0)} грн
-                      </Td>
-                      <Td style={{ padding: '8px 12px' }}>
-                        {selectedProduct.cost ? Math.round(((selectedProduct.price || 0) / selectedProduct.cost - 1) * 100) : 0}%
-                      </Td>
-                      <Td style={{ padding: '8px 12px' }}>
-                        {selectedProduct.price ? Math.round(((selectedProduct.price - (selectedProduct.cost || 0)) / selectedProduct.price) * 100) : 0}%
-                      </Td>
-                    </tr>
-                  </tbody>
-                </Table>
-              </div>
-            </PanelContent>
-          </>
-        )}
-      </SlidePanel>
+              </PanelContent>
+            </>
+          )}
+        </SlidePanel>
+      </PageContainer>
     </MainLayout>
   );
 }

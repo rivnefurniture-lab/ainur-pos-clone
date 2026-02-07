@@ -42,10 +42,8 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) {
-      // Redirect to login if unauthorized
-      window.location.href = '/pos/login';
-    }
+    // Don't redirect on 401 - we handle auth internally
+    // This prevents redirect loops when using auto-login
     return Promise.reject(error);
   }
 );

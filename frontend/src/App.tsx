@@ -49,10 +49,6 @@ function App() {
             <Route path="/pos/employees" element={<Settings />} />
             <Route path="/pos/loyalty" element={<Settings />} />
             <Route path="/pos/print-forms" element={<Settings />} />
-            <Route path="/pos/online-store" element={<Settings />} />
-            <Route path="/pos/store-online" element={<Settings />} />
-            <Route path="/pos/integrations" element={<Settings />} />
-            <Route path="/pos/billing" element={<Settings />} />
             <Route path="/pos/cart" element={<Settings />} />
             <Route path="/pos/whats-new" element={<Settings />} />
             <Route path="/pos/knowledge-base" element={<Settings />} />

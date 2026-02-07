@@ -119,7 +119,7 @@ const FilterButton = styled.button<{ hasValue?: boolean }>`
   }
 `;
 
-const FilterMenu = styled.div<{ isOpen: boolean }>`
+const FilterMenu = styled.div<{ isOpen: boolean; $flexLayout?: boolean }>`
   position: absolute;
   top: 100%;
   left: 0;
@@ -130,7 +130,8 @@ const FilterMenu = styled.div<{ isOpen: boolean }>`
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 100;
-  display: ${props => props.isOpen ? 'block' : 'none'};
+  display: ${props => props.isOpen ? (props.$flexLayout ? 'flex' : 'block') : 'none'};
+  flex-direction: ${props => props.$flexLayout ? 'column' : 'initial'};
 `;
 
 const FilterOption = styled.div<{ active?: boolean }>`
@@ -1123,7 +1124,7 @@ export default function Documents() {
                 </ClearFilterButton>
               )}
             </FilterButton>
-            <FilterMenu isOpen={openDropdown === 'date'} style={{ padding: 0, minWidth: 500, display: 'flex', flexDirection: 'column' }}>
+            <FilterMenu isOpen={openDropdown === 'date'} $flexLayout style={{ padding: 0, minWidth: 500 }}>
               <div style={{ display: 'flex' }}>
                 <DatePresetList>
                   {datePresets.map(preset => (

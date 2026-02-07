@@ -9,9 +9,6 @@ import {
   BarChart2,
   Users,
   Building2,
-  Globe,
-  Link2,
-  CreditCard,
   ShoppingBag,
   Gift,
   HelpCircle,
@@ -291,23 +288,7 @@ export default function Sidebar() {
           <SubNavItem to="/pos/accounts">Рахунки</SubNavItem>
           <SubNavItem to="/pos/loyalty">Лояльність</SubNavItem>
           <SubNavItem to="/pos/print-forms">Друковані форми</SubNavItem>
-          <SubNavItem to="/pos/online-store">Інтернет-вітрина</SubNavItem>
         </SubNav>
-
-        <NavItem to="/pos/store-online">
-          <Globe size={20} />
-          Інтернет-вітрина
-        </NavItem>
-        
-        <NavItem to="/pos/integrations">
-          <Link2 size={20} />
-          Інтеграції
-        </NavItem>
-        
-        <NavItem to="/pos/billing">
-          <CreditCard size={20} />
-          Тарифи та оплата
-        </NavItem>
         
         <NavItem to="/pos/cart" style={{ color: theme.colors.textMuted }}>
           <ShoppingBag size={20} />
