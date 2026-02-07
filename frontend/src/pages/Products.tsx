@@ -875,12 +875,12 @@ export default function Products() {
             </DropdownMenu>
           </ActionDropdown>
 
-          <SettingsButton onClick={() => setShowSettingsDropdown(!showSettingsDropdown)}>
-            <Settings size={18} />
-          </SettingsButton>
+          <ActionDropdown>
+            <SettingsButton onClick={() => setShowSettingsDropdown(!showSettingsDropdown)}>
+              <Settings size={18} />
+            </SettingsButton>
 
-          {showSettingsDropdown && (
-            <DropdownMenu isOpen={showSettingsDropdown} style={{ right: 0, maxHeight: '500px', overflowY: 'auto' }}>
+            <DropdownMenu isOpen={showSettingsDropdown} style={{ maxHeight: '500px', overflowY: 'auto' }}>
               <DropdownSection>
                 <DropdownSectionTitle>Настройки таблицы</DropdownSectionTitle>
                 <CheckboxLabel>
@@ -983,7 +983,7 @@ export default function Products() {
                 ))}
               </DropdownSection>
             </DropdownMenu>
-          )}
+          </ActionDropdown>
         </FiltersBar>
 
         <FilterPanel isOpen={showFilterPanel}>
