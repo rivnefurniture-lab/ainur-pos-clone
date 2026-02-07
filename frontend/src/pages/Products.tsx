@@ -798,7 +798,8 @@ export default function Products() {
 
   return (
     <MainLayout title="Товари та послуги">
-      <PageContainer>
+      <>
+        <PageContainer>
         <Breadcrumb>
           <a href="/pos">
             <Home size={16} />
@@ -1519,7 +1520,8 @@ export default function Products() {
             Сохранить
           </ActionButton>
         </SlidePanelFooter>
-      </SlidePanel>
+        </SlidePanel>
+      </>
     </MainLayout>
   );
 }
