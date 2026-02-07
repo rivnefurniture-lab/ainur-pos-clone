@@ -1,0 +1,29 @@
+services:
+  # Backend API
+  - type: web
+    name: ainur-pos-backend
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: cd backend && npm install && npm run build
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://frontend-p7zph3jty-andriis-projects-ae2f998e.vercel.app
+    healthCheckPath: /health
+
+databases:
+  - name: ainur-pos-db
+    databaseName: ainur_pos
+    plan: free
+    region: frankfurt
