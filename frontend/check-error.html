@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test</title></head>
+<body>
+<h1>Testing fetch</h1>
+<pre id="output"></pre>
+<script>
+async function test() {
+  const output = document.getElementById('output');
+  try {
+    const res = await fetch('http://localhost:5173/pos/products');
+    const text = await res.text();
+    output.textContent = 'Page length: ' + text.length + '\n\n' + text.substring(0, 2000);
+  } catch(e) {
+    output.textContent = 'Error: ' + e.message;
+  }
+}
+test();
+</script>
+</body>
+</html>

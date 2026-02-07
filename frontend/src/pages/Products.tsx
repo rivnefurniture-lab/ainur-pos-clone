@@ -67,7 +67,7 @@ const HeaderActions = styled.div`
   gap: 12px;
 `;
 
-const ActionButton = styled.button<{ primary?: boolean }>`
+const ActionButton = styled.button<{ $primary?: boolean }>`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -75,13 +75,13 @@ const ActionButton = styled.button<{ primary?: boolean }>`
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
-  background: ${props => props.primary ? '#4caf50' : 'white'};
-  color: ${props => props.primary ? 'white' : theme.colors.textPrimary};
-  border: ${props => props.primary ? 'none' : `1px solid ${theme.colors.border}`};
+  background: ${props => props.$primary ? '#4caf50' : 'white'};
+  color: ${props => props.$primary ? 'white' : theme.colors.textPrimary};
+  border: ${props => props.$primary ? 'none' : `1px solid ${theme.colors.border}`};
   cursor: pointer;
 
   &:hover {
-    background: ${props => props.primary ? '#45a049' : theme.colors.gray100};
+    background: ${props => props.$primary ? '#45a049' : theme.colors.gray100};
   }
 `;
 
@@ -110,13 +110,13 @@ const SearchInput = styled.div`
   }
 `;
 
-const FilterButton = styled.button<{ active?: boolean }>`
+const FilterButton = styled.button<{ $active?: boolean }>`
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  border: 1px solid ${props => props.active ? theme.colors.primary : theme.colors.border};
-  background: ${props => props.active ? theme.colors.primaryLight : 'white'};
+  border: 1px solid ${props => props.$active ? theme.colors.primary : theme.colors.border};
+  background: ${props => props.$active ? theme.colors.primaryLight : 'white'};
   color: ${theme.colors.textPrimary};
   border-radius: 6px;
   font-size: 14px;
@@ -185,6 +185,8 @@ const Pagination = styled.div`
 `;
 
 export default function Products() {
+  console.log('Products component rendering...');
+  
   const dispatch = useAppDispatch();
   const { companyId } = useAppSelector(state => state.auth);
   const { products, categories } = useAppSelector(state => state.data);
@@ -263,7 +265,7 @@ export default function Products() {
               <Download size={18} />
               Імпорт товарів
             </ActionButton>
-            <ActionButton primary>
+            <ActionButton $primary>
               <Plus size={18} />
               Создать товар
             </ActionButton>
@@ -282,7 +284,7 @@ export default function Products() {
           </SearchInput>
           
           <FilterButton
-            active={showFilterPanel}
+            $active={showFilterPanel}
             onClick={() => setShowFilterPanel(!showFilterPanel)}
           >
             <Filter size={18} />
@@ -337,7 +339,7 @@ export default function Products() {
                   <Td>{product.code || product._id.slice(-4)}</Td>
                   <Td>{product.sku || '-'}</Td>
                   <Td>шт</Td>
-                  <Td style={{ textAlign: 'right' }}>{product.price.toFixed(2)}</Td>
+                  <Td style={{ textAlign: 'right' }}>{parseFloat(String(product.price || 0)).toFixed(2)}</Td>
                   <Td style={{ textAlign: 'right' }}>0</Td>
                   {stores.map(store => (
                     <Td key={store._id} style={{ textAlign: 'right' }}>

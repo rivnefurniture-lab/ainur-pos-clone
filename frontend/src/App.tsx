@@ -21,6 +21,8 @@ import Suppliers from './pages/Suppliers';
 import MoneyMovement from './pages/MoneyMovement';
 
 function App() {
+  console.log('App component rendering...');
+  
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
