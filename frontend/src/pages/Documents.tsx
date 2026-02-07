@@ -41,6 +41,17 @@ interface DocumentFilters {
   status: string;
   payment: string;
   type: string;
+  author: string;
+  fiscalCheck: string;
+  orderStatus: string;
+  receiver: string;
+  sender: string;
+}
+
+interface UserOption {
+  _id: string;
+  name: string;
+  role?: string;
 }
 
 // ============================================
@@ -148,7 +159,158 @@ const ClearFilterButton = styled.button`
   }
 `;
 
-const FilterBadge = styled.button`
+const FilterBadge = styled.div`
+  position: relative;
+`;
+
+const FilterBadgeButton = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid ${theme.colors.border};
+  border-radius: 4px;
+  font-size: 14px;
+  color: ${theme.colors.textPrimary};
+  cursor: pointer;
+
+  &:hover {
+    border-color: #9ca3af;
+  }
+
+  svg {
+    color: #9ca3af;
+  }
+`;
+
+const FilterBadgeMenu = styled.div<{ isOpen: boolean }>`
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  min-width: 180px;
+  background: white;
+  border: 1px solid ${theme.colors.border};
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 100;
+  display: ${props => props.isOpen ? 'block' : 'none'};
+`;
+
+const DatePresetList = styled.div`
+  border-right: 1px solid ${theme.colors.border};
+  min-width: 140px;
+`;
+
+const DatePresetItem = styled.div<{ active?: boolean }>`
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  background: ${props => props.active ? '#f0f7ff' : 'white'};
+  color: ${theme.colors.textPrimary};
+
+  &:hover {
+    background: #f5f5f5;
+  }
+`;
+
+const DateCalendars = styled.div`
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+`;
+
+const CalendarContainer = styled.div`
+  width: 280px;
+`;
+
+const CalendarHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+`;
+
+const CalendarGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+`;
+
+const CalendarDay = styled.div<{ isCurrentMonth?: boolean; isSelected?: boolean; isInRange?: boolean; isToday?: boolean }>`
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: ${props => {
+    if (!props.isCurrentMonth) return '#d1d5db';
+    if (props.isSelected) return 'white';
+    return theme.colors.textPrimary;
+  }};
+  background: ${props => {
+    if (props.isSelected) return theme.colors.primary;
+    if (props.isInRange) return '#dbeafe';
+    return 'transparent';
+  }};
+  border: ${props => props.isToday ? `1px solid ${theme.colors.primary}` : 'none'};
+
+  &:hover {
+    background: ${props => props.isSelected ? theme.colors.primary : '#f3f4f6'};
+  }
+`;
+
+const DateRangeInfo = styled.div`
+  padding: 12px 16px;
+  border-top: 1px solid ${theme.colors.border};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #6b7280;
+`;
+
+const ApplyButton = styled.button`
+  padding: 8px 16px;
+  background: ${theme.colors.primary};
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    background: ${theme.colors.primaryHover};
+  }
+`;
+
+const FilterGroupTitle = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  background: #f9fafb;
+`;
+
+const OrderStatusDot = styled.span<{ color: string }>`
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: ${props => props.color};
+`;
+
+const LegacyFilterBadge = styled.button`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -621,7 +783,21 @@ export default function Documents() {
     status: '',
     payment: '',
     type: '',
+    author: '',
+    fiscalCheck: '',
+    orderStatus: '',
+    receiver: '',
+    sender: '',
   });
+  
+  // Active additional filters
+  const [activeExtraFilters, setActiveExtraFilters] = useState<string[]>([]);
+  
+  // Users list for author filter
+  const [users, setUsers] = useState<UserOption[]>([]);
+  
+  // Suppliers list
+  const [suppliers, setSuppliers] = useState<{_id: string; name: string}[]>([]);
 
   // Dropdown state
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -679,12 +855,35 @@ export default function Documents() {
 
       if (docsResponse.status && docsResponse.data) {
         setDocuments(docsResponse.data);
+        
+        // Extract unique users from documents
+        const userMap = new Map<string, UserOption>();
+        docsResponse.data.forEach((doc: Document) => {
+          if (doc._user && doc.author_name) {
+            userMap.set(doc._user, {
+              _id: doc._user,
+              name: doc.author_name,
+              role: 'Кассир', // Default role, could be extracted from doc if available
+            });
+          }
+        });
+        setUsers(Array.from(userMap.values()));
       }
       if (storesResponse.status && storesResponse.data) {
         setStores(storesResponse.data);
       }
       if (customersResponse.status && customersResponse.data) {
         setCustomers(customersResponse.data);
+      }
+      
+      // Fetch suppliers
+      try {
+        const suppliersResponse = await dataApi.getSuppliers(companyId);
+        if (suppliersResponse.status && suppliersResponse.data) {
+          setSuppliers(suppliersResponse.data);
+        }
+      } catch (e) {
+        console.error('Failed to load suppliers:', e);
       }
     } catch (error) {
       console.error('Failed to load documents:', error);
@@ -814,28 +1013,74 @@ export default function Documents() {
     setSelectedUser(null);
   };
 
-  // Filter type options
+  // Filter type options - matching Ainur exactly
   const typeOptions = [
-    { value: '', label: 'Выберите' },
     { value: 'sales', label: 'Продажа' },
     { value: 'purchases', label: 'Закупка' },
     { value: 'return_sales', label: 'Возврат продажи' },
-    { value: 'movements', label: 'Перемещение' },
+    { value: 'return_purchases', label: 'Возврат закупки' },
     { value: 'changes', label: 'Корректировка' },
+    { value: 'inventory', label: 'Инвентаризация' },
+    { value: 'arrivals', label: 'Оприходование' },
+    { value: 'writeoffs', label: 'Списание' },
+    { value: 'movements', label: 'Перемещение' },
   ];
 
   const statusOptions = [
-    { value: '', label: 'Выберите' },
-    { value: 'completed', label: 'Проведен' },
-    { value: 'pending', label: 'Ожидает' },
+    { value: 'completed', label: 'Проведён' },
+    { value: 'pending', label: 'Отложен' },
+    { value: 'deleted', label: 'Удалён' },
   ];
 
   const paymentOptions = [
-    { value: '', label: 'Выберите' },
-    { value: 'paid', label: 'Оплачен' },
-    { value: 'unpaid', label: 'Не оплачен' },
-    { value: 'partial', label: 'Частично' },
+    { value: 'paid', label: 'Оплаченные' },
+    { value: 'unpaid', label: 'Неоплаченные' },
   ];
+  
+  const orderStatusOptions = [
+    { value: 'new', label: 'Новый', color: '#6b7280' },
+    { value: 'in_progress', label: 'В работе', color: '#3b82f6' },
+    { value: 'closed', label: 'Закрыт', color: '#10b981' },
+    { value: 'cancelled', label: 'Отменён', color: '#ef4444' },
+  ];
+  
+  const fiscalOptions = [
+    { value: 'yes', label: 'Да' },
+    { value: 'no', label: 'Нет' },
+  ];
+  
+  const extraFilterOptions = [
+    { value: 'author', label: 'Автор' },
+    { value: 'fiscalCheck', label: 'Фискальный чек' },
+    { value: 'orderStatus', label: 'Статус заказа' },
+    { value: 'receiver', label: 'Получатель' },
+    { value: 'sender', label: 'Отправитель' },
+    { value: 'type', label: 'Тип' },
+  ];
+  
+  const datePresets = [
+    { label: 'сегодня', getValue: () => { const d = new Date(); return { from: d, to: d }; } },
+    { label: 'Вчера', getValue: () => { const d = new Date(); d.setDate(d.getDate() - 1); return { from: d, to: d }; } },
+    { label: '7 дней', getValue: () => { const to = new Date(); const from = new Date(); from.setDate(from.getDate() - 7); return { from, to }; } },
+    { label: '30 дней', getValue: () => { const to = new Date(); const from = new Date(); from.setDate(from.getDate() - 30); return { from, to }; } },
+    { label: 'Этот месяц', getValue: () => { const now = new Date(); return { from: new Date(now.getFullYear(), now.getMonth(), 1), to: now }; } },
+    { label: 'Прошлый месяц', getValue: () => { const now = new Date(); return { from: new Date(now.getFullYear(), now.getMonth() - 1, 1), to: new Date(now.getFullYear(), now.getMonth(), 0) }; } },
+    { label: 'квартал', getValue: () => { const now = new Date(); const qm = Math.floor(now.getMonth() / 3) * 3; return { from: new Date(now.getFullYear(), qm, 1), to: now }; } },
+  ];
+  
+  // Add extra filter
+  const addExtraFilter = (filterKey: string) => {
+    if (!activeExtraFilters.includes(filterKey)) {
+      setActiveExtraFilters([...activeExtraFilters, filterKey]);
+    }
+    setOpenDropdown(null);
+  };
+  
+  // Remove extra filter
+  const removeExtraFilter = (filterKey: string) => {
+    setActiveExtraFilters(activeExtraFilters.filter(f => f !== filterKey));
+    setFilters({ ...filters, [filterKey]: '' });
+  };
 
   // Get recent docs for store
   const getStoreRecentDocs = (storeId: string) => {
@@ -866,27 +1111,61 @@ export default function Documents() {
               <span style={{ color: theme.colors.textPrimary }}>
                 {formatDateRange()}
               </span>
-              <ChevronDown size={14} />
+              {(dateFrom || dateTo) && (
+                <ClearFilterButton onClick={(e) => { 
+                  e.stopPropagation(); 
+                  const d = new Date();
+                  d.setDate(d.getDate() - 7);
+                  setDateFrom(d);
+                  setDateTo(new Date());
+                }}>
+                  <X size={14} />
+                </ClearFilterButton>
+              )}
             </FilterButton>
-            <FilterMenu isOpen={openDropdown === 'date'} style={{ padding: 12, minWidth: 220 }}>
-              <div style={{ marginBottom: 8 }}>
-                <label style={{ fontSize: 12, color: '#6b7280', display: 'block', marginBottom: 4 }}>Від</label>
-                <input 
-                  type="date" 
-                  value={format(dateFrom, 'yyyy-MM-dd')}
-                  onChange={(e) => setDateFrom(new Date(e.target.value))}
-                  style={{ width: '100%', padding: 8, border: '1px solid #e5e7eb', borderRadius: 4 }}
-                />
+            <FilterMenu isOpen={openDropdown === 'date'} style={{ padding: 0, minWidth: 500, display: 'flex', flexDirection: 'column' }}>
+              <div style={{ display: 'flex' }}>
+                <DatePresetList>
+                  {datePresets.map(preset => (
+                    <DatePresetItem 
+                      key={preset.label}
+                      onClick={() => {
+                        const { from, to } = preset.getValue();
+                        setDateFrom(from);
+                        setDateTo(to);
+                      }}
+                    >
+                      {preset.label}
+                    </DatePresetItem>
+                  ))}
+                </DatePresetList>
+                <div style={{ padding: 12, flex: 1 }}>
+                  <div style={{ display: 'flex', gap: 16 }}>
+                    <div style={{ flex: 1 }}>
+                      <label style={{ fontSize: 12, color: '#6b7280', display: 'block', marginBottom: 4 }}>Від</label>
+                      <input 
+                        type="date" 
+                        value={format(dateFrom, 'yyyy-MM-dd')}
+                        onChange={(e) => setDateFrom(new Date(e.target.value))}
+                        style={{ width: '100%', padding: 8, border: '1px solid #e5e7eb', borderRadius: 4 }}
+                      />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <label style={{ fontSize: 12, color: '#6b7280', display: 'block', marginBottom: 4 }}>До</label>
+                      <input 
+                        type="date" 
+                        value={format(dateTo, 'yyyy-MM-dd')}
+                        onChange={(e) => setDateTo(new Date(e.target.value))}
+                        style={{ width: '100%', padding: 8, border: '1px solid #e5e7eb', borderRadius: 4 }}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <label style={{ fontSize: 12, color: '#6b7280', display: 'block', marginBottom: 4 }}>До</label>
-                <input 
-                  type="date" 
-                  value={format(dateTo, 'yyyy-MM-dd')}
-                  onChange={(e) => setDateTo(new Date(e.target.value))}
-                  style={{ width: '100%', padding: 8, border: '1px solid #e5e7eb', borderRadius: 4 }}
-                />
-              </div>
+              <DateRangeInfo>
+                <span>{format(dateFrom, 'yyyy-MM-dd')} to {format(dateTo, 'yyyy-MM-dd')} ({Math.ceil((dateTo.getTime() - dateFrom.getTime()) / (1000 * 60 * 60 * 24)) + 1} Дней)</span>
+                <ApplyButton onClick={() => setOpenDropdown(null)}>Применить</ApplyButton>
+              </DateRangeInfo>
             </FilterMenu>
           </FilterDropdown>
 
@@ -958,10 +1237,190 @@ export default function Documents() {
               ))}
             </FilterMenu>
           </FilterDropdown>
+          
+          {/* Author filter - shown when active */}
+          {activeExtraFilters.includes('author') && (
+            <FilterDropdown>
+              <FilterButton onClick={() => setOpenDropdown(openDropdown === 'author' ? null : 'author')}>
+                автор
+                <span>{users.find(u => u._id === filters.author)?.name || 'введите'}</span>
+                <ClearFilterButton onClick={(e) => { e.stopPropagation(); removeExtraFilter('author'); }}>
+                  <X size={14} />
+                </ClearFilterButton>
+              </FilterButton>
+              <FilterMenu isOpen={openDropdown === 'author'} style={{ maxHeight: 300, overflow: 'auto' }}>
+                <FilterGroupTitle>СОТРУДНИКИ</FilterGroupTitle>
+                {users.map(user => (
+                  <FilterOption
+                    key={user._id}
+                    active={filters.author === user._id}
+                    onClick={() => { setFilters({ ...filters, author: user._id }); setOpenDropdown(null); }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+                      <span>{user.name}</span>
+                      <span style={{ color: '#9ca3af', fontSize: 12 }}>{user.role}</span>
+                    </div>
+                  </FilterOption>
+                ))}
+              </FilterMenu>
+            </FilterDropdown>
+          )}
+          
+          {/* Receiver filter */}
+          {activeExtraFilters.includes('receiver') && (
+            <FilterDropdown>
+              <FilterButton onClick={() => setOpenDropdown(openDropdown === 'receiver' ? null : 'receiver')}>
+                получатель
+                <span>введите</span>
+                <ClearFilterButton onClick={(e) => { e.stopPropagation(); removeExtraFilter('receiver'); }}>
+                  <X size={14} />
+                </ClearFilterButton>
+              </FilterButton>
+              <FilterMenu isOpen={openDropdown === 'receiver'} style={{ maxHeight: 300, overflow: 'auto' }}>
+                <FilterGroupTitle>МАГАЗИНЫ</FilterGroupTitle>
+                {stores.map(store => (
+                  <FilterOption
+                    key={store._id}
+                    active={filters.receiver === store._id}
+                    onClick={() => { setFilters({ ...filters, receiver: store._id }); setOpenDropdown(null); }}
+                  >
+                    {store.name}
+                  </FilterOption>
+                ))}
+                <FilterGroupTitle>ПОСТАВЩИКИ</FilterGroupTitle>
+                {suppliers.map(supplier => (
+                  <FilterOption
+                    key={supplier._id}
+                    active={filters.receiver === supplier._id}
+                    onClick={() => { setFilters({ ...filters, receiver: supplier._id }); setOpenDropdown(null); }}
+                  >
+                    {supplier.name}
+                  </FilterOption>
+                ))}
+                <FilterGroupTitle>КЛИЕНТЫ</FilterGroupTitle>
+                {customers.slice(0, 20).map(customer => (
+                  <FilterOption
+                    key={customer._id}
+                    active={filters.receiver === customer._id}
+                    onClick={() => { setFilters({ ...filters, receiver: customer._id }); setOpenDropdown(null); }}
+                  >
+                    {customer.name}
+                  </FilterOption>
+                ))}
+              </FilterMenu>
+            </FilterDropdown>
+          )}
+          
+          {/* Sender filter */}
+          {activeExtraFilters.includes('sender') && (
+            <FilterDropdown>
+              <FilterButton onClick={() => setOpenDropdown(openDropdown === 'sender' ? null : 'sender')}>
+                отправитель
+                <span>введите</span>
+                <ClearFilterButton onClick={(e) => { e.stopPropagation(); removeExtraFilter('sender'); }}>
+                  <X size={14} />
+                </ClearFilterButton>
+              </FilterButton>
+              <FilterMenu isOpen={openDropdown === 'sender'} style={{ maxHeight: 300, overflow: 'auto' }}>
+                <FilterGroupTitle>МАГАЗИНЫ</FilterGroupTitle>
+                {stores.map(store => (
+                  <FilterOption
+                    key={store._id}
+                    active={filters.sender === store._id}
+                    onClick={() => { setFilters({ ...filters, sender: store._id }); setOpenDropdown(null); }}
+                  >
+                    {store.name}
+                  </FilterOption>
+                ))}
+                <FilterGroupTitle>ПОСТАВЩИКИ</FilterGroupTitle>
+                {suppliers.map(supplier => (
+                  <FilterOption
+                    key={supplier._id}
+                    active={filters.sender === supplier._id}
+                    onClick={() => { setFilters({ ...filters, sender: supplier._id }); setOpenDropdown(null); }}
+                  >
+                    {supplier.name}
+                  </FilterOption>
+                ))}
+                <FilterGroupTitle>КЛИЕНТЫ</FilterGroupTitle>
+                {customers.slice(0, 20).map(customer => (
+                  <FilterOption
+                    key={customer._id}
+                    active={filters.sender === customer._id}
+                    onClick={() => { setFilters({ ...filters, sender: customer._id }); setOpenDropdown(null); }}
+                  >
+                    {customer.name}
+                  </FilterOption>
+                ))}
+              </FilterMenu>
+            </FilterDropdown>
+          )}
+          
+          {/* Order Status filter */}
+          {activeExtraFilters.includes('orderStatus') && (
+            <FilterDropdown>
+              <FilterButton onClick={() => setOpenDropdown(openDropdown === 'orderStatus' ? null : 'orderStatus')}>
+                статус заказа
+                <span>{orderStatusOptions.find(o => o.value === filters.orderStatus)?.label || 'введите'}</span>
+                <ClearFilterButton onClick={(e) => { e.stopPropagation(); removeExtraFilter('orderStatus'); }}>
+                  <X size={14} />
+                </ClearFilterButton>
+              </FilterButton>
+              <FilterMenu isOpen={openDropdown === 'orderStatus'}>
+                {orderStatusOptions.map(opt => (
+                  <FilterOption
+                    key={opt.value}
+                    active={filters.orderStatus === opt.value}
+                    onClick={() => { setFilters({ ...filters, orderStatus: opt.value }); setOpenDropdown(null); }}
+                  >
+                    <OrderStatusDot color={opt.color} />
+                    <span style={{ marginLeft: 8 }}>{opt.label}</span>
+                  </FilterOption>
+                ))}
+              </FilterMenu>
+            </FilterDropdown>
+          )}
+          
+          {/* Fiscal Check filter */}
+          {activeExtraFilters.includes('fiscalCheck') && (
+            <FilterDropdown>
+              <FilterButton onClick={() => setOpenDropdown(openDropdown === 'fiscalCheck' ? null : 'fiscalCheck')}>
+                фискальный чек
+                <span>{fiscalOptions.find(o => o.value === filters.fiscalCheck)?.label || 'введите'}</span>
+                <ClearFilterButton onClick={(e) => { e.stopPropagation(); removeExtraFilter('fiscalCheck'); }}>
+                  <X size={14} />
+                </ClearFilterButton>
+              </FilterButton>
+              <FilterMenu isOpen={openDropdown === 'fiscalCheck'}>
+                {fiscalOptions.map(opt => (
+                  <FilterOption
+                    key={opt.value}
+                    active={filters.fiscalCheck === opt.value}
+                    onClick={() => { setFilters({ ...filters, fiscalCheck: opt.value }); setOpenDropdown(null); }}
+                  >
+                    {opt.label}
+                  </FilterOption>
+                ))}
+              </FilterMenu>
+            </FilterDropdown>
+          )}
 
+          {/* Extra filters dropdown */}
           <FilterBadge>
-            <Filter size={16} />
-            Фильтр
+            <FilterBadgeButton onClick={() => setOpenDropdown(openDropdown === 'extraFilters' ? null : 'extraFilters')}>
+              <Filter size={16} />
+              Фильтр
+            </FilterBadgeButton>
+            <FilterBadgeMenu isOpen={openDropdown === 'extraFilters'}>
+              {extraFilterOptions.filter(opt => !activeExtraFilters.includes(opt.value)).map(opt => (
+                <FilterOption
+                  key={opt.value}
+                  onClick={() => addExtraFilter(opt.value)}
+                >
+                  {opt.label}
+                </FilterOption>
+              ))}
+            </FilterBadgeMenu>
           </FilterBadge>
         </FiltersBar>
 

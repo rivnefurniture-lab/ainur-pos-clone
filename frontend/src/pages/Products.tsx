@@ -418,7 +418,7 @@ export default function Products() {
   // Filter products
   useEffect(() => {
     // If we have a special filter active, use those products
-    if (activeFilter && specialFilterProducts.length > 0) {
+    if (activeFilter) {
       let result = specialFilterProducts;
       
       if (searchQuery) {
@@ -560,7 +560,13 @@ export default function Products() {
       </FiltersBar>
 
       <TableContainer>
-        {paginatedProducts.length > 0 ? (
+        {loading ? (
+          <EmptyState>
+            <Package size={64} />
+            <h3>Завантаження...</h3>
+            <p>Отримуємо дані товарів</p>
+          </EmptyState>
+        ) : paginatedProducts.length > 0 ? (
           <>
             <Table>
               <thead>

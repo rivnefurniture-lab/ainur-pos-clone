@@ -139,6 +139,16 @@ export const dataApi = {
     const response = await api.get(`/data/${companyId}/catalog/filtered`, {
       params: { filter, offset, limit },
     });
+    // Parse numeric values from strings
+    if (response.data.data) {
+      response.data.data = response.data.data.map((p: any) => ({
+        ...p,
+        price: parseFloat(p.price) || 0,
+        cost: parseFloat(p.cost) || 0,
+        total_stock: parseFloat(p.total_stock) || parseFloat(p.total_qty) || 0,
+        categories: Array.isArray(p.categories) ? p.categories : [],
+      }));
+    }
     return response.data;
   },
 
