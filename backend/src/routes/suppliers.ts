@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /data/:companyId/suppliers
  * Get all suppliers
  */
-router.get('/:companyId/suppliers', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/suppliers', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -44,7 +44,7 @@ router.get('/:companyId/suppliers', isAuthenticated, async (req: Request, res: R
  * POST /data/:companyId/suppliers
  * Create new supplier
  */
-router.post('/:companyId/suppliers', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/suppliers', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { name, site, address, description, phones, emails, bank_details } = req.body;
@@ -91,7 +91,7 @@ router.post('/:companyId/suppliers', isAuthenticated, async (req: Request, res: 
  * PUT /data/:companyId/suppliers/:supplierId
  * Update supplier
  */
-router.put('/:companyId/suppliers/:supplierId', isAuthenticated, async (req: Request, res: Response) => {
+router.put('/:companyId/suppliers/:supplierId', async (req: Request, res: Response) => {
   try {
     const { companyId, supplierId } = req.params;
     const { name, site, address, description, phones, emails, deleted } = req.body;

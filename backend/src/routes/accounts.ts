@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /data/:companyId/accounts
  * Get all financial accounts
  */
-router.get('/:companyId/accounts', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/accounts', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -44,7 +44,7 @@ router.get('/:companyId/accounts', isAuthenticated, async (req: Request, res: Re
  * POST /data/:companyId/accounts
  * Create new account
  */
-router.post('/:companyId/accounts', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/accounts', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { name, type, include, use_terminal, bank_details } = req.body;
@@ -85,7 +85,7 @@ router.post('/:companyId/accounts', isAuthenticated, async (req: Request, res: R
  * PUT /data/:companyId/accounts/:accountId
  * Update account
  */
-router.put('/:companyId/accounts/:accountId', isAuthenticated, async (req: Request, res: Response) => {
+router.put('/:companyId/accounts/:accountId', async (req: Request, res: Response) => {
   try {
     const { companyId, accountId } = req.params;
     const { name, type, include, use_terminal, balance, deleted } = req.body;

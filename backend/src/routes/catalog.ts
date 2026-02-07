@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /data/:companyId/catalog
  * Get products with pagination
  */
-router.get('/:companyId/catalog', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/catalog', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const offset = parseInt(req.query.offset as string) || 0;
@@ -57,7 +57,7 @@ router.get('/:companyId/catalog', isAuthenticated, async (req: Request, res: Res
  * GET /data/:companyId/catalog/categories
  * Get all categories
  */
-router.get('/:companyId/catalog/categories', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/catalog/categories', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -93,7 +93,7 @@ router.get('/:companyId/catalog/categories', isAuthenticated, async (req: Reques
  * POST /data/:companyId/catalog
  * Create new product
  */
-router.post('/:companyId/catalog', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/catalog', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { 
@@ -145,7 +145,7 @@ router.post('/:companyId/catalog', isAuthenticated, async (req: Request, res: Re
  * PUT /data/:companyId/catalog/:productId
  * Update product
  */
-router.put('/:companyId/catalog/:productId', isAuthenticated, async (req: Request, res: Response) => {
+router.put('/:companyId/catalog/:productId', async (req: Request, res: Response) => {
   try {
     const { companyId, productId } = req.params;
     const { 
@@ -214,7 +214,7 @@ router.put('/:companyId/catalog/:productId', isAuthenticated, async (req: Reques
  * GET /data/:companyId/stock-stats
  * Get stock statistics for all products
  */
-router.get('/:companyId/stock-stats', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/stock-stats', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -285,7 +285,7 @@ router.get('/:companyId/stock-stats', isAuthenticated, async (req: Request, res:
  * GET /data/:companyId/catalog/filtered
  * Get filtered products (zero cost, negative stock, expired)
  */
-router.get('/:companyId/catalog/filtered', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/catalog/filtered', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const filter = req.query.filter as string;

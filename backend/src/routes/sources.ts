@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /data/:companyId/sources
  * Get all money sources (payment methods)
  */
-router.get('/:companyId/sources', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/sources', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -43,7 +43,7 @@ router.get('/:companyId/sources', isAuthenticated, async (req: Request, res: Res
  * POST /data/:companyId/sources
  * Create new money source
  */
-router.post('/:companyId/sources', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/sources', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { title, type, country } = req.body;

@@ -1,14 +1,10 @@
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
-import morgan from 'morgan';
-import session from 'express-session';
 import { createServer } from 'http';
 import { Server as SocketServer } from 'socket.io';
 import dotenv from 'dotenv';
 
-import pool from './config/database';
-import authRoutes from './routes/auth';
 import proxyRoutes from './routes/proxy';
 import catalogRoutes from './routes/catalog';
 import clientsRoutes from './routes/clients';
@@ -25,71 +21,28 @@ dotenv.config();
 
 const app = express();
 const httpServer = createServer(app);
-// Allowed origins for CORS
-const allowedOrigins = [
-  process.env.FRONTEND_URL,
-  'http://localhost:5173',
-  'http://localhost:5174',
-  'https://ainur-pos-clone.vercel.app',
-].filter(Boolean) as string[];
 
 const io = new SocketServer(httpServer, {
-  cors: {
-    origin: allowedOrigins,
-    methods: ['GET', 'POST'],
-    credentials: true,
-  },
+  cors: { origin: '*', methods: ['GET', 'POST'] },
 });
 
 const PORT = process.env.PORT || 3001;
 
-// Middleware
-app.use(helmet({
-  crossOriginResourcePolicy: { policy: 'cross-origin' },
-}));
-
-app.use(cors({
-  origin: function(origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.some(allowed => origin.includes(allowed.replace('https://', '').replace('http://', '')))) {
-      return callback(null, true);
-    }
-    return callback(null, true); // Allow all origins for now
-  },
-  credentials: true,
-}));
-
-app.use(morgan('dev'));
+// Middleware - allow everything
+app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
+app.use(cors({ origin: '*' }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-// Session configuration (using memory store for demo, PgSession for production)
-// Note: Memory store is not production-ready but works for demo
-app.use(session({
-  name: 'connect.sid',
-  secret: process.env.SESSION_SECRET || 'your-secret-key',
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    secure: process.env.NODE_ENV === 'production',
-    httpOnly: true,
-    maxAge: 365 * 24 * 60 * 60 * 1000, // 1 year (matching Ainur)
-    sameSite: 'lax',
-  },
-}));
-
-// Make io available in routes
 app.set('io', io);
 
 // Health check
-app.get('/health', (req: Request, res: Response) => {
+app.get('/health', (_req: Request, res: Response) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// API Routes (matching Ainur's structure)
-app.use('/auth', authRoutes);
-app.use('/proxy', proxyRoutes);  // Main proxy endpoint like Ainur
+// API Routes
+app.use('/proxy', proxyRoutes);
 
 // Direct data routes
 app.use('/data', catalogRoutes);

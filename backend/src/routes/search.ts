@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * POST /search/docs/:companyId/:offset/:limit
  * Search documents with filters
  */
-router.post('/docs/:companyId/:offset/:limit', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/docs/:companyId/:offset/:limit', async (req: Request, res: Response) => {
   try {
     const companyId = req.params.companyId as string;
     const offset = req.params.offset as string;
@@ -216,7 +216,7 @@ router.post('/docs/:companyId/:offset/:limit', isAuthenticated, async (req: Requ
  * POST /search/money/:companyId/:offset/:limit
  * Search money movements with filters
  */
-router.post('/money/:companyId/:offset/:limit', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/money/:companyId/:offset/:limit', async (req: Request, res: Response) => {
   try {
     const companyId = req.params.companyId as string;
     const offset = req.params.offset as string;
@@ -282,7 +282,7 @@ router.post('/money/:companyId/:offset/:limit', isAuthenticated, async (req: Req
  * POST /search/catalog/:companyId/:offset/:limit
  * Search products with filters
  */
-router.post('/catalog/:companyId/:offset/:limit', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/catalog/:companyId/:offset/:limit', async (req: Request, res: Response) => {
   try {
     const companyId = req.params.companyId as string;
     const offset = req.params.offset as string;
@@ -342,7 +342,7 @@ router.post('/catalog/:companyId/:offset/:limit', isAuthenticated, async (req: R
  * POST /search/clients/:companyId/:offset/:limit
  * Search customers with filters
  */
-router.post('/clients/:companyId/:offset/:limit', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/clients/:companyId/:offset/:limit', async (req: Request, res: Response) => {
   try {
     const companyId = req.params.companyId as string;
     const offset = req.params.offset as string;

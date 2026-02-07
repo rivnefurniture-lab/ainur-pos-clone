@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /data/:companyId/docs
  * Get documents with pagination
  */
-router.get(['/:companyId/docs', '/:companyId'], isAuthenticated, async (req: Request, res: Response) => {
+router.get(['/:companyId/docs', '/:companyId'], async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const offset = parseInt(req.query.offset as string) || 0;
@@ -68,7 +68,7 @@ router.get(['/:companyId/docs', '/:companyId'], isAuthenticated, async (req: Req
  * GET /data/:companyId/docs/:docId
  * Get single document
  */
-router.get('/:companyId/docs/:docId', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/docs/:docId', async (req: Request, res: Response) => {
   try {
     const { companyId, docId } = req.params;
 
@@ -106,7 +106,7 @@ router.get('/:companyId/docs/:docId', isAuthenticated, async (req: Request, res:
  * POST /data/:companyId/docs
  * Create new document (sale, purchase, movement, etc.)
  */
-router.post('/:companyId/docs', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/docs', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { 

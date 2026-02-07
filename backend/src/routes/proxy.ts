@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * Proxy endpoint - matches Ainur's /proxy?path={encoded_path}&timezone={tz}
  * This is the main API gateway that routes requests based on path parameter
  */
-router.all('/', isAuthenticated, async (req: Request, res: Response) => {
+router.all('/', async (req: Request, res: Response) => {
   try {
     const { path: encodedPath, timezone } = req.query;
     

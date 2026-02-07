@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /shift/:companyId
  * Alias for getting current shift (redirects to /current behavior)
  */
-router.get('/:companyId', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -49,7 +49,7 @@ router.get('/:companyId', isAuthenticated, async (req: Request, res: Response) =
  * GET /shift/:companyId/current
  * Get current open shift
  */
-router.get('/:companyId/current', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/current', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -90,7 +90,7 @@ router.get('/:companyId/current', isAuthenticated, async (req: Request, res: Res
  * GET /shift/:companyId/history
  * Get shift history
  */
-router.get('/:companyId/history', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/history', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const offset = parseInt(req.query.offset as string) || 0;
@@ -135,7 +135,7 @@ router.get('/:companyId/history', isAuthenticated, async (req: Request, res: Res
  * POST /shift/:companyId/open
  * Open new shift
  */
-router.post('/:companyId/open', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/open', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { store, register, opening_balance } = req.body;
@@ -200,7 +200,7 @@ router.post('/:companyId/open', isAuthenticated, async (req: Request, res: Respo
  * POST /shift/:companyId/close
  * Close current shift
  */
-router.post('/:companyId/close', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/close', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { closing_balance, notes } = req.body;

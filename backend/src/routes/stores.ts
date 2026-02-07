@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /data/:companyId/stores
  * Get all stores/warehouses
  */
-router.get('/:companyId/stores', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/stores', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
 
@@ -44,7 +44,7 @@ router.get('/:companyId/stores', isAuthenticated, async (req: Request, res: Resp
  * POST /data/:companyId/stores
  * Create new store
  */
-router.post('/:companyId/stores', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/stores', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { name, address, description, type } = req.body;
@@ -80,7 +80,7 @@ router.post('/:companyId/stores', isAuthenticated, async (req: Request, res: Res
  * PUT /data/:companyId/stores/:storeId
  * Update store
  */
-router.put('/:companyId/stores/:storeId', isAuthenticated, async (req: Request, res: Response) => {
+router.put('/:companyId/stores/:storeId', async (req: Request, res: Response) => {
   try {
     const { companyId, storeId } = req.params;
     const { name, address, description, type, deleted, include } = req.body;

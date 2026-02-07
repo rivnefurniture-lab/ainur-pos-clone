@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import pool from '../config/database';
-import { isAuthenticated, getCompanyId } from '../middleware/auth';
+import { getCompanyId } from '../middleware/auth';
 
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
  * GET /data/:companyId/clients
  * Get customers with pagination
  */
-router.get('/:companyId/clients', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/clients', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const offset = parseInt(req.query.offset as string) || 0;
@@ -54,7 +54,7 @@ router.get('/:companyId/clients', isAuthenticated, async (req: Request, res: Res
  * GET /data/:companyId/clients/:clientId
  * Get single customer
  */
-router.get('/:companyId/clients/:clientId', isAuthenticated, async (req: Request, res: Response) => {
+router.get('/:companyId/clients/:clientId', async (req: Request, res: Response) => {
   try {
     const { companyId, clientId } = req.params;
 
@@ -92,7 +92,7 @@ router.get('/:companyId/clients/:clientId', isAuthenticated, async (req: Request
  * POST /data/:companyId/clients
  * Create new customer
  */
-router.post('/:companyId/clients', isAuthenticated, async (req: Request, res: Response) => {
+router.post('/:companyId/clients', async (req: Request, res: Response) => {
   try {
     const { companyId } = req.params;
     const { 
@@ -142,7 +142,7 @@ router.post('/:companyId/clients', isAuthenticated, async (req: Request, res: Re
  * PUT /data/:companyId/clients/:clientId
  * Update customer
  */
-router.put('/:companyId/clients/:clientId', isAuthenticated, async (req: Request, res: Response) => {
+router.put('/:companyId/clients/:clientId', async (req: Request, res: Response) => {
   try {
     const { companyId, clientId } = req.params;
     const { 
