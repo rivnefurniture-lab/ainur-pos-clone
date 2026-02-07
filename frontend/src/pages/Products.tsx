@@ -21,7 +21,7 @@ import MainLayout from '../components/Layout/MainLayout';
 import { useAppDispatch, useAppSelector } from '../hooks/useRedux';
 import { fetchProducts, fetchCategories } from '../store/slices/dataSlice';
 import { dataApi } from '../services/api';
-import type { Product } from '../types';
+import type { Product, Store } from '../types';
 import { theme } from '../styles/GlobalStyles';
 
 // ============================================
@@ -670,7 +670,7 @@ type ProductType = 'product' | 'service' | 'kit';
 
 export default function Products() {
   const dispatch = useAppDispatch();
-  const { user } = useAppSelector(state => state.auth);
+  const { user, companyId } = useAppSelector(state => state.auth);
   const { products, productsTotal, categories } = useAppSelector(state => state.data);
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -679,6 +679,7 @@ export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+  const [stores, setStores] = useState<Store[]>([]);
   const [loading, setLoading] = useState(false);
   const [showFilterPanel, setShowFilterPanel] = useState(false);
   const [showActionsDropdown, setShowActionsDropdown] = useState(false);
@@ -693,18 +694,45 @@ export default function Products() {
   const [filterStockFrom, setFilterStockFrom] = useState('');
   const [filterStockTo, setFilterStockTo] = useState('');
   
+  // Column visibility states
+  const [visibleColumns, setVisibleColumns] = useState({
+    photo: true,
+    code: true,
+    sku: true,
+    unit: true,
+    price: true,
+    discount: true,
+  });
+  
   const itemsPerPage = 20;
   
   // Get filter from URL params
   const activeFilter = searchParams.get('filter') as FilterType;
 
-  // Load products
+  // Load products and stores
   useEffect(() => {
-    if (user) {
-      dispatch(fetchProducts({ companyId: user._client }));
-      dispatch(fetchCategories(user._client));
-    }
-  }, [dispatch, user]);
+    const loadData = async () => {
+      if (companyId) {
+        setLoading(true);
+        try {
+          dispatch(fetchProducts({ companyId }));
+          dispatch(fetchCategories(companyId));
+          
+          // Load stores
+          const storesResponse = await dataApi.getStores(companyId);
+          if (storesResponse.status && storesResponse.data) {
+            setStores(storesResponse.data);
+          }
+        } catch (error) {
+          console.error('Failed to load data:', error);
+        } finally {
+          setLoading(false);
+        }
+      }
+    };
+    
+    loadData();
+  }, [dispatch, companyId]);
 
   // Filter products
   useEffect(() => {
@@ -852,15 +880,23 @@ export default function Products() {
           </SettingsButton>
 
           {showSettingsDropdown && (
-            <DropdownMenu isOpen={showSettingsDropdown} style={{ right: 0 }}>
+            <DropdownMenu isOpen={showSettingsDropdown} style={{ right: 0, maxHeight: '500px', overflowY: 'auto' }}>
               <DropdownSection>
                 <DropdownSectionTitle>Настройки таблицы</DropdownSectionTitle>
                 <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
+                  <input 
+                    type="checkbox" 
+                    checked={visibleColumns.photo}
+                    onChange={(e) => setVisibleColumns({...visibleColumns, photo: e.target.checked})}
+                  />
                   Фотография
                 </CheckboxLabel>
                 <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
+                  <input 
+                    type="checkbox" 
+                    checked={visibleColumns.code}
+                    onChange={(e) => setVisibleColumns({...visibleColumns, code: e.target.checked})}
+                  />
                   Код
                 </CheckboxLabel>
                 <CheckboxLabel>
@@ -872,11 +908,19 @@ export default function Products() {
                   Штрих-код
                 </CheckboxLabel>
                 <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
+                  <input 
+                    type="checkbox" 
+                    checked={visibleColumns.sku}
+                    onChange={(e) => setVisibleColumns({...visibleColumns, sku: e.target.checked})}
+                  />
                   Артикул
                 </CheckboxLabel>
                 <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
+                  <input 
+                    type="checkbox" 
+                    checked={visibleColumns.unit}
+                    onChange={(e) => setVisibleColumns({...visibleColumns, unit: e.target.checked})}
+                  />
                   Единица измерения
                 </CheckboxLabel>
                 <CheckboxLabel>
@@ -900,7 +944,11 @@ export default function Products() {
                   Поставщик
                 </CheckboxLabel>
                 <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
+                  <input 
+                    type="checkbox" 
+                    checked={visibleColumns.price}
+                    onChange={(e) => setVisibleColumns({...visibleColumns, price: e.target.checked})}
+                  />
                   Цена продажи
                 </CheckboxLabel>
                 <CheckboxLabel>
@@ -916,49 +964,23 @@ export default function Products() {
                   Создан
                 </CheckboxLabel>
                 <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
+                  <input 
+                    type="checkbox" 
+                    checked={visibleColumns.discount}
+                    onChange={(e) => setVisibleColumns({...visibleColumns, discount: e.target.checked})}
+                  />
                   Скидка
                 </CheckboxLabel>
                 <CheckboxLabel>
                   <input type="checkbox" />
                   Мин. остаток
                 </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  "Океан Плаза" 1 этаж
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  "Океан Плаза" 2 этаж
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  "Океан Плаза" Ашан -1 этаж
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  Березне
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  Лобановського, "NOVUS"
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  Осокорки, "NOVUS"
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  Офис "LOVEISKA"
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  СКЛАД РЕМОНТ
-                </CheckboxLabel>
-                <CheckboxLabel>
-                  <input type="checkbox" defaultChecked />
-                  Святошино,"NOVUS"
-                </CheckboxLabel>
+                {stores.map(store => (
+                  <CheckboxLabel key={store._id}>
+                    <input type="checkbox" defaultChecked />
+                    {store.name}
+                  </CheckboxLabel>
+                ))}
               </DropdownSection>
             </DropdownMenu>
           )}
@@ -1091,20 +1113,18 @@ export default function Products() {
                     <Th style={{ width: '40px' }}>
                       <input type="checkbox" />
                     </Th>
+                    {visibleColumns.photo && <Th style={{ width: '60px' }}></Th>}
                     <Th>Наименование</Th>
-                    <Th>Код</Th>
-                    <Th>Артикул</Th>
-                    <Th>Ед. изм.</Th>
-                    <Th style={{ textAlign: 'right' }}>Цена продажи</Th>
-                    <Th style={{ textAlign: 'right' }}>Скидка, %</Th>
-                    <Th style={{ textAlign: 'right' }}>Океан Плаза 1 этаж</Th>
-                    <Th style={{ textAlign: 'right' }}>Океан Плаза 2 этаж</Th>
-                    <Th style={{ textAlign: 'right' }}>Океан Плаза Ашан -1 этаж</Th>
-                    <Th style={{ textAlign: 'right' }}>Березне</Th>
-                    <Th style={{ textAlign: 'right' }}>Лобановського, NOVUS</Th>
-                    <Th style={{ textAlign: 'right' }}>Осокорки, NOVUS</Th>
-                    <Th style={{ textAlign: 'right' }}>Офис LOVEISKA</Th>
-                    <Th style={{ textAlign: 'right' }}>СКЛАД РЕМОНТ</Th>
+                    {visibleColumns.code && <Th>Код</Th>}
+                    {visibleColumns.sku && <Th>Артикул</Th>}
+                    {visibleColumns.unit && <Th>Ед. изм.</Th>}
+                    {visibleColumns.price && <Th style={{ textAlign: 'right' }}>Цена продажи</Th>}
+                    {visibleColumns.discount && <Th style={{ textAlign: 'right' }}>Скидка, %</Th>}
+                    {stores.map(store => (
+                      <Th key={store._id} style={{ textAlign: 'right' }}>
+                        {store.name}
+                      </Th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
@@ -1113,49 +1133,32 @@ export default function Products() {
                       <Td>
                         <input type="checkbox" />
                       </Td>
-                      <Td>
-                        <ProductNameCell>
+                      {visibleColumns.photo && (
+                        <Td>
                           <ProductImage>
-                            {product.image ? (
-                              <img src={product.image} alt={product.name} />
+                            {(product as any).image ? (
+                              <img src={(product as any).image} alt={product.name} />
                             ) : (
                               <ImageIcon size={20} />
                             )}
                           </ProductImage>
-                          <ProductInfo>
-                            <ProductName>{product.name}</ProductName>
-                          </ProductInfo>
-                        </ProductNameCell>
+                        </Td>
+                      )}
+                      <Td>
+                        <ProductInfo>
+                          <ProductName>{product.name}</ProductName>
+                        </ProductInfo>
                       </Td>
-                      <Td>{product._id.slice(-4)}</Td>
-                      <Td>{product.sku || '-'}</Td>
-                      <Td>шт</Td>
-                      <Td style={{ textAlign: 'right' }}>{formatPrice(product.price)}</Td>
-                      <Td style={{ textAlign: 'right' }}>0</Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['58c8741e3ce7d5ac658b49be'] || 0}
-                      </Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['58c874653ce7d5656b8b4696'] || 0}
-                      </Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['623f95c015afe432df5fa55d'] || 0}
-                      </Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['5f96e3870bd70c778731345a'] || 0}
-                      </Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['5f96e3870bd70c778731345b'] || 0}
-                      </Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['5f96e3870bd70c778731345c'] || 0}
-                      </Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['58c874653ce7d5656b8b4696'] || 0}
-                      </Td>
-                      <Td style={{ textAlign: 'right' }}>
-                        {product.stock?.['5f96e3870bd70c778731345d'] || 0}
-                      </Td>
+                      {visibleColumns.code && <Td>{product.code || product._id.slice(-4)}</Td>}
+                      {visibleColumns.sku && <Td>{product.sku || '-'}</Td>}
+                      {visibleColumns.unit && <Td>шт</Td>}
+                      {visibleColumns.price && <Td style={{ textAlign: 'right' }}>{formatPrice(product.price)}</Td>}
+                      {visibleColumns.discount && <Td style={{ textAlign: 'right' }}>0</Td>}
+                      {stores.map(store => (
+                        <Td key={store._id} style={{ textAlign: 'right' }}>
+                          {product.stock?.[store._id] || 0}
+                        </Td>
+                      ))}
                     </ProductRow>
                   ))}
                 </tbody>
