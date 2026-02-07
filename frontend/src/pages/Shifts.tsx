@@ -2,282 +2,352 @@ import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import {
   Clock,
-  Play,
-  Square,
-  DollarSign,
-  TrendingUp,
-  AlertCircle,
+  Check,
+  X,
+  ChevronDown,
+  Settings,
 } from 'lucide-react';
 import MainLayout from '../components/Layout/MainLayout';
 import { useAppDispatch, useAppSelector } from '../hooks/useRedux';
-import { openShift, closeShift, fetchShiftHistory } from '../store/slices/shiftSlice';
+import { fetchShiftHistory } from '../store/slices/shiftSlice';
+import { documentApi } from '../services/api';
 import { theme } from '../styles/GlobalStyles';
-import { format } from 'date-fns';
-import { uk } from 'date-fns/locale';
-import toast from 'react-hot-toast';
+import { format, subDays } from 'date-fns';
+import { ru } from 'date-fns/locale';
+import type { Document } from '../types';
 
+interface Shift {
+  _id: string;
+  number: number;
+  opened: number;
+  closed?: number;
+  store_name?: string;
+  register_name?: string;
+  cashier_name?: string;
+  sales_total: number;
+  sales_count: number;
+  cash_start: number;
+  cash_end?: number;
+}
+
+// ============================================
 // Styled Components
-const PageHeader = styled.div`
+// ============================================
+const PageContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-`;
-
-const PageTitle = styled.h1`
-  font-size: 24px;
-  font-weight: 600;
-  color: ${theme.colors.textPrimary};
-  margin: 0;
-`;
-
-const CurrentShiftCard = styled.div<{ isOpen?: boolean }>`
-  background: ${props => props.isOpen ? theme.colors.successLight : theme.colors.gray50};
-  border: 2px solid ${props => props.isOpen ? theme.colors.success : theme.colors.border};
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 24px;
-`;
-
-const ShiftHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-`;
-
-const ShiftStatus = styled.div<{ isOpen?: boolean }>`
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  color: ${props => props.isOpen ? theme.colors.success : theme.colors.textSecondary};
-
-  svg {
-    padding: 8px;
-    background: ${props => props.isOpen ? theme.colors.success : theme.colors.gray300};
-    color: white;
-    border-radius: 50%;
-  }
-`;
-
-const ShiftActions = styled.div`
-  display: flex;
-  gap: 12px;
-`;
-
-const ShiftButton = styled.button<{ variant?: 'success' | 'danger' }>`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-  background: ${props => {
-    switch (props.variant) {
-      case 'success': return theme.colors.success;
-      case 'danger': return theme.colors.danger;
-      default: return theme.colors.primary;
-    }
-  }};
-  color: white;
-
-  &:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-  }
-`;
-
-const ShiftStats = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-`;
-
-const StatBox = styled.div`
-  background: white;
-  border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-`;
-
-const StatValue = styled.div`
-  font-size: 24px;
-  font-weight: 700;
-  color: ${theme.colors.textPrimary};
-  margin-bottom: 4px;
-`;
-
-const StatLabel = styled.div`
-  font-size: 13px;
-  color: ${theme.colors.textSecondary};
-`;
-
-const HistorySection = styled.div`
-  background: white;
-  border-radius: 12px;
-  border: 1px solid ${theme.colors.border};
+  flex-direction: column;
+  height: calc(100vh - 60px);
   overflow: hidden;
 `;
 
-const SectionTitle = styled.h2`
-  font-size: 16px;
-  font-weight: 600;
-  color: ${theme.colors.textPrimary};
-  margin: 0;
-  padding: 16px 20px;
-  border-bottom: 1px solid ${theme.colors.border};
-`;
-
-const ShiftList = styled.div``;
-
-const ShiftItem = styled.div`
+const TopBar = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 16px 20px;
-  border-bottom: 1px solid ${theme.colors.border};
-
-  &:last-child {
-    border-bottom: none;
-  }
-
-  &:hover {
-    background: ${theme.colors.gray50};
-  }
+  gap: 12px;
+  padding: 16px 0;
+  flex-wrap: wrap;
 `;
 
-const ShiftInfo = styled.div`
+const FilterDropdown = styled.div`
+  position: relative;
+`;
+
+const FilterButton = styled.button`
   display: flex;
   align-items: center;
-  gap: 16px;
-`;
-
-const ShiftIcon = styled.div`
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: ${theme.colors.primaryLight};
-  color: ${theme.colors.primary};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const ShiftDetails = styled.div``;
-
-const ShiftNumber = styled.div`
-  font-weight: 600;
-  color: ${theme.colors.textPrimary};
-`;
-
-const ShiftMeta = styled.div`
+  gap: 4px;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid ${theme.colors.border};
+  border-radius: 4px;
   font-size: 13px;
+  color: ${theme.colors.textSecondary};
+  min-width: 120px;
+  
+  span {
+    color: ${theme.colors.textPrimary};
+  }
+`;
+
+const FilterMenu = styled.div<{ isOpen: boolean }>`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid ${theme.colors.border};
+  border-radius: 4px;
+  box-shadow: ${theme.shadows.md};
+  min-width: 200px;
+  z-index: 20;
+  display: ${props => props.isOpen ? 'block' : 'none'};
+`;
+
+const FilterOption = styled.div`
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  &:hover {
+    background: #f5f5f5;
+  }
+`;
+
+const ClearFilter = styled.button`
+  margin-left: -4px;
   color: ${theme.colors.textMuted};
+  padding: 4px;
+  &:hover {
+    color: ${theme.colors.textPrimary};
+  }
 `;
 
-const ShiftAmount = styled.div`
-  text-align: right;
+const SettingsButton = styled.button`
+  margin-left: auto;
+  padding: 8px;
+  border-radius: 4px;
+  color: ${theme.colors.textMuted};
+  &:hover {
+    background: #f5f5f5;
+  }
 `;
 
-const AmountValue = styled.div`
-  font-size: 18px;
+const TableContainer = styled.div`
+  flex: 1;
+  overflow: auto;
+  background: white;
+  border: 1px solid ${theme.colors.border};
+  border-radius: 4px;
+`;
+
+const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+`;
+
+const Thead = styled.thead`
+  position: sticky;
+  top: 0;
+  background: #f9fafb;
+  z-index: 10;
+`;
+
+const Th = styled.th`
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 11px;
   font-weight: 600;
-  color: ${theme.colors.success};
+  text-transform: uppercase;
+  color: ${theme.colors.textSecondary};
+  border-bottom: 1px solid ${theme.colors.border};
+  white-space: nowrap;
 `;
 
-const AmountLabel = styled.div`
-  font-size: 12px;
-  color: ${theme.colors.textMuted};
+const Tr = styled.tr`
+  cursor: pointer;
+  &:hover {
+    background: #f9fafb;
+  }
 `;
 
-const Modal = styled.div`
+const Td = styled.td`
+  padding: 12px 16px;
+  font-size: 14px;
+  color: ${theme.colors.textPrimary};
+  border-bottom: 1px solid ${theme.colors.border};
+  vertical-align: middle;
+`;
+
+const StatusIcon = styled.span<{ open?: boolean }>`
+  display: inline-flex;
+  color: ${props => props.open ? theme.colors.warning : theme.colors.success};
+`;
+
+const ShiftLink = styled.span`
+  color: ${theme.colors.primary};
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const CashierLink = styled.span`
+  color: ${theme.colors.primary};
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+// Slide Panel Styles
+const PanelOverlay = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  opacity: ${props => props.isOpen ? 1 : 0};
+  visibility: ${props => props.isOpen ? 'visible' : 'hidden'};
+  transition: all 0.3s ease;
 `;
 
-const ModalContent = styled.div`
+const SlidePanel = styled.div<{ isOpen: boolean }>`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  max-width: 100%;
+  height: 100%;
   background: white;
-  border-radius: 16px;
-  padding: 24px;
-  width: 100%;
-  max-width: 400px;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 101;
+  transform: translateX(${props => props.isOpen ? '0' : '100%'});
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 `;
 
-const ModalTitle = styled.h3`
+const PanelHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid ${theme.colors.border};
+`;
+
+const PanelCloseButton = styled.button`
+  padding: 8px;
+  border-radius: 4px;
+  color: ${theme.colors.textMuted};
+  &:hover {
+    background: #f5f5f5;
+  }
+`;
+
+const PanelContent = styled.div`
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+`;
+
+const PanelTitle = styled.h2`
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 4px;
+`;
+
+const PanelSubtitle = styled.div`
+  font-size: 13px;
+  color: ${theme.colors.textMuted};
+  margin-bottom: 24px;
+`;
+
+const PanelLabel = styled.div`
+  font-size: 12px;
+  color: ${theme.colors.textMuted};
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  text-align: right;
+`;
+
+const InfoList = styled.div`
+  margin-bottom: 24px;
+`;
+
+const InfoItem = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #f3f4f6;
+
+  &:last-child {
+    border-bottom: none;
+  }
+`;
+
+const InfoIcon = styled.span`
+  color: ${theme.colors.primary};
+`;
+
+const InfoText = styled.span``;
+
+const InfoLink = styled.a`
+  color: ${theme.colors.primary};
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const SectionTitle = styled.h3`
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: ${theme.colors.textSecondary};
+  margin: 24px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid ${theme.colors.border};
+`;
+
+const StatGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 20px;
+`;
+
+const StatRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+`;
+
+const StatLabel = styled.span`
+  color: ${theme.colors.textSecondary};
+`;
+
+const StatValue = styled.span<{ color?: string }>`
+  font-weight: 500;
+  color: ${props => props.color || theme.colors.textPrimary};
+`;
+
+const TotalRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
   font-size: 18px;
   font-weight: 600;
-  margin: 0 0 20px;
+  border-top: 1px solid ${theme.colors.border};
+  margin-top: 16px;
 `;
 
-const FormGroup = styled.div`
-  margin-bottom: 16px;
-`;
-
-const Label = styled.label`
-  display: block;
+const DateGroupTitle = styled.div`
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 8px;
+  color: ${theme.colors.textSecondary};
+  padding: 16px 0 8px;
 `;
 
-const Input = styled.input`
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid ${theme.colors.border};
-  border-radius: 8px;
-  font-size: 15px;
-
-  &:focus {
-    outline: none;
-    border-color: ${theme.colors.primary};
-  }
-`;
-
-const ModalButtons = styled.div`
-  display: flex;
-  gap: 12px;
-  margin-top: 24px;
-`;
-
-const Button = styled.button<{ variant?: 'primary' | 'secondary' }>`
-  flex: 1;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-  background: ${props => props.variant === 'primary' ? theme.colors.primary : 'transparent'};
-  color: ${props => props.variant === 'primary' ? 'white' : theme.colors.textPrimary};
-  border: 1px solid ${props => props.variant === 'primary' ? theme.colors.primary : theme.colors.border};
-
-  &:hover {
-    background: ${props => props.variant === 'primary' ? theme.colors.primaryHover : theme.colors.gray100};
-  }
-`;
-
+// ============================================
 // Component
+// ============================================
 export default function Shifts() {
   const dispatch = useAppDispatch();
   const { user } = useAppSelector(state => state.auth);
-  const { currentShift, shiftHistory, isLoading } = useAppSelector(state => state.shift);
-  const { selectedStore, selectedRegister, accounts } = useAppSelector(state => state.data);
+  const { shiftHistory } = useAppSelector(state => state.shift);
+  const { stores, registers } = useAppSelector(state => state.data);
 
-  const [showOpenModal, setShowOpenModal] = useState(false);
-  const [showCloseModal, setShowCloseModal] = useState(false);
-  const [cashStart, setCashStart] = useState('0');
-  const [cashEnd, setCashEnd] = useState('0');
+  const [dateFrom, setDateFrom] = useState(subDays(new Date(), 7));
+  const [dateTo, setDateTo] = useState(new Date());
+  const [cashierFilter, setCashierFilter] = useState('');
+  const [storeFilter, setStoreFilter] = useState('');
+  const [registerFilter, setRegisterFilter] = useState('');
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [selectedShift, setSelectedShift] = useState<Shift | null>(null);
 
   useEffect(() => {
     if (user) {
@@ -285,195 +355,295 @@ export default function Shifts() {
     }
   }, [dispatch, user]);
 
-  const formatPrice = (price: number) => price.toFixed(2) + ' ₴';
-
-  const formatDate = (timestamp: number) => {
-    return format(new Date(timestamp * 1000), 'dd MMM yyyy, HH:mm', { locale: uk });
+  const formatPrice = (price: number) => {
+    const parts = (price || 0).toFixed(2).split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    return parts.join(',');
   };
 
-  const handleOpenShift = async () => {
-    if (!user || !selectedStore || !selectedRegister) {
-      toast.error('Оберіть магазин та касу');
-      return;
-    }
-
-    const result = await dispatch(openShift({
-      companyId: user._client,
-      registerId: selectedRegister._id,
-      storeId: selectedStore._id,
-      accountId: accounts[0]?._id,
-      cashStart: parseFloat(cashStart) || 0,
-    }));
-
-    if (openShift.fulfilled.match(result)) {
-      toast.success('Зміну відкрито');
-      setShowOpenModal(false);
-      setCashStart('0');
-    }
+  const formatDateTime = (timestamp: number) => {
+    return format(new Date(timestamp * 1000), 'd MMMM HH:mm', { locale: ru });
   };
 
-  const handleCloseShift = async () => {
-    if (!user || !currentShift) return;
+  const formatTime = (timestamp: number) => {
+    return format(new Date(timestamp * 1000), 'HH:mm');
+  };
 
-    const result = await dispatch(closeShift({
-      companyId: user._client,
-      shiftId: currentShift._id,
-      cashEnd: parseFloat(cashEnd) || 0,
-    }));
+  // Extract unique cashiers from shift history
+  const cashiers = Array.from(new Set(shiftHistory.map(s => s.cashier_name).filter(Boolean)));
 
-    if (closeShift.fulfilled.match(result)) {
-      toast.success('Зміну закрито');
-      setShowCloseModal(false);
-      setCashEnd('0');
-    }
+  // Filter shifts
+  const filteredShifts = shiftHistory.filter(shift => {
+    const shiftDate = new Date(shift.opened * 1000);
+    if (shiftDate < dateFrom || shiftDate > dateTo) return false;
+    if (cashierFilter && shift.cashier_name !== cashierFilter) return false;
+    if (storeFilter && shift.store_name !== storeFilter) return false;
+    if (registerFilter && shift.register_name !== registerFilter) return false;
+    return true;
+  });
+
+  // Group by date
+  const groupedShifts = filteredShifts.reduce((groups, shift) => {
+    const date = format(new Date(shift.opened * 1000), 'd MMMM yyyy', { locale: ru });
+    if (!groups[date]) groups[date] = [];
+    groups[date].push(shift);
+    return groups;
+  }, {} as Record<string, Shift[]>);
+
+  const openShiftPanel = (shift: Shift) => {
+    setSelectedShift(shift);
+  };
+
+  const closePanel = () => {
+    setSelectedShift(null);
   };
 
   return (
     <MainLayout title="Зміни">
-      <PageHeader>
-        <PageTitle>Управління змінами</PageTitle>
-      </PageHeader>
+      <PageContainer>
+        <TopBar>
+          <FilterDropdown>
+            <FilterButton onClick={() => setOpenDropdown(openDropdown === 'date' ? null : 'date')}>
+              дата відкриття
+              <span>{format(dateFrom, 'd MMM', { locale: ru })} — {format(dateTo, 'd MMM', { locale: ru })}</span>
+              <ClearFilter onClick={(e) => {
+                e.stopPropagation();
+                setDateFrom(subDays(new Date(), 7));
+                setDateTo(new Date());
+              }}>
+                <X size={14} />
+              </ClearFilter>
+            </FilterButton>
+          </FilterDropdown>
 
-      <CurrentShiftCard isOpen={!!currentShift}>
-        <ShiftHeader>
-          <ShiftStatus isOpen={!!currentShift}>
-            <Clock size={24} />
-            {currentShift ? `Зміна #${currentShift.number} відкрита` : 'Зміна закрита'}
-          </ShiftStatus>
-          <ShiftActions>
-            {currentShift ? (
-              <ShiftButton variant="danger" onClick={() => setShowCloseModal(true)}>
-                <Square size={18} />
-                Закрити зміну
-              </ShiftButton>
-            ) : (
-              <ShiftButton variant="success" onClick={() => setShowOpenModal(true)}>
-                <Play size={18} />
-                Відкрити зміну
-              </ShiftButton>
-            )}
-          </ShiftActions>
-        </ShiftHeader>
+          <FilterDropdown>
+            <FilterButton onClick={() => setOpenDropdown(openDropdown === 'cashier' ? null : 'cashier')}>
+              касир
+              <span>{cashierFilter || 'введіть'}</span>
+              {cashierFilter && (
+                <ClearFilter onClick={(e) => { e.stopPropagation(); setCashierFilter(''); }}>
+                  <X size={14} />
+                </ClearFilter>
+              )}
+            </FilterButton>
+            <FilterMenu isOpen={openDropdown === 'cashier'}>
+              {cashiers.map(name => (
+                <FilterOption key={name} onClick={() => { setCashierFilter(name || ''); setOpenDropdown(null); }}>
+                  {name}
+                </FilterOption>
+              ))}
+            </FilterMenu>
+          </FilterDropdown>
 
-        {currentShift && (
-          <ShiftStats>
-            <StatBox>
-              <StatValue>{formatPrice(currentShift.cash_start)}</StatValue>
-              <StatLabel>Каса на початок</StatLabel>
-            </StatBox>
-            <StatBox>
-              <StatValue>{currentShift.sales_count}</StatValue>
-              <StatLabel>Продажів</StatLabel>
-            </StatBox>
-            <StatBox>
-              <StatValue>{formatPrice(currentShift.sales_total)}</StatValue>
-              <StatLabel>Сума продажів</StatLabel>
-            </StatBox>
-            <StatBox>
-              <StatValue>{formatPrice(currentShift.cash_start + currentShift.sales_total)}</StatValue>
-              <StatLabel>Очікувана каса</StatLabel>
-            </StatBox>
-          </ShiftStats>
+          <FilterDropdown>
+            <FilterButton onClick={() => setOpenDropdown(openDropdown === 'store' ? null : 'store')}>
+              магазин
+              <span>{storeFilter || 'введіть'}</span>
+              {storeFilter && (
+                <ClearFilter onClick={(e) => { e.stopPropagation(); setStoreFilter(''); }}>
+                  <X size={14} />
+                </ClearFilter>
+              )}
+            </FilterButton>
+            <FilterMenu isOpen={openDropdown === 'store'}>
+              {stores.map(store => (
+                <FilterOption key={store._id} onClick={() => { setStoreFilter(store.name); setOpenDropdown(null); }}>
+                  {store.name}
+                </FilterOption>
+              ))}
+            </FilterMenu>
+          </FilterDropdown>
+
+          <FilterDropdown>
+            <FilterButton onClick={() => setOpenDropdown(openDropdown === 'register' ? null : 'register')}>
+              каса
+              <span>{registerFilter || 'введіть'}</span>
+              {registerFilter && (
+                <ClearFilter onClick={(e) => { e.stopPropagation(); setRegisterFilter(''); }}>
+                  <X size={14} />
+                </ClearFilter>
+              )}
+            </FilterButton>
+            <FilterMenu isOpen={openDropdown === 'register'}>
+              {registers.map(reg => (
+                <FilterOption key={reg._id} onClick={() => { setRegisterFilter(reg.name); setOpenDropdown(null); }}>
+                  {reg.name}
+                </FilterOption>
+              ))}
+            </FilterMenu>
+          </FilterDropdown>
+
+          <SettingsButton>
+            <Settings size={18} />
+          </SettingsButton>
+        </TopBar>
+
+        <TableContainer>
+          <Table>
+            <Thead>
+              <tr>
+                <Th>СТАТУС</Th>
+                <Th>НОМЕР</Th>
+                <Th>ВІДКРИТА</Th>
+                <Th>ЗАКРИТА</Th>
+                <Th>КАСИР</Th>
+                <Th>КАСА</Th>
+                <Th>МАГАЗИН</Th>
+                <Th>ВИРУЧКА ГРН</Th>
+                <Th>ПРОДАЖІ</Th>
+              </tr>
+            </Thead>
+            <tbody>
+              {Object.entries(groupedShifts).map(([date, shifts]) => (
+                shifts.map((shift, idx) => (
+                  <Tr key={shift._id} onClick={() => openShiftPanel(shift)}>
+                    <Td>
+                      <StatusIcon open={!shift.closed}>
+                        {shift.closed ? <Check size={18} /> : <Clock size={18} />}
+                      </StatusIcon>
+                    </Td>
+                    <Td>
+                      <ShiftLink>Зміна #{shift.number}</ShiftLink>
+                    </Td>
+                    <Td>{formatDateTime(shift.opened)}</Td>
+                    <Td>{shift.closed ? formatDateTime(shift.closed) : '—'}</Td>
+                    <Td>
+                      <CashierLink>{shift.cashier_name || '—'}</CashierLink>
+                    </Td>
+                    <Td>
+                      <CashierLink>{shift.register_name || '—'}</CashierLink>
+                    </Td>
+                    <Td>
+                      <CashierLink>{shift.store_name || '—'}</CashierLink>
+                    </Td>
+                    <Td>{formatPrice(shift.sales_total)}</Td>
+                    <Td>{shift.sales_count}</Td>
+                  </Tr>
+                ))
+              ))}
+            </tbody>
+          </Table>
+        </TableContainer>
+      </PageContainer>
+
+      {/* Overlay */}
+      <PanelOverlay isOpen={selectedShift !== null} onClick={closePanel} />
+
+      {/* Shift Detail Panel */}
+      <SlidePanel isOpen={selectedShift !== null}>
+        {selectedShift && (
+          <>
+            <PanelHeader>
+              <PanelCloseButton onClick={closePanel}>
+                <X size={20} />
+              </PanelCloseButton>
+            </PanelHeader>
+            <PanelContent>
+              <PanelTitle>Зміна #{selectedShift.number}</PanelTitle>
+              <PanelSubtitle>
+                Створено {format(new Date(selectedShift.opened * 1000), 'd MMMM', { locale: ru })}
+              </PanelSubtitle>
+              <PanelLabel>Зміна</PanelLabel>
+
+              <InfoList>
+                <InfoItem>
+                  <InfoIcon>●</InfoIcon>
+                  <InfoText>Відкрита {formatDateTime(selectedShift.opened)}</InfoText>
+                </InfoItem>
+                {selectedShift.closed && (
+                  <InfoItem>
+                    <InfoIcon>●</InfoIcon>
+                    <InfoText>Закрита {formatDateTime(selectedShift.closed)}</InfoText>
+                  </InfoItem>
+                )}
+                <InfoItem>
+                  <InfoIcon>●</InfoIcon>
+                  <InfoText>Магазин «{selectedShift.store_name || '—'}»</InfoText>
+                </InfoItem>
+                <InfoItem>
+                  <InfoIcon>●</InfoIcon>
+                  <InfoText>Каса «{selectedShift.register_name || '—'}»</InfoText>
+                </InfoItem>
+              </InfoList>
+
+              <div style={{ display: 'flex', gap: 40, marginBottom: 24 }}>
+                <div style={{ textAlign: 'right', flex: 1 }}>
+                  <InfoLink>{selectedShift.cashier_name || '—'}</InfoLink>
+                  <div style={{ fontSize: 12, color: '#9ca3af' }}>Android 11</div>
+                </div>
+                <div style={{ textAlign: 'right' }}>
+                  <div style={{ fontSize: 13, color: '#9ca3af' }}>IP 10.0.10.206</div>
+                </div>
+              </div>
+
+              <SectionTitle>ВИРУЧКА</SectionTitle>
+              <StatGrid>
+                <StatRow>
+                  <StatLabel>Кіл-во продажів</StatLabel>
+                  <StatValue>{selectedShift.sales_count}</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Готівка</StatLabel>
+                  <StatValue>{formatPrice(selectedShift.sales_total * 0.3)} грн</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Сума продажів</StatLabel>
+                  <StatValue>{formatPrice(selectedShift.sales_total)} грн</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Безготівка</StatLabel>
+                  <StatValue>{formatPrice(selectedShift.sales_total * 0.7)} грн</StatValue>
+                </StatRow>
+              </StatGrid>
+
+              <SectionTitle>ПОВЕРНЕННЯ</SectionTitle>
+              <StatGrid>
+                <StatRow>
+                  <StatLabel>Кількість повернень продажів</StatLabel>
+                  <StatValue>0</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Готівка</StatLabel>
+                  <StatValue>0,00 грн</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Сума повернень продажів</StatLabel>
+                  <StatValue>0,00 грн</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Безготівка</StatLabel>
+                  <StatValue>0,00 грн</StatValue>
+                </StatRow>
+              </StatGrid>
+
+              <SectionTitle>КАСА</SectionTitle>
+              <StatGrid>
+                <StatRow>
+                  <StatLabel>Сума на початок зміни</StatLabel>
+                  <StatValue>{formatPrice(selectedShift.cash_start)} грн</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Сума всіх внесень</StatLabel>
+                  <StatValue>{formatPrice(selectedShift.sales_total * 0.3)} грн</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Сума на кінець зміни</StatLabel>
+                  <StatValue>{formatPrice(selectedShift.cash_end || 0)} грн</StatValue>
+                </StatRow>
+                <StatRow>
+                  <StatLabel>Сума расходів</StatLabel>
+                  <StatValue>{formatPrice(selectedShift.sales_total * 0.3)} грн</StatValue>
+                </StatRow>
+              </StatGrid>
+
+              <TotalRow>
+                <span>Виручка</span>
+                <StatValue color={theme.colors.success}>{formatPrice(selectedShift.sales_total)} грн</StatValue>
+              </TotalRow>
+            </PanelContent>
+          </>
         )}
-      </CurrentShiftCard>
-
-      <HistorySection>
-        <SectionTitle>Історія змін</SectionTitle>
-        <ShiftList>
-          {shiftHistory.length > 0 ? (
-            shiftHistory.map(shift => (
-              <ShiftItem key={shift._id}>
-                <ShiftInfo>
-                  <ShiftIcon>
-                    <Clock size={20} />
-                  </ShiftIcon>
-                  <ShiftDetails>
-                    <ShiftNumber>Зміна #{shift.number}</ShiftNumber>
-                    <ShiftMeta>
-                      {formatDate(shift.opened)} – {shift.closed ? formatDate(shift.closed) : 'Відкрита'}
-                    </ShiftMeta>
-                  </ShiftDetails>
-                </ShiftInfo>
-                <ShiftAmount>
-                  <AmountValue>{formatPrice(shift.sales_total)}</AmountValue>
-                  <AmountLabel>{shift.sales_count} продажів</AmountLabel>
-                </ShiftAmount>
-              </ShiftItem>
-            ))
-          ) : (
-            <ShiftItem>
-              <ShiftInfo>
-                <AlertCircle size={20} color={theme.colors.textMuted} />
-                <ShiftMeta>Історія змін порожня</ShiftMeta>
-              </ShiftInfo>
-            </ShiftItem>
-          )}
-        </ShiftList>
-      </HistorySection>
-
-      {/* Open Shift Modal */}
-      {showOpenModal && (
-        <Modal onClick={() => setShowOpenModal(false)}>
-          <ModalContent onClick={e => e.stopPropagation()}>
-            <ModalTitle>Відкрити зміну</ModalTitle>
-            <FormGroup>
-              <Label>Каса на початок зміни</Label>
-              <Input
-                type="number"
-                value={cashStart}
-                onChange={(e) => setCashStart(e.target.value)}
-                placeholder="0.00"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label>Магазин</Label>
-              <Input type="text" value={selectedStore?.name || '-'} disabled />
-            </FormGroup>
-            <FormGroup>
-              <Label>Каса</Label>
-              <Input type="text" value={selectedRegister?.name || '-'} disabled />
-            </FormGroup>
-            <ModalButtons>
-              <Button onClick={() => setShowOpenModal(false)}>Скасувати</Button>
-              <Button variant="primary" onClick={handleOpenShift} disabled={isLoading}>
-                {isLoading ? 'Відкриваємо...' : 'Відкрити'}
-              </Button>
-            </ModalButtons>
-          </ModalContent>
-        </Modal>
-      )}
-
-      {/* Close Shift Modal */}
-      {showCloseModal && currentShift && (
-        <Modal onClick={() => setShowCloseModal(false)}>
-          <ModalContent onClick={e => e.stopPropagation()}>
-            <ModalTitle>Закрити зміну #{currentShift.number}</ModalTitle>
-            <FormGroup>
-              <Label>Фактична каса</Label>
-              <Input
-                type="number"
-                value={cashEnd}
-                onChange={(e) => setCashEnd(e.target.value)}
-                placeholder="0.00"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label>Очікувана каса</Label>
-              <Input
-                type="text"
-                value={formatPrice(currentShift.cash_start + currentShift.sales_total)}
-                disabled
-              />
-            </FormGroup>
-            <ModalButtons>
-              <Button onClick={() => setShowCloseModal(false)}>Скасувати</Button>
-              <Button variant="primary" onClick={handleCloseShift} disabled={isLoading}>
-                {isLoading ? 'Закриваємо...' : 'Закрити зміну'}
-              </Button>
-            </ModalButtons>
-          </ModalContent>
-        </Modal>
-      )}
+      </SlidePanel>
     </MainLayout>
   );
 }

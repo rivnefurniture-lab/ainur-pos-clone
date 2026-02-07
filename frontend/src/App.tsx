@@ -18,6 +18,7 @@ import Accounts from './pages/Accounts';
 import Reports from './pages/Reports';
 import Settings from './pages/Settings';
 import Suppliers from './pages/Suppliers';
+import MoneyMovement from './pages/MoneyMovement';
 
 function App() {
   return (
@@ -37,10 +38,10 @@ function App() {
             <Route path="/pos/customers" element={<Customers />} />
             <Route path="/pos/documents" element={<Documents />} />
             <Route path="/pos/movements" element={<Documents />} />
-            <Route path="/pos/money" element={<Accounts />} />
+            <Route path="/pos/money" element={<MoneyMovement />} />
             <Route path="/pos/shifts" element={<Shifts />} />
-            <Route path="/pos/stores" element={<Stores />} />
-            <Route path="/pos/accounts" element={<Accounts />} />
+            <Route path="/pos/stores" element={<Settings />} />
+            <Route path="/pos/accounts" element={<Settings />} />
             <Route path="/pos/suppliers" element={<Suppliers />} />
             <Route path="/pos/reports" element={<Reports />} />
             <Route path="/pos/settings" element={<Settings />} />
