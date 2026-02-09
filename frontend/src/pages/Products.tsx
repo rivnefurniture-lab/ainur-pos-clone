@@ -588,16 +588,19 @@ export default function Products() {
   useEffect(() => {
     const loadData = async () => {
       if (companyId) {
+        console.log('Products page: Loading data for company:', companyId);
         dispatch(fetchProducts({ companyId }));
         dispatch(fetchCategories(companyId));
         
         try {
           const storesResponse = await dataApi.getStores(companyId);
+          console.log('Products page: Stores response:', storesResponse);
           if (storesResponse.status && storesResponse.data) {
             setStores(storesResponse.data);
+            console.log('Products page: Stores set:', storesResponse.data.length);
           }
         } catch (error) {
-          console.error('Failed to load stores:', error);
+          console.error('Products page: Failed to load stores:', error);
         }
       }
     };
@@ -606,7 +609,9 @@ export default function Products() {
   }, [dispatch, companyId]);
 
   useEffect(() => {
+    console.log('Products page: Filtering products. Total products:', products.length);
     let result = products.filter(p => !p.deleted);
+    console.log('Products page: After deleted filter:', result.length);
 
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
@@ -616,6 +621,7 @@ export default function Products() {
           (p.sku && p.sku.toLowerCase().includes(query)) ||
           (p.barcode && p.barcode.toLowerCase().includes(query))
       );
+      console.log('Products page: After search filter:', result.length);
     }
 
     // Apply filter presets
@@ -626,20 +632,24 @@ export default function Products() {
       result = result.filter(p => 
         p.categories && p.categories.includes(filterCategory)
       );
+      console.log('Products page: After category filter:', result.length);
     }
 
     // Apply price filter
     if (filterPriceFrom) {
       const priceFrom = parseFloat(filterPriceFrom);
       result = result.filter(p => parseFloat(String(p.price || 0)) >= priceFrom);
+      console.log('Products page: After price from filter:', result.length);
     }
     if (filterPriceTo) {
       const priceTo = parseFloat(filterPriceTo);
       result = result.filter(p => parseFloat(String(p.price || 0)) <= priceTo);
+      console.log('Products page: After price to filter:', result.length);
     }
 
     setFilteredProducts(result);
     setCurrentPage(1);
+    console.log('Products page: Final filtered products:', result.length);
   }, [products, searchQuery, filterPresets, filterCategory, filterPriceFrom, filterPriceTo]);
 
   const paginatedProducts = filteredProducts.slice(

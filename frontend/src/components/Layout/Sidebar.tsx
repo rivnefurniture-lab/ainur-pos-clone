@@ -222,7 +222,7 @@ export default function Sidebar() {
   return (
     <SidebarContainer>
       <SidebarHeader>
-        <Logo>AinurPOS</Logo>
+        <Logo>PipeLogic POS</Logo>
       </SidebarHeader>
 
       <CreateButton onClick={() => navigate('/pos/documents/new')}>

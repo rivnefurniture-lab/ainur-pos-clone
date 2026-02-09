@@ -190,7 +190,7 @@ export default function Login() {
     <LoginContainer>
       <LoginCard>
         <Logo>
-          <LogoText>AinurPOS</LogoText>
+          <LogoText>PipeLogic POS</LogoText>
           <LogoSubtext>Система управління продажами</LogoSubtext>
         </Logo>
 
@@ -259,7 +259,7 @@ export default function Login() {
         </Form>
 
         <Footer>
-          © 2024 AinurPOS Clone. Всі права захищені.
+          © 2024 PipeLogic POS Clone. Всі права захищені.
         </Footer>
       </LoginCard>
     </LoginContainer>
