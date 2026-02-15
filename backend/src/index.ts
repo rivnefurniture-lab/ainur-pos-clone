@@ -54,6 +54,43 @@ app.get('/health/db', async (_req: Request, res: Response) => {
   }
 });
 
+// Setup database schema (run once for fresh Postgres)
+app.post('/admin/setup-db', async (_req: Request, res: Response) => {
+  try {
+    const fs = await import('fs');
+    const path = await import('path');
+    const pool = (await import('./config/database')).default;
+    const schemaPath = path.join(__dirname, 'database', 'schema.sql');
+    const schema = fs.readFileSync(schemaPath, 'utf8');
+    await pool.query(schema);
+    res.json({ status: 'ok', message: 'Schema applied successfully' });
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error('Setup DB error:', err);
+    res.status(500).json({ status: 'error', error: msg });
+  }
+});
+
+// Seed default store if empty
+app.post('/admin/seed-store', async (_req: Request, res: Response) => {
+  try {
+    const pool = (await import('./config/database')).default;
+    const check = await pool.query('SELECT COUNT(*) FROM stores');
+    if (parseInt(check.rows[0].count) > 0) {
+      return res.json({ status: 'ok', message: 'Stores already exist' });
+    }
+    const now = Math.floor(Date.now() / 1000);
+    await pool.query(`
+      INSERT INTO stores (_id, _client, _user, _app, name, type, created, updated, created_ms) VALUES 
+      ('58c872aa3ce7d5fc688b49be', '58c872aa3ce7d5fc688b49bd', '58c872aa3ce7d5fc688b49bc', 'WAPP', 'Головний магазин', 'store', $1, $1, $2)
+    `, [now, now * 1000]);
+    res.json({ status: 'ok', message: 'Default store created' });
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    res.status(500).json({ status: 'error', error: msg });
+  }
+});
+
 // API Routes
 app.use('/auth', authRoutes);
 app.use('/proxy', proxyRoutes);
