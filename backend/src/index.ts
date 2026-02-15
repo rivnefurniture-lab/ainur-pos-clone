@@ -42,6 +42,18 @@ app.get('/health', (_req: Request, res: Response) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+// Database health check
+app.get('/health/db', async (_req: Request, res: Response) => {
+  try {
+    const pool = (await import('./config/database')).default;
+    const result = await pool.query('SELECT 1 as ok');
+    res.json({ status: 'ok', database: 'connected', result: result.rows[0] });
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    res.status(503).json({ status: 'error', database: 'disconnected', error: msg });
+  }
+});
+
 // API Routes
 app.use('/auth', authRoutes);
 app.use('/proxy', proxyRoutes);

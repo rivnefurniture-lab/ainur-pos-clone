@@ -243,6 +243,19 @@ userId: '58c872aa3ce7d5fc688b49bd'
 
 ## Troubleshooting
 
+### Issue: Database not connected / ECONNRESET / all zeros
+**Cause**: DATABASE_URL missing, wrong, or Railway database paused.
+
+**Solution**:
+1. Ensure `backend/.env` has: `DATABASE_URL=postgresql://postgres:PASSWORD@HOST:PORT/railway`
+2. Test: `curl http://localhost:3001/health/db` - should return `{"database":"connected"}`
+3. If ECONNRESET: Create NEW PostgreSQL on Railway:
+   - Railway dashboard -> New Project -> Add PostgreSQL
+   - Copy DATABASE_URL from Connect tab
+   - Set in backend/.env and Railway variables
+   - Run schema: `psql $DATABASE_URL -f backend/src/database/schema.sql` (if empty DB)
+4. Railway free tier databases may pause after inactivity - wake via dashboard.
+
 ### Issue: Vercel shows zeros on dashboard
 **Solution**: Environment variables not set correctly
 ```bash
